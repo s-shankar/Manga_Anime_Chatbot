@@ -1,0 +1,12 @@
+épouse
+époux
+femme
+fille
+fils
+frère
+homme
+mari
+mère
+père
+soeur
+sœur
