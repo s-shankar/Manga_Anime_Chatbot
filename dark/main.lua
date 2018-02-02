@@ -1,4 +1,4 @@
-local base = dofile("base1.lua")
+local base = dofile("base2.lua")
 
 -- Création d'un pipeline pour DARK
 local main = dark.pipeline()
@@ -11,9 +11,11 @@ local main = dark.pipeline()
 
 characterFirstNames = {}
 characterLastNames = {}
-for key, value in ipairs(base["character"]) do
-	characterFirstNames[#characterFirstNames+1] = value["firstname"]
-	characterLastNames[#characterLastNames+1] = value["lastname"]
+for key, anime in ipairs(base["anime"]) do
+	for key, character in ipairs(anime["character"]) do
+		characterFirstNames[#characterFirstNames+1] = character["firstname"]
+		characterLastNames[#characterLastNames+1] = character["lastname"]
+	end
 end
 
 
@@ -44,6 +46,12 @@ main:pattern([[
 	]
 ]])
 
+main:pattern([[
+	[#DESCRIPTION
+		(#CHARACTERNAME 'is' 'very'? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
+	]
+]])
+
 
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
@@ -59,7 +67,8 @@ local tags = {
 	["#CHARACTERFIRSTNAME"] = "blue",
 	["#CHARACTERNAME"] = "cyan",
 	["#DUREE"] = "magenta",
-	["#BEHAVIOUR"] = "red"
+	["#BEHAVIOUR"] = "red",
+	["#DESCRIPTION"] = "green"
 }
 
 
@@ -110,7 +119,6 @@ local function GetValueInLink(seq, entity, link)
 end
 
 
---découpage en mot tout pourri à refaire. Problèmes avec "C.C."
 local function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
@@ -118,19 +126,31 @@ local function process(sen)
 	print(seq:tostring(tags))
 end
 
---découpage en phrases : attention, ce n'est pas parfait, notamment pour "C.C."
 local function splitsen(line)
 	for sen in line:gmatch("(.-[a-z][.?!])") do
 		process(sen)
 	end
 end
 
+-- un champ personnage de la base
+--[[local getCharacBehaviours(character)
+	
+end]]--
+
 --Pour afficher le corpus
-for f in os.dir("sentences") do
+--[[for f in os.dir("sentences") do
 	for line in io.lines("sentences/"..f) do
 		--print(line)
 		if line ~= "" then
 			splitsen(line)
 		end
+	end
+end]]--
+
+for key, anime in ipairs(base["anime"]) do
+	for key,review in ipairs(anime["review"]) do
+		if review["text"] ~= "" then
+			splitsen(review["text"])
+		end	
 	end
 end
