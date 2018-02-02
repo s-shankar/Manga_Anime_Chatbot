@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 from sys import stdin, stderr, argv
 
 with open(argv[1], 'r') as f:
-	soup = BeautifulSoup(f.read())
+	soup = BeautifulSoup(f.read(), "html.parser")
 
 #coms = soup.find_all("div", class_="spaceit textReadability word-break pt8 mt8")
 coms = soup.find_all("div", class_="borderDark")
@@ -53,6 +53,9 @@ for i in coms:
 		
 	text = text[:-len("\n\nHelpful\n\n\nread more\n")]
 	
+	
+	text = text.replace("\\", "\\\\")
+	
 	text = text.replace("<br>","\n")
 	text = text.replace("<br/>","\n")
 	text = text.replace("\n\n","\n")
@@ -74,6 +77,9 @@ for i in coms:
 	text = text.replace("&ocirc;","ô")
 	text = text.replace("&ndash;"," - ")
 	text = text.replace("&mdash;"," - ")
+	
+	text = text.replace("“", "\"")
+	text = text.replace("”", "\"")
 	
 	text = text.replace("\"","\\\"")
 	
