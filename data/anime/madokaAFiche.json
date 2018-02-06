@@ -1,0 +1,1380 @@
+{
+   "premiered" : "Winter 2011",
+   "licensor" : [
+      {
+         "name" : "Aniplex of America",
+         "url" : "https://myanimelist.net/anime/producer/493/Aniplex_of_America"
+      }
+   ],
+   "scored_by" : 361673,
+   "popularity" : 47,
+   "synopsis" : "Madoka Kaname and Sayaka Miki are regular middle school girls with regular lives, but all that changes when they encounter Kyuubey, a cat-like magical familiar, and Homura Akemi, the new transfer student. Kyuubey offers them a proposition: he will grant any one of their wishes and in exchange, they will each become a magical girl, gaining enough power to fulfill their dreams. However, Homura Akemi, a magical girl herself, urges them not to accept the offer, stating that everything is not what it seems. A story of hope, despair, and friendship, Mahou Shoujo Madoka★Magica deals with the difficulties of being a magical girl and the price one has to pay to make a dream come true. [Written by MAL Rewrite] ",
+   "title_synonyms" : "Mahou Shoujo Madoka Magika, Magical Girl Madoka Magica",
+   "character" : [
+      {
+         "name" : "Akemi, Homura",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/219771.jpg?s=f3f61d6207ec078d9eeafa5b950763d5",
+         "mal_id" : 38005,
+         "url" : "https://myanimelist.net/character/38005/Homura_Akemi",
+         "voice_actor" : [
+            {
+               "url" : "https://myanimelist.net/people/61/Chiwa_Saito",
+               "mal_id" : 61,
+               "name" : "Saito, Chiwa",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/44265.jpg?s=a6b165a2f3f4e33a40f498b35c645d72",
+               "language" : "Japanese"
+            },
+            {
+               "name" : "Valenzuela, Cristina",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/44707.jpg?s=a2bb7931d205501d874dcc5476a60014",
+               "url" : "https://myanimelist.net/people/489/Cristina_Valenzuela",
+               "mal_id" : 489,
+               "language" : "English"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/8097.jpg?s=5c9b0f052bc4b644034132dfe0b42b59",
+               "name" : "Möller, Kaya Marie",
+               "mal_id" : 10034,
+               "url" : "https://myanimelist.net/people/10034/Kaya_Marie_Möller",
+               "language" : "German"
+            },
+            {
+               "language" : "Italian",
+               "name" : "Amendola, Alessia",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15219.jpg?s=1172884071187ce30768eb5217bcf291",
+               "url" : "https://myanimelist.net/people/14583/Alessia_Amendola",
+               "mal_id" : 14583
+            },
+            {
+               "language" : "Korean",
+               "url" : "https://myanimelist.net/people/14773/Jeong_Sin_Wu",
+               "mal_id" : 14773,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/15321.jpg?s=a11a7179952776037e493276f3e28822",
+               "name" : "Wu, Jeong Sin"
+            },
+            {
+               "url" : "https://myanimelist.net/people/20332/Ariadna_Jiménez",
+               "mal_id" : 20332,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/48085.jpg?s=ec759bdf09d7f5f442ff60974e98ee1d",
+               "name" : "Jiménez, Ariadna",
+               "language" : "Spanish"
+            }
+         ],
+         "role" : "Main"
+      },
+      {
+         "mal_id" : 37832,
+         "url" : "https://myanimelist.net/character/37832/Madoka_Kaname",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/139487.jpg?s=81e518d4d934c6a3a610df3bb47b8a22",
+         "name" : "Kaname, Madoka",
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "mal_id" : 6686,
+               "url" : "https://myanimelist.net/people/6686/Aoi_Yuuki",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/42150.jpg?s=0bbff14569196032801710b505af6bda",
+               "name" : "Yuuki, Aoi"
+            },
+            {
+               "mal_id" : 8812,
+               "url" : "https://myanimelist.net/people/8812/Mi_Sook_Jeong",
+               "name" : "Jeong, Mi Sook",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/25851.jpg?s=980d845f9cbf2fa30fb9d89ba51a42a6",
+               "language" : "Korean"
+            },
+            {
+               "language" : "English",
+               "url" : "https://myanimelist.net/people/12344/Christine_Marie_Cabanos",
+               "mal_id" : 12344,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43360.jpg?s=1f78ee57c4fcbc9eda90e9f801eb0cd4",
+               "name" : "Cabanos, Christine Marie"
+            },
+            {
+               "language" : "Italian",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/22235.jpg?s=65da2ba7e3388412542a67af88e22946",
+               "name" : "Saltarelli, Joy",
+               "url" : "https://myanimelist.net/people/20144/Joy_Saltarelli",
+               "mal_id" : 20144
+            },
+            {
+               "language" : "Spanish",
+               "name" : "Ambrós, Carmen",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/49707.jpg?s=d147cf6d800785ffafc766ea09aeca1d",
+               "mal_id" : 20494,
+               "url" : "https://myanimelist.net/people/20494/Carmen_Ambrós"
+            },
+            {
+               "mal_id" : 40191,
+               "url" : "https://myanimelist.net/people/40191/Lydia_Morgenstern",
+               "name" : "Morgenstern, Lydia",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/41149.jpg?s=5d0cb130fba3f2e524576ef9a4b89ff2",
+               "language" : "German"
+            }
+         ],
+         "role" : "Main"
+      },
+      {
+         "role" : "Main",
+         "voice_actor" : [
+            {
+               "mal_id" : 52,
+               "url" : "https://myanimelist.net/people/52/Emiri_Katou",
+               "name" : "Katou, Emiri",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/12722.jpg?s=a805519821f69e6c5e1ee498c6be3a88",
+               "language" : "Japanese"
+            },
+            {
+               "language" : "German",
+               "url" : "https://myanimelist.net/people/6106/Rubina_Kuraoka",
+               "mal_id" : 6106,
+               "name" : "Kuraoka, Rubina",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/5197.jpg?s=fe6e0ae1ea172984624b0fecb567f85e"
+            },
+            {
+               "language" : "Italian",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/37605.jpg?s=50be45ec761b46482dce713982c64c3f",
+               "name" : "Di Pisa, Loretta",
+               "mal_id" : 9993,
+               "url" : "https://myanimelist.net/people/9993/Loretta_Di_Pisa"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/41478.jpg?s=21decf9f068ea7dd39ee8f0deb134ee2",
+               "name" : "Morris, Cassandra Lee",
+               "mal_id" : 11369,
+               "url" : "https://myanimelist.net/people/11369/Cassandra_Lee_Morris",
+               "language" : "English"
+            },
+            {
+               "language" : "Korean",
+               "url" : "https://myanimelist.net/people/14755/Jeong_Hwa_Yang",
+               "mal_id" : 14755,
+               "name" : "Yang, Jeong Hwa",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15305.jpg?s=07a680fff0bc1025829129dae23ded7a"
+            },
+            {
+               "language" : "Spanish",
+               "name" : "Villalonga, Inma",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+               "url" : "https://myanimelist.net/people/26295/Inma_Villalonga",
+               "mal_id" : 26295
+            }
+         ],
+         "name" : "Kyuubey",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/110705.jpg?s=bdb19b8890e625bdd79102626e534961",
+         "url" : "https://myanimelist.net/character/38566/Kyuubey",
+         "mal_id" : 38566
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/107672.jpg?s=627733bae7d7c9f2ad54706d1a17e7a8",
+         "name" : "Miki, Sayaka",
+         "mal_id" : 38395,
+         "url" : "https://myanimelist.net/character/38395/Sayaka_Miki",
+         "role" : "Main",
+         "voice_actor" : [
+            {
+               "mal_id" : 413,
+               "url" : "https://myanimelist.net/people/413/Eri_Kitamura",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/50751.jpg?s=ff5e812f471b46159c84558d5673fa7b",
+               "name" : "Kitamura, Eri",
+               "language" : "Japanese"
+            },
+            {
+               "language" : "English",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/20265.jpg?s=784b8df78d27a6ffead055ae2e9e8e34",
+               "name" : "Williams, Sarah",
+               "url" : "https://myanimelist.net/people/14285/Sarah_Williams",
+               "mal_id" : 14285
+            },
+            {
+               "mal_id" : 14569,
+               "url" : "https://myanimelist.net/people/14569/Gea_Riva",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/15029.jpg?s=e0882abc1f809cede9070898650052f1",
+               "name" : "Riva, Gea",
+               "language" : "Italian"
+            },
+            {
+               "mal_id" : 14771,
+               "url" : "https://myanimelist.net/people/14771/Seon_hui_Mun",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/15319.jpg?s=67e8587c7727e2c428d80764c8323ed0",
+               "name" : "Mun, Seon hui",
+               "language" : "Korean"
+            },
+            {
+               "mal_id" : 21669,
+               "url" : "https://myanimelist.net/people/21669/Carmen_Calvell",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/24881.jpg?s=bc3216112b76ef4e12c70de005499877",
+               "name" : "Calvell, Carmen",
+               "language" : "Spanish"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/39333.jpg?s=11a77fa85e8c95cb1fc0b22e84c5f627",
+               "name" : "Vural, Esra",
+               "url" : "https://myanimelist.net/people/21705/Esra_Vural",
+               "mal_id" : 21705,
+               "language" : "German"
+            }
+         ]
+      },
+      {
+         "mal_id" : 40006,
+         "url" : "https://myanimelist.net/character/40006/Kyouko_Sakura",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/111234.jpg?s=da3234216ff0a03402dc7817bae51d0f",
+         "name" : "Sakura, Kyouko",
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "mal_id" : 32,
+               "url" : "https://myanimelist.net/people/32/Ai_Nonaka",
+               "name" : "Nonaka, Ai",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/29717.jpg?s=4e64eeca3c56927022b23446a6d2b5f7"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/2769.jpg?s=abdb692fd3b4319af97d1d53f948f47c",
+               "name" : "Otto, Ilona",
+               "mal_id" : 6138,
+               "url" : "https://myanimelist.net/people/6138/Ilona_Otto",
+               "language" : "German"
+            },
+            {
+               "language" : "English",
+               "name" : "Landa, Lauren",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/16813.jpg?s=2e41f6b365361dfc28ee60f74521ca27",
+               "url" : "https://myanimelist.net/people/7993/Lauren_Landa",
+               "mal_id" : 7993
+            },
+            {
+               "name" : "Puccio, Veronica",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/20327.jpg?s=f089446965c961a0de1db7c966e52c97",
+               "url" : "https://myanimelist.net/people/8066/Veronica_Puccio",
+               "mal_id" : 8066,
+               "language" : "Italian"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15815.jpg?s=134c2680dfa2db7dabe3f4a66ddb1914",
+               "name" : "Chae, Ui Jin",
+               "mal_id" : 14983,
+               "url" : "https://myanimelist.net/people/14983/Ui_Jin_Chae",
+               "language" : "Korean"
+            }
+         ],
+         "role" : "Main"
+      },
+      {
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "url" : "https://myanimelist.net/people/156/Kaori_Mizuhashi",
+               "mal_id" : 156,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43574.jpg?s=1a2a63392610a57f099e00a93def0e5d",
+               "name" : "Mizuhashi, Kaori"
+            },
+            {
+               "url" : "https://myanimelist.net/people/1435/Carrie_Keranen",
+               "mal_id" : 1435,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/37365.jpg?s=5404f72d811ac2518f79dd8076a40913",
+               "name" : "Keranen, Carrie",
+               "language" : "English"
+            },
+            {
+               "name" : "Meynen, Julia",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/2770.jpg?s=fd0d98a9d005274ea1aa168f6090a368",
+               "mal_id" : 1653,
+               "url" : "https://myanimelist.net/people/1653/Julia_Meynen",
+               "language" : "German"
+            },
+            {
+               "language" : "Italian",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/1575.jpg?s=80c30cd2e6f6ec0ea497bf6a1026d8f2",
+               "name" : "Scifoni, Maria Letizia",
+               "mal_id" : 1676,
+               "url" : "https://myanimelist.net/people/1676/Maria_Letizia_Scifoni"
+            },
+            {
+               "mal_id" : 15135,
+               "url" : "https://myanimelist.net/people/15135/Do_Yeong_Song",
+               "name" : "Song, Do Yeong",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/16033.jpg?s=1b0ee9504008331caca957fab27a8272",
+               "language" : "Korean"
+            },
+            {
+               "language" : "Spanish",
+               "url" : "https://myanimelist.net/people/26511/Violeta_Bibiloni",
+               "mal_id" : 26511,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+               "name" : "Bibiloni, Violeta"
+            }
+         ],
+         "role" : "Main",
+         "mal_id" : 38194,
+         "url" : "https://myanimelist.net/character/38194/Mami_Tomoe",
+         "name" : "Tomoe, Mami",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/141631.jpg?s=05cb80b110b9a10cad06a56d2ec71f58"
+      },
+      {
+         "role" : "Supporting",
+         "voice_actor" : [],
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/111972.jpg?s=964238720388f2911cb3fe0e9f2cd16b",
+         "name" : "Charlotte",
+         "url" : "https://myanimelist.net/character/40842/Charlotte",
+         "mal_id" : 40842
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/111980.jpg?s=6a91dcfda420dd306966944ba19468b6",
+         "name" : "Elsa Maria",
+         "mal_id" : 41115,
+         "url" : "https://myanimelist.net/character/41115/Elsa_Maria",
+         "voice_actor" : [],
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "voice_actor" : [],
+         "url" : "https://myanimelist.net/character/40925/Gertrud",
+         "mal_id" : 40925,
+         "name" : "Gertrud",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/111437.jpg?s=e3b0fa528c5f22b5ac547db222d32d3b"
+      },
+      {
+         "name" : "H.N. Elly",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/112009.jpg?s=a437402f5b7ec35db2a2d894e3575457",
+         "mal_id" : 41127,
+         "url" : "https://myanimelist.net/character/41127/HN_Elly",
+         "role" : "Supporting",
+         "voice_actor" : []
+      },
+      {
+         "name" : "Kamijou, Kyousuke",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/114694.jpg?s=34d6da2163c0dbd48fa9457cf3ca61b1",
+         "mal_id" : 39835,
+         "url" : "https://myanimelist.net/character/39835/Kyousuke_Kamijou",
+         "voice_actor" : [
+            {
+               "language" : "Italian",
+               "mal_id" : 1163,
+               "url" : "https://myanimelist.net/people/1163/Renato_Novara",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/1203.jpg?s=cc51a1285324cd8b9f0db53b2a93d5e4",
+               "name" : "Novara, Renato"
+            },
+            {
+               "name" : "Miller, Marianne",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/22892.jpg?s=ed7baea88d82442201fe78de4eb3f9dc",
+               "url" : "https://myanimelist.net/people/7992/Marianne_Miller",
+               "mal_id" : 7992,
+               "language" : "English"
+            },
+            {
+               "name" : "Yoshida, Seiko",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/11402.jpg?s=61550dcc5f97ea183ecfeae5d8b5e6c7",
+               "url" : "https://myanimelist.net/people/8477/Seiko_Yoshida",
+               "mal_id" : 8477,
+               "language" : "Japanese"
+            },
+            {
+               "language" : "Korean",
+               "name" : "Kim, Seung jun",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15759.jpg?s=cbaad14c0190f6a1ef7bf0de3e9e9993",
+               "mal_id" : 14819,
+               "url" : "https://myanimelist.net/people/14819/Seung_jun_Kim"
+            },
+            {
+               "language" : "German",
+               "name" : "Zeiger, Christian",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/39141.jpg?s=3744e9e591feba03df1ee467156ece21",
+               "mal_id" : 36980,
+               "url" : "https://myanimelist.net/people/36980/Christian_Zeiger"
+            },
+            {
+               "language" : "Spanish",
+               "url" : "https://myanimelist.net/people/45982/Cesc_Martínez",
+               "mal_id" : 45982,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+               "name" : "Martínez, Cesc"
+            }
+         ],
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 41851,
+         "url" : "https://myanimelist.net/character/41851/Tatsuya_Kaname",
+         "name" : "Kaname, Tatsuya",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/167507.jpg?s=36a125fb2a7f1346063f34d0099bc2e6",
+         "role" : "Supporting",
+         "voice_actor" : [
+            {
+               "mal_id" : 156,
+               "url" : "https://myanimelist.net/people/156/Kaori_Mizuhashi",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43574.jpg?s=1a2a63392610a57f099e00a93def0e5d",
+               "name" : "Mizuhashi, Kaori",
+               "language" : "Japanese"
+            },
+            {
+               "language" : "English",
+               "mal_id" : 396,
+               "url" : "https://myanimelist.net/people/396/Stephanie_Sheh",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/38453.jpg?s=302490c5abade44954155b197946ab64",
+               "name" : "Sheh, Stephanie"
+            },
+            {
+               "language" : "Italian",
+               "url" : "https://myanimelist.net/people/7533/Francesca_Bielli",
+               "mal_id" : 7533,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/4628.jpg?s=39ebe6ed827feeab6dbaef964522ba47",
+               "name" : "Bielli, Francesca"
+            },
+            {
+               "name" : "Jiménez, Ariadna",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/48085.jpg?s=ec759bdf09d7f5f442ff60974e98ee1d",
+               "mal_id" : 20332,
+               "url" : "https://myanimelist.net/people/20332/Ariadna_Jiménez",
+               "language" : "Spanish"
+            }
+         ]
+      },
+      {
+         "voice_actor" : [
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/38702.jpg?s=31f3f15561763a9b1b4bfb89462fc5f1",
+               "name" : "Hebert, Kyle",
+               "mal_id" : 336,
+               "url" : "https://myanimelist.net/people/336/Kyle_Hebert",
+               "language" : "English"
+            },
+            {
+               "name" : "Iwanaga, Tetsuya",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/19085.jpg?s=77bb92d5bc1de124157de79ecaa99647",
+               "url" : "https://myanimelist.net/people/694/Tetsuya_Iwanaga",
+               "mal_id" : 694,
+               "language" : "Japanese"
+            },
+            {
+               "name" : "Löwenberg, Jaron",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/5626.jpg?s=edaf6324a6885ca438eba39c173816c0",
+               "url" : "https://myanimelist.net/people/8433/Jaron_Löwenberg",
+               "mal_id" : 8433,
+               "language" : "German"
+            },
+            {
+               "mal_id" : 14781,
+               "url" : "https://myanimelist.net/people/14781/Ja_hyeong_Gu",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/18217.jpg?s=9dbdf25d13a5f921883e777b268211c6",
+               "name" : "Gu, Ja hyeong",
+               "language" : "Korean"
+            },
+            {
+               "url" : "https://myanimelist.net/people/35543/Luca_Ghignone",
+               "mal_id" : 35543,
+               "name" : "Ghignone, Luca",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/37203.jpg?s=714e70f06bd04bf168e174b0d8665107",
+               "language" : "Italian"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/39130.jpg?s=fc84d1e2964dd8c9f07dac862ec4197c",
+               "name" : "Lladó, Carlos",
+               "url" : "https://myanimelist.net/people/36959/Carlos_Lladó",
+               "mal_id" : 36959,
+               "language" : "Spanish"
+            }
+         ],
+         "role" : "Supporting",
+         "mal_id" : 39784,
+         "url" : "https://myanimelist.net/character/39784/Tomohisa_Kaname",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/108839.jpg?s=facad80b3bc16194bdb2ea2227796404",
+         "name" : "Kaname, Tomohisa"
+      },
+      {
+         "url" : "https://myanimelist.net/character/39742/Junko_Kaname",
+         "mal_id" : 39742,
+         "name" : "Kaname, Junko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/108841.jpg?s=dceedb6976cc8bbdc4f9479f8f9a9503",
+         "role" : "Supporting",
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "mal_id" : 105,
+               "url" : "https://myanimelist.net/people/105/Yuuko_Gotou",
+               "name" : "Gotou, Yuuko",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/35159.jpg?s=209f685a68af5e8e63526ab482f08337"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/6771.jpg?s=ced25ba3d9a1b63db351b90f00bad7c0",
+               "name" : "Savage, Carrie",
+               "mal_id" : 327,
+               "url" : "https://myanimelist.net/people/327/Carrie_Savage",
+               "language" : "English"
+            },
+            {
+               "mal_id" : 6141,
+               "url" : "https://myanimelist.net/people/6141/Katrin_Zimmermann",
+               "name" : "Zimmermann, Katrin",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/25811.jpg?s=f35bc96baf4acbb2a649c5a245de9d4e",
+               "language" : "German"
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15407.jpg?s=9a0a2ea6bf5d761cf2e8e9c94c3346bc",
+               "name" : "Lee, Hyeon Jin",
+               "url" : "https://myanimelist.net/people/14835/Hyeon_Jin_Lee",
+               "mal_id" : 14835,
+               "language" : "Korean"
+            },
+            {
+               "language" : "Italian",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/37619.jpg?s=b7bb7ccaa42c24afd5902e2729d8d85c",
+               "name" : "Vadacca, Maddalena",
+               "url" : "https://myanimelist.net/people/35771/Maddalena_Vadacca",
+               "mal_id" : 35771
+            },
+            {
+               "name" : "Guillén, Maria Rosa",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/49709.jpg?s=a30eca4ba588bfebce34cc41584d0db3",
+               "mal_id" : 45991,
+               "url" : "https://myanimelist.net/people/45991/Maria_Rosa_Guillén",
+               "language" : "Spanish"
+            }
+         ]
+      },
+      {
+         "role" : "Supporting",
+         "voice_actor" : [
+            {
+               "url" : "https://myanimelist.net/people/6359/Jason_Miller",
+               "mal_id" : 6359,
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/14521.jpg?s=da7a7b6419474bba81a89b3c9a7f72f1",
+               "name" : "Miller, Jason",
+               "language" : "English"
+            },
+            {
+               "language" : "Japanese",
+               "mal_id" : 11817,
+               "url" : "https://myanimelist.net/people/11817/Yoshitsugu_Matsuoka",
+               "name" : "Matsuoka, Yoshitsugu",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/42176.jpg?s=b8c34ba93b3dd955bccc55e561ae09c9"
+            },
+            {
+               "language" : "German",
+               "url" : "https://myanimelist.net/people/40201/Marcel_Mann",
+               "mal_id" : 40201,
+               "name" : "Mann, Marcel",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/41159.jpg?s=abe8ab85f6d2f2116f2446f67f0b7c08"
+            }
+         ],
+         "mal_id" : 87295,
+         "url" : "https://myanimelist.net/character/87295/Nakazawa",
+         "name" : "Nakazawa",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/211827.jpg?s=7c906ce2df7ff8a5b6b393ffda0d7352"
+      },
+      {
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/30549.jpg?s=e37d97439f6d5756f280027a3f6d730d",
+               "name" : "Iwao, Junko",
+               "url" : "https://myanimelist.net/people/289/Junko_Iwao",
+               "mal_id" : 289
+            },
+            {
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/39759.jpg?s=babb3b92b356c3eb7cae9049ca18f410",
+               "name" : "Strassman, Karen",
+               "mal_id" : 1054,
+               "url" : "https://myanimelist.net/people/1054/Karen_Strassman",
+               "language" : "English"
+            },
+            {
+               "name" : "Magnaghi, Debora",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15553.jpg?s=e13356953999aaa6f3e147f718f1c698",
+               "mal_id" : 1088,
+               "url" : "https://myanimelist.net/people/1088/Debora_Magnaghi",
+               "language" : "Italian"
+            },
+            {
+               "language" : "German",
+               "mal_id" : 8550,
+               "url" : "https://myanimelist.net/people/8550/Silvia_Mißbach",
+               "name" : "Mißbach, Silvia",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+            },
+            {
+               "mal_id" : 45991,
+               "url" : "https://myanimelist.net/people/45991/Maria_Rosa_Guillén",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/49709.jpg?s=a30eca4ba588bfebce34cc41584d0db3",
+               "name" : "Guillén, Maria Rosa",
+               "language" : "Spanish"
+            }
+         ],
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/39785/Kazuko_Saotome",
+         "mal_id" : 39785,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/108810.jpg?s=ccabc096d273f244380c9d777f9a84ee",
+         "name" : "Saotome, Kazuko"
+      },
+      {
+         "url" : "https://myanimelist.net/character/39584/Hitomi_Shizuki",
+         "mal_id" : 39584,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/108840.jpg?s=93990e1a32baf3ac08b2b5a61695712d",
+         "name" : "Shizuki, Hitomi",
+         "role" : "Supporting",
+         "voice_actor" : [
+            {
+               "name" : "Shintani, Ryouko",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/28369.jpg?s=15170c00ff800815cd943bd5a86a60e6",
+               "url" : "https://myanimelist.net/people/315/Ryouko_Shintani",
+               "mal_id" : 315,
+               "language" : "Japanese"
+            },
+            {
+               "language" : "English",
+               "url" : "https://myanimelist.net/people/11370/Shelby_Lindley",
+               "mal_id" : 11370,
+               "name" : "Lindley, Shelby",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/13027.jpg?s=9f52c8103ef2212f7b890e8d7c7180f3"
+            },
+            {
+               "language" : "Korean",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/15407.jpg?s=9a0a2ea6bf5d761cf2e8e9c94c3346bc",
+               "name" : "Lee, Hyeon Jin",
+               "url" : "https://myanimelist.net/people/14835/Hyeon_Jin_Lee",
+               "mal_id" : 14835
+            },
+            {
+               "name" : "Schmidt, Josephine",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/16847.jpg?s=049a114cb4cb9c61c9d4fb4c1b3a189e",
+               "url" : "https://myanimelist.net/people/15555/Josephine_Schmidt",
+               "mal_id" : 15555,
+               "language" : "German"
+            },
+            {
+               "name" : "Massutí, Assumpta",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+               "mal_id" : 26513,
+               "url" : "https://myanimelist.net/people/26513/Assumpta_Massutí",
+               "language" : "Spanish"
+            },
+            {
+               "language" : "Italian",
+               "mal_id" : 35769,
+               "url" : "https://myanimelist.net/people/35769/Deborah_Morese",
+               "name" : "Morese, Deborah",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/37621.jpg?s=0cec2a7c0825e5fdead20971f7354355"
+            }
+         ]
+      },
+      {
+         "url" : "https://myanimelist.net/character/42361/Walpurgis_Night",
+         "mal_id" : 42361,
+         "name" : "Walpurgis Night",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/134089.jpg?s=04cd06b4f4297c24bb79c6034bfbe4fc",
+         "role" : "Supporting",
+         "voice_actor" : [
+            {
+               "language" : "Japanese",
+               "mal_id" : 156,
+               "url" : "https://myanimelist.net/people/156/Kaori_Mizuhashi",
+               "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43574.jpg?s=1a2a63392610a57f099e00a93def0e5d",
+               "name" : "Mizuhashi, Kaori"
+            }
+         ]
+      }
+   ],
+   "rating" : "PG-13 - Teens 13 or older",
+   "link_canonical" : "https://myanimelist.net/anime/9756/Mahou_Shoujo_Madoka★Magica",
+   "genre" : [
+      {
+         "url" : "https://myanimelist.net/anime/genre/8/Drama",
+         "name" : "Drama"
+      },
+      {
+         "url" : "https://myanimelist.net/anime/genre/16/Magic",
+         "name" : "Magic"
+      },
+      {
+         "name" : "Psychological",
+         "url" : "https://myanimelist.net/anime/genre/40/Psychological"
+      },
+      {
+         "name" : "Thriller",
+         "url" : "https://myanimelist.net/anime/genre/41/Thriller"
+      }
+   ],
+   "opening_theme" : [
+      "\"Connect (コネクト)\" by ClariS (eps 1-9, 11)"
+   ],
+   "related" : {
+      "Sequel" : [
+         {
+            "url" : "https://myanimelist.net/anime/11981/Mahou_Shoujo_Madoka★Magica_Movie_3__Hangyaku_no_Monogatari",
+            "mal_id" : 11981,
+            "title" : "Mahou Shoujo Madoka★Magica Movie 3: Hangyaku no Monogatari",
+            "type" : "anime"
+         }
+      ],
+      "Adaptation" : [
+         {
+            "title" : "Mahou Shoujo Madoka★Magica",
+            "url" : "https://myanimelist.net/manga/24457/Mahou_Shoujo_Madoka★Magica",
+            "mal_id" : 24457,
+            "type" : "manga"
+         },
+         {
+            "title" : "Mahou Shoujo Madoka★Magica",
+            "mal_id" : 27861,
+            "url" : "https://myanimelist.net/manga/27861/Mahou_Shoujo_Madoka★Magica",
+            "type" : "manga"
+         }
+      ],
+      "Alternative version" : [
+         {
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/11977/Mahou_Shoujo_Madoka★Magica_Movie_1__Hajimari_no_Monogatari",
+            "mal_id" : 11977,
+            "title" : "Mahou Shoujo Madoka★Magica Movie 1: Hajimari no Monogatari"
+         },
+         {
+            "type" : "anime",
+            "title" : "Mahou Shoujo Madoka★Magica Movie 2: Eien no Monogatari",
+            "mal_id" : 11979,
+            "url" : "https://myanimelist.net/anime/11979/Mahou_Shoujo_Madoka★Magica_Movie_2__Eien_no_Monogatari"
+         },
+         {
+            "mal_id" : 35300,
+            "url" : "https://myanimelist.net/anime/35300/Magia_Record__Mahou_Shoujo_Madoka☆Magica_Gaiden",
+            "title" : "Magia Record: Mahou Shoujo Madoka☆Magica Gaiden",
+            "type" : "anime"
+         }
+      ],
+      "Other" : [
+         {
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/10519/Mahou_Shoujo_Sonico★Magica",
+            "mal_id" : 10519,
+            "title" : "Mahou Shoujo Sonico★Magica"
+         },
+         {
+            "url" : "https://myanimelist.net/anime/32153/Mahou_Shoujo_Madoka★Magica__Concept_Movie",
+            "mal_id" : 32153,
+            "title" : "Mahou Shoujo Madoka★Magica: Concept Movie",
+            "type" : "anime"
+         }
+      ]
+   },
+   "producer" : [
+      {
+         "name" : "Aniplex",
+         "url" : "https://myanimelist.net/anime/producer/17/Aniplex"
+      },
+      {
+         "name" : "Mainichi Broadcasting System",
+         "url" : "https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System"
+      },
+      {
+         "name" : "Movic",
+         "url" : "https://myanimelist.net/anime/producer/166/Movic"
+      },
+      {
+         "name" : "Nitroplus",
+         "url" : "https://myanimelist.net/anime/producer/459/Nitroplus"
+      },
+      {
+         "url" : "https://myanimelist.net/anime/producer/627/Madoka_Partners",
+         "name" : "Madoka Partners"
+      },
+      {
+         "name" : "Houbunsha",
+         "url" : "https://myanimelist.net/anime/producer/797/Houbunsha"
+      }
+   ],
+   "status" : "Finished Airing",
+   "members" : 600914,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/anime/11/55225.jpg",
+   "favorites" : 33147,
+   "score" : 8.47,
+   "title" : "Mahou Shoujo Madoka★Magica",
+   "rank" : 119,
+   "title_english" : "Puella Magi Madoka Magica",
+   "source" : "Original",
+   "aired" : {
+      "to" : "2011-04-22",
+      "from" : "2011-01-07"
+   },
+   "staff" : [
+      {
+         "name" : "Iwakami, Atsuhiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/29425.jpg?s=776b0f96754bf2af5e3391f076b090f7",
+         "mal_id" : 14031,
+         "url" : "https://myanimelist.net/people/14031/Atsuhiro_Iwakami",
+         "role" : "Producer"
+      },
+      {
+         "role" : "Producer",
+         "url" : "https://myanimelist.net/people/9323/Yasunori_Mori",
+         "mal_id" : 9323,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Mori, Yasunori"
+      },
+      {
+         "role" : "Assistant Producer",
+         "name" : "Ooshima, Miku",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "url" : "https://myanimelist.net/people/20883/Miku_Ooshima",
+         "mal_id" : 20883
+      },
+      {
+         "url" : "https://myanimelist.net/people/12328/Yukihiro_Miyamoto",
+         "mal_id" : 12328,
+         "name" : "Miyamoto, Yukihiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Director, Episode Director"
+      },
+      {
+         "url" : "https://myanimelist.net/people/5089/Akiyuki_Shinbou",
+         "mal_id" : 5089,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/50374.jpg?s=2b44a824567256d8a9971d9c2d787946",
+         "name" : "Shinbou, Akiyuki",
+         "role" : "Director"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/12175.jpg?s=5e381967c20dda5c63691c85096aa877",
+         "name" : "Tsuruoka, Youta",
+         "mal_id" : 7194,
+         "url" : "https://myanimelist.net/people/7194/Youta_Tsuruoka",
+         "role" : "Sound Director"
+      },
+      {
+         "role" : "Episode Director, Storyboard",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/43710.jpg?s=dd0e6015d3c75fe5b8dde84e3b5919ff",
+         "name" : "Itamura, Tomoyuki",
+         "url" : "https://myanimelist.net/people/15639/Tomoyuki_Itamura",
+         "mal_id" : 15639
+      },
+      {
+         "role" : "Episode Director",
+         "name" : "Kawabata, Takashi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 16333,
+         "url" : "https://myanimelist.net/people/16333/Takashi_Kawabata"
+      },
+      {
+         "name" : "Mukai, Masahiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/26267.jpg?s=bfab4dc5af25285603b5d576863b1803",
+         "url" : "https://myanimelist.net/people/23577/Masahiro_Mukai",
+         "mal_id" : 23577,
+         "role" : "Episode Director"
+      },
+      {
+         "role" : "Episode Director, Storyboard",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Omata, Shinichi",
+         "url" : "https://myanimelist.net/people/16583/Shinichi_Omata",
+         "mal_id" : 16583
+      },
+      {
+         "mal_id" : 18421,
+         "url" : "https://myanimelist.net/people/18421/Kotono_Watanabe",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/20887.jpg?s=96ace7aa375a7f40da67ff653bce90e8",
+         "name" : "Watanabe, Kotono",
+         "role" : "Episode Director"
+      },
+      {
+         "mal_id" : 15805,
+         "url" : "https://myanimelist.net/people/15805/Yuki_Yase",
+         "name" : "Yase, Yuki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Episode Director"
+      },
+      {
+         "role" : "Script, ADR Director",
+         "url" : "https://myanimelist.net/people/22203/Alex_Von_David",
+         "mal_id" : 22203,
+         "name" : "David, Alex Von",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "role" : "Script, Series Composition",
+         "mal_id" : 10308,
+         "url" : "https://myanimelist.net/people/10308/Gen_Urobuchi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/45871.jpg?s=524a8671869e0d2e3371eeab41f60985",
+         "name" : "Urobuchi, Gen"
+      },
+      {
+         "role" : "Storyboard, Key Animation",
+         "url" : "https://myanimelist.net/people/25803/Yoshiharu_Ashino",
+         "mal_id" : 25803,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/28073.jpg?s=4ce90a50fbac688d6d452016bc5d18a4",
+         "name" : "Ashino, Yoshiharu"
+      },
+      {
+         "role" : "Storyboard",
+         "name" : "Itou, Tomohiko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43184.jpg?s=d2ab932bb9de4fd2afcb6a6570cbcb9e",
+         "mal_id" : 10801,
+         "url" : "https://myanimelist.net/people/10801/Tomohiko_Itou"
+      },
+      {
+         "mal_id" : 16745,
+         "url" : "https://myanimelist.net/people/16745/Masayoshi_Nishita",
+         "name" : "Nishita, Masayoshi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/24785.jpg?s=50f61e621cc94edd1c007e21f13af360",
+         "role" : "Storyboard"
+      },
+      {
+         "role" : "Theme Song Performance",
+         "url" : "https://myanimelist.net/people/11746/ClariS",
+         "mal_id" : 11746,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/40138.jpg?s=0949ad206a0ab6db657137c5f5cbe8cf",
+         "name" : "ClariS"
+      },
+      {
+         "url" : "https://myanimelist.net/people/5077/Yuki_Kajiura",
+         "mal_id" : 5077,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/35633.jpg?s=3072226346da02d0b2cf291a4da52faa",
+         "name" : "Kajiura, Yuki",
+         "role" : "Theme Song Arrangement, Theme Song Lyrics, Theme Song Composition, Music"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/40158.jpg?s=f648c6b0a856e23fc2c510ff67503c49",
+         "name" : "Kalafina",
+         "mal_id" : 6975,
+         "url" : "https://myanimelist.net/people/6975/Kalafina",
+         "role" : "Theme Song Performance"
+      },
+      {
+         "mal_id" : 413,
+         "url" : "https://myanimelist.net/people/413/Eri_Kitamura",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/50751.jpg?s=ff5e812f471b46159c84558d5673fa7b",
+         "name" : "Kitamura, Eri",
+         "role" : "Theme Song Performance"
+      },
+      {
+         "url" : "https://myanimelist.net/people/32/Ai_Nonaka",
+         "mal_id" : 32,
+         "name" : "Nonaka, Ai",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/29717.jpg?s=4e64eeca3c56927022b23446a6d2b5f7",
+         "role" : "Theme Song Performance"
+      },
+      {
+         "url" : "https://myanimelist.net/people/14345/Sho_Watanabe",
+         "mal_id" : 14345,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/27923.jpg?s=cad0ead4390aac00571d61fd17c7e027",
+         "name" : "Watanabe, Sho",
+         "role" : "Theme Song Lyrics, Theme Song Composition"
+      },
+      {
+         "role" : "Theme Song Performance",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/42150.jpg?s=0bbff14569196032801710b505af6bda",
+         "name" : "Yuuki, Aoi",
+         "url" : "https://myanimelist.net/people/6686/Aoi_Yuuki",
+         "mal_id" : 6686
+      },
+      {
+         "role" : "Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Abe, Nozomu",
+         "url" : "https://myanimelist.net/people/21271/Nozomu_Abe",
+         "mal_id" : 21271
+      },
+      {
+         "role" : "Key Animation",
+         "url" : "https://myanimelist.net/people/33723/Genichirou_Abe",
+         "mal_id" : 33723,
+         "name" : "Abe, Genichirou",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "url" : "https://myanimelist.net/people/2969/Ume_Aoki",
+         "mal_id" : 2969,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/36145.jpg?s=234fe03433adbb9b8c3afe535d1a07a9",
+         "name" : "Aoki, Ume",
+         "role" : "Original Character Design"
+      },
+      {
+         "role" : "Music",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/6812.jpg?s=d212fd788e5f074a1d5d8622bfdde692",
+         "name" : "Bach, Johann Sebastian",
+         "mal_id" : 9159,
+         "url" : "https://myanimelist.net/people/9159/Johann_Sebastian_Bach"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Buriki",
+         "mal_id" : 11008,
+         "url" : "https://myanimelist.net/people/11008/Buriki",
+         "role" : "Principle Drawing"
+      },
+      {
+         "role" : "Key Animation",
+         "name" : "Chikaoka, Sunao",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/46540.jpg?s=6f4cc8754383ea9e3e88263a673813cd",
+         "mal_id" : 17759,
+         "url" : "https://myanimelist.net/people/17759/Sunao_Chikaoka"
+      },
+      {
+         "url" : "https://myanimelist.net/people/38912/Masao_Ebihara",
+         "mal_id" : 38912,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Ebihara, Masao",
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Character Design, Special Effects, Background Art, Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/26087.jpg?s=4129b8650b78a3806c27ce214fa9e546",
+         "name" : "Gekidan Inu Curry",
+         "url" : "https://myanimelist.net/people/23507/Gekidan_Inu_Curry",
+         "mal_id" : 23507
+      },
+      {
+         "name" : "Geshi, Yuuya",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 40111,
+         "url" : "https://myanimelist.net/people/40111/Yuuya_Geshi",
+         "role" : "Key Animation"
+      },
+      {
+         "url" : "https://myanimelist.net/people/24725/Charles_Gounod",
+         "mal_id" : 24725,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/27355.jpg?s=d9ce54a97a84d4c74c20e09e1f57def1",
+         "name" : "Gounod, Charles",
+         "role" : "Music"
+      },
+      {
+         "name" : "Hikawa, Hekiru",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "url" : "https://myanimelist.net/people/3459/Hekiru_Hikawa",
+         "mal_id" : 3459,
+         "role" : "Principle Drawing"
+      },
+      {
+         "url" : "https://myanimelist.net/people/41138/Yoshino_Honda",
+         "mal_id" : 41138,
+         "name" : "Honda, Yoshino",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Key Animation, Layout",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Imamura, Ryou",
+         "url" : "https://myanimelist.net/people/40002/Ryou_Imamura",
+         "mal_id" : 40002
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Imoto, Kazuaki",
+         "mal_id" : 47111,
+         "url" : "https://myanimelist.net/people/47111/Kazuaki_Imoto",
+         "role" : "Key Animation"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Inaba, Kunihiko",
+         "url" : "https://myanimelist.net/people/19779/Kunihiko_Inaba",
+         "mal_id" : 19779,
+         "role" : "Art Director"
+      },
+      {
+         "role" : "Music",
+         "mal_id" : 10275,
+         "url" : "https://myanimelist.net/people/10275/Eri_Itou",
+         "name" : "Itou, Eri",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/18061.jpg?s=c5daf83e731201ddf1695b02eb9dd487"
+      },
+      {
+         "url" : "https://myanimelist.net/people/16113/Kazuhiro_Itou",
+         "mal_id" : 16113,
+         "name" : "Itou, Kazuhiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Background Art"
+      },
+      {
+         "url" : "https://myanimelist.net/people/9787/Yoshiaki_Itou",
+         "mal_id" : 9787,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Itou, Yoshiaki",
+         "role" : "Animation Director"
+      },
+      {
+         "mal_id" : 9301,
+         "url" : "https://myanimelist.net/people/9301/Tomoaki_Kado",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Kado, Tomoaki",
+         "role" : "Animation Director"
+      },
+      {
+         "role" : "Key Animation",
+         "mal_id" : 11021,
+         "url" : "https://myanimelist.net/people/11021/Kanetoshi_Kamimoto",
+         "name" : "Kamimoto, Kanetoshi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "role" : "Art Director",
+         "name" : "Kaneko, Yuuji",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/44500.jpg?s=33a995350ba734d88a137fca85d663ef",
+         "url" : "https://myanimelist.net/people/16457/Yuuji_Kaneko",
+         "mal_id" : 16457
+      },
+      {
+         "role" : "Key Animation",
+         "mal_id" : 47560,
+         "url" : "https://myanimelist.net/people/47560/Rika_Kanetaka",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Kanetaka, Rika"
+      },
+      {
+         "role" : "Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Kimiya, Ryousuke",
+         "url" : "https://myanimelist.net/people/42161/Ryousuke_Kimiya",
+         "mal_id" : 42161
+      },
+      {
+         "role" : "Assistant Animation Director, Character Design, Key Animation",
+         "name" : "Kishida, Takahiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 6403,
+         "url" : "https://myanimelist.net/people/6403/Takahiro_Kishida"
+      },
+      {
+         "name" : "Kubota, Mitsutoshi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/29571.jpg?s=2f5d5a785ac3554f235a69af4354dcb5",
+         "mal_id" : 27919,
+         "url" : "https://myanimelist.net/people/27919/Mitsutoshi_Kubota",
+         "role" : "Planning"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/43898.jpg?s=2e35ace43e9907ee3f760ca6ecf66fcb",
+         "name" : "Kurita, Shinichi",
+         "url" : "https://myanimelist.net/people/24119/Shinichi_Kurita",
+         "mal_id" : 24119,
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/23797.jpg?s=2f3e8e480035118f7e37bd8e62ab72e7",
+         "name" : "Kutsuna, Kenichi",
+         "url" : "https://myanimelist.net/people/21007/Kenichi_Kutsuna",
+         "mal_id" : 21007
+      },
+      {
+         "role" : "Background Art",
+         "mal_id" : 38822,
+         "url" : "https://myanimelist.net/people/38822/Scott_MacDonald",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "MacDonald, Scott"
+      },
+      {
+         "role" : "Original Creator",
+         "mal_id" : 9496,
+         "url" : "https://myanimelist.net/people/9496/Magica_Quartet",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Magica Quartet"
+      },
+      {
+         "role" : "Art Director",
+         "name" : "Masuyama, Osamu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/3/49524.jpg?s=c2b43c8f554ecd631e94fef0c6b6ec8b",
+         "url" : "https://myanimelist.net/people/46063/Osamu_Masuyama",
+         "mal_id" : 46063
+      },
+      {
+         "role" : "Animation Director",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Matsumoto, Mayuko",
+         "url" : "https://myanimelist.net/people/21925/Mayuko_Matsumoto",
+         "mal_id" : 21925
+      },
+      {
+         "role" : "Key Animation, 2nd Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Miki, Tatsuya",
+         "url" : "https://myanimelist.net/people/41031/Tatsuya_Miki",
+         "mal_id" : 41031
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Morikawa, Yuuki",
+         "url" : "https://myanimelist.net/people/41148/Yuuki_Morikawa",
+         "mal_id" : 41148,
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Key Animation",
+         "url" : "https://myanimelist.net/people/11445/Takashi_Mukouda",
+         "mal_id" : 11445,
+         "name" : "Mukouda, Takashi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "url" : "https://myanimelist.net/people/10131/Jun_Nakai",
+         "mal_id" : 10131,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Nakai, Jun",
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Key Animation",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Okuda, Yousuke",
+         "mal_id" : 39024,
+         "url" : "https://myanimelist.net/people/39024/Yousuke_Okuda"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Ookubo, Tomihiko",
+         "mal_id" : 33181,
+         "url" : "https://myanimelist.net/people/33181/Tomihiko_Ookubo",
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Key Animation",
+         "name" : "Ookubo, Hiroshi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 10135,
+         "url" : "https://myanimelist.net/people/10135/Hiroshi_Ookubo"
+      },
+      {
+         "role" : "Animation Director, Key Animation",
+         "url" : "https://myanimelist.net/people/21821/Miyabi_Ozeki",
+         "mal_id" : 21821,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Ozeki, Miyabi"
+      },
+      {
+         "role" : "Music",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/2/11032.jpg?s=482099d87ed37c5b71c80ffb475075db",
+         "name" : "Rachmaninoff, Sergei",
+         "url" : "https://myanimelist.net/people/9162/Sergei_Rachmaninoff",
+         "mal_id" : 9162
+      },
+      {
+         "role" : "Animation Director",
+         "name" : "Ryouma, Ebata",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 42109,
+         "url" : "https://myanimelist.net/people/42109/Ebata_Ryouma"
+      },
+      {
+         "url" : "https://myanimelist.net/people/34179/Masahiro_Sekiguchi",
+         "mal_id" : 34179,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Sekiguchi, Masahiro",
+         "role" : "Key Animation, Animation Director"
+      },
+      {
+         "name" : "Shibata, Masato",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "url" : "https://myanimelist.net/people/16751/Masato_Shibata",
+         "mal_id" : 16751,
+         "role" : "Background Art"
+      },
+      {
+         "role" : "Key Animation",
+         "url" : "https://myanimelist.net/people/10083/Nobuhiro_Sugiyama",
+         "mal_id" : 10083,
+         "name" : "Sugiyama, Nobuhiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "url" : "https://myanimelist.net/people/35733/Etsuko_Sumimoto",
+         "mal_id" : 35733,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Sumimoto, Etsuko",
+         "role" : "Key Animation"
+      },
+      {
+         "mal_id" : 10132,
+         "url" : "https://myanimelist.net/people/10132/Shingo_Suzuki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Suzuki, Shingo",
+         "role" : "Key Animation"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/12146.jpg?s=45a3bb7191b5e153bc36e1c953320a52",
+         "name" : "Suzuki, Hirofumi",
+         "url" : "https://myanimelist.net/people/6188/Hirofumi_Suzuki",
+         "mal_id" : 6188,
+         "role" : "Key Animation"
+      },
+      {
+         "name" : "Takahashi, Yuuichi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 15749,
+         "url" : "https://myanimelist.net/people/15749/Yuuichi_Takahashi",
+         "role" : "Key Animation"
+      },
+      {
+         "name" : "Takiyama, Shintetsu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "url" : "https://myanimelist.net/people/16617/Shintetsu_Takiyama",
+         "mal_id" : 16617,
+         "role" : "Key Animation"
+      },
+      {
+         "url" : "https://myanimelist.net/people/8979/Hironori_Tanaka",
+         "mal_id" : 8979,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Tanaka, Hironori",
+         "role" : "Key Animation"
+      },
+      {
+         "mal_id" : 16501,
+         "url" : "https://myanimelist.net/people/16501/Junichirou_Taniguchi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/33645.jpg?s=bec502bfb2777b28f3841b6518573392",
+         "name" : "Taniguchi, Junichirou",
+         "role" : "Chief Animation Director"
+      },
+      {
+         "role" : "Background Art",
+         "name" : "Tateishi, Takeshi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "mal_id" : 41461,
+         "url" : "https://myanimelist.net/people/41461/Takeshi_Tateishi"
+      },
+      {
+         "url" : "https://myanimelist.net/people/33177/Hiroyuki_Terao",
+         "mal_id" : 33177,
+         "name" : "Terao, Hiroyuki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Key Animation"
+      },
+      {
+         "role" : "Principle Drawing",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/29131.jpg?s=6a59bc735d59a77abfc5b03a589ebecd",
+         "name" : "Ueda, Hajime",
+         "mal_id" : 2402,
+         "url" : "https://myanimelist.net/people/2402/Hajime_Ueda"
+      },
+      {
+         "role" : "Key Animation",
+         "url" : "https://myanimelist.net/people/40061/Masato_Yasuno",
+         "mal_id" : 40061,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Yasuno, Masato"
+      },
+      {
+         "mal_id" : 7420,
+         "url" : "https://myanimelist.net/people/7420/ryo-timo",
+         "name" : "ryo-timo",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/voiceactors/1/5746.jpg?s=1a5a45516c16e8b7c2ff18e249c602bc",
+         "role" : "Key Animation"
+      }
+   ],
+   "aired_string" : "Jan 7, 2011 to Apr 22, 2011",
+   "broadcast" : "Fridays at 01:25 (JST)",
+   "background" : "Mahou Shoujo Madoka★Magica has received widespread critical acclaim, with critics praising the writing, visuals and soundtrack of the series, as well as its approach to the magical girl subgenre. It has also been a commercial success, with each BD volume selling more than 50,000 copies.The series won several awards in Japan, such as the Television Award at the 16th Animation Kobe Awards, as well as 12 Newtype Anime Awards and the Grand Prize for animation in the 2011 Japan Media Arts awards. In 2015, the show was also awarded the inaugural Sugoi Japan Grand Prix, Japan&#039;s nationwide vote for manga, anime, and novels considered as cultural assets that have the potential to be beloved all over the world, among all the works published since 2005.More VideosEpisode VideosEpisode 12Episode 11Episode 10Episode 9",
+   "ending_theme" : [
+      "#1: \"Mata Ashita (また あした)\" by Aoi Yuuki (eps 1-2)",
+      "#2: \"Magia\" by Kalafina (eps 3-8, 11)",
+      "#3: \"and I&#039;m home\" by Ai Nonaka and Eri Kitamura (ep 9)",
+      "#4: \"Connect (コネクト)\" by ClariS (eps 10, 12)"
+   ],
+   "episodes" : 12,
+   "mal_id" : 9756,
+   "studio" : [
+      {
+         "name" : "Shaft",
+         "url" : "https://myanimelist.net/anime/producer/44/Shaft"
+      }
+   ],
+   "duration" : "24 min. per ep.",
+   "title_japanese" : "魔法少女まどか★マギカ",
+   "airing" : false,
+   "type" : "TV"
+}

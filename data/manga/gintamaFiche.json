@@ -1,0 +1,1567 @@
+{
+   "title_english" : "Gin Tama",
+   "synopsis" : "During the Edo period, Japan is suddenly invaded by alien creatures known as the \"Amanto.\" Despite the samurai&#039;s attempts to combat the extraterrestrial menace, the Shogun soon realizes that their efforts are futile and decides to surrender. This marks the beginning of an uneasy agreement between the Shogunate and Amanto, one that results in a countrywide sword ban and the disappearance of the samurai spirit. However, there exists one eccentric individual who wields a wooden sword and refuses to let his samurai status die. Now that his kind are no longer needed, Gintoki Sakata performs various odd jobs around town in order to make ends meet. Joined by his self-proclaimed disciple Shinpachi Shimura, the fearsome alien Kagura, and a giant dog named Sadaharu, they run the business known as Yorozuya, often getting caught up in all sorts of crazy and hilarious shenanigans. [Written by MAL Rewrite] Included one-shots: Volume 1: Dandelion Volume 2: Shirokuro Volume 24: 13 Volume 38: Bankara-san ga Tooru",
+   "members" : 48383,
+   "volumes" : "Unknown",
+   "link_canonical" : "https://myanimelist.net/manga/44/Gintama",
+   "author" : [
+      {
+         "url" : "https://myanimelist.net/people/1904/Hideaki_Sorachi",
+         "name" : "Sorachi, Hideaki"
+      }
+   ],
+   "background" : "As of May 2016, publisher Shueisha revealed that Gintama has more than 50 million copies in print in Japan. The series was nominated for Best Manga under the comedy category in 2008 at the Society for the Promotion of Japanese Animation.VIZ Media published the manga in English as Gin Tama under the Shonen Jump Advanced imprint, with 23 volumes published from July 3, 2007 to August 2, 2011 before release was discontinued. It was also published in Spanish by Gl&eacute;nat, with 16 volumes published from October 2007 to May 2010; and in Italian by Planeta DeAgostini from July 4, 2008 to January 9, 2010 before release was discontinued. Star Comics picked up the license and re-released volume 1 on April 25, 2015.",
+   "character" : [
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/303227.jpg?s=4c886e23000cd68a8257fcadecc3df3a",
+         "mal_id" : 674,
+         "name" : "Kagura",
+         "role" : "Main",
+         "url" : "https://myanimelist.net/character/674/Kagura"
+      },
+      {
+         "role" : "Main",
+         "name" : "Sakata, Gintoki",
+         "url" : "https://myanimelist.net/character/672/Gintoki_Sakata",
+         "mal_id" : 672,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/241479.jpg?s=5a6d351979cb65b6d00caad328c6250b"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/114081.jpg?s=338906cbb158fa4e7ebf19812e2211de",
+         "name" : "Shimura, Shinpachi",
+         "role" : "Main",
+         "url" : "https://myanimelist.net/character/673/Shinpachi_Shimura",
+         "mal_id" : 673
+      },
+      {
+         "mal_id" : 50955,
+         "role" : "Supporting",
+         "name" : "Abo",
+         "url" : "https://myanimelist.net/character/50955/Abo",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/140119.jpg?s=a5722ce457c35914c9b5844043d9ca93"
+      },
+      {
+         "url" : "https://myanimelist.net/character/26731/Abuto",
+         "name" : "Abuto",
+         "role" : "Supporting",
+         "mal_id" : 26731,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/111640.jpg?s=50777afab92accc42ea5ae80f6bdbb78"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/115638.jpg?s=5589d4083007982b77c71f011dc80adc",
+         "mal_id" : 32277,
+         "url" : "https://myanimelist.net/character/32277/Azumi_Agonoske",
+         "role" : "Supporting",
+         "name" : "Agonoske, Azumi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/115637.jpg?s=1c23a099710347a2db61af80da28a53d",
+         "mal_id" : 42431,
+         "role" : "Supporting",
+         "name" : "Akage",
+         "url" : "https://myanimelist.net/character/42431/Akage"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/120784.jpg?s=bc1bd8149e6890519c08538f5693471c",
+         "mal_id" : 43915,
+         "url" : "https://myanimelist.net/character/43915/Amachi",
+         "role" : "Supporting",
+         "name" : "Amachi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/124273.jpg?s=f023d770b09a7622eb108b0cab01d16e",
+         "role" : "Supporting",
+         "name" : "Andromeda, Suitsu",
+         "url" : "https://myanimelist.net/character/45101/Suitsu_Andromeda",
+         "mal_id" : 45101
+      },
+      {
+         "url" : "https://myanimelist.net/character/32232/Ane",
+         "role" : "Supporting",
+         "name" : "Ane",
+         "mal_id" : 32232,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/86254.jpg?s=3bbf1599478a5cb4cb92ab574cc5554a"
+      },
+      {
+         "mal_id" : 50887,
+         "url" : "https://myanimelist.net/character/50887/Momo_Anigasaki",
+         "role" : "Supporting",
+         "name" : "Anigasaki, Momo",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/139877.jpg?s=2a63acf6ff7304fa4f2a3fdb970e2c2a"
+      },
+      {
+         "name" : "Ben",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/42430/Ben",
+         "mal_id" : 42430,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/118071.jpg?s=a7e31176f2c0b0e0c708c6315b765a94"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/139961.jpg?s=5eaec9d277c2336d3be7d20e8b09a5df",
+         "mal_id" : 50915,
+         "name" : "Beri, Kuzunosuke",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/50915/Kuzunosuke_Beri"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/348742.jpg?s=96185599f4b7529cf6b4c450ac25531c",
+         "mal_id" : 156770,
+         "name" : "Bichie",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/156770/Bichie"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/144371.jpg?s=600c9523292a355fe48179529a45362b",
+         "url" : "https://myanimelist.net/character/47541/Blu-rayko",
+         "role" : "Supporting",
+         "name" : "Blu-rayko",
+         "mal_id" : 47541
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/135855.jpg?s=d0c33d30a62dd0f2072c9f70f34e02b5",
+         "mal_id" : 49499,
+         "role" : "Supporting",
+         "name" : "Breeza",
+         "url" : "https://myanimelist.net/character/49499/Breeza"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/134573.jpg?s=1c9d9594d35ed3c3300883b1d7ddfd9e",
+         "mal_id" : 49069,
+         "url" : "https://myanimelist.net/character/49069/Captain_Turtle",
+         "name" : "Captain Turtle",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/7930/Catherine",
+         "name" : "Catherine",
+         "role" : "Supporting",
+         "mal_id" : 7930,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/120277.jpg?s=cd27cc9abb012232d64372cd66a92d8e"
+      },
+      {
+         "mal_id" : 130183,
+         "name" : "Daishikyou",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/130183/Daishikyou",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/285068.jpg?s=5a74dddd55579662d3b7b65b8b281a36"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/115631.jpg?s=a9fa7529be9917ce050bad573d4b7028",
+         "name" : "Daito",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/42427/Daito",
+         "mal_id" : 42427
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/157611.jpg?s=f4b476f54e052581ca1e33389e4f3b26",
+         "mal_id" : 58679,
+         "url" : "https://myanimelist.net/character/58679/Debugon",
+         "name" : "Debugon",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/135965.jpg?s=041dd5feff3dac119150171a39053e2b",
+         "role" : "Supporting",
+         "name" : "Delde",
+         "url" : "https://myanimelist.net/character/49531/Delde",
+         "mal_id" : 49531
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Doctor",
+         "url" : "https://myanimelist.net/character/153411/Doctor",
+         "mal_id" : 153411,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/336081.jpg?s=1ca0d11909f5cc1944fb832c8bd95e0e"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/210835.jpg?s=8b0b7c9e8731afe6ae74321c3b0322fb",
+         "url" : "https://myanimelist.net/character/32838/Jirochou_Doromizu",
+         "name" : "Doromizu, Jirochou",
+         "role" : "Supporting",
+         "mal_id" : 32838
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/139485.jpg?s=a9e6261ed98a34c2f85fc707d569de8f",
+         "mal_id" : 41608,
+         "name" : "Doromizu, Pirako",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/41608/Pirako_Doromizu"
+      },
+      {
+         "name" : "Doushin",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/42426/Doushin",
+         "mal_id" : 42426,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/115630.jpg?s=f4190efe7eca3b9851fe83a2d84929b1"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/335893.jpg?s=8c3d36e1dbb29386c56f657d21c2144e",
+         "mal_id" : 153315,
+         "name" : "Dozaemon",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/153315/Dozaemon"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/59849.jpg?s=2ddd049214efa647e6fd2050d03cf7f5",
+         "mal_id" : 22633,
+         "role" : "Supporting",
+         "name" : "Dragon Taichou",
+         "url" : "https://myanimelist.net/character/22633/Dragon_Taichou"
+      },
+      {
+         "url" : "https://myanimelist.net/character/30761/Ebina",
+         "role" : "Supporting",
+         "name" : "Ebina",
+         "mal_id" : 30761,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/115489.jpg?s=d37329f0680577df42624a9ffed659ed"
+      },
+      {
+         "url" : "https://myanimelist.net/character/2946/Elizabeth",
+         "name" : "Elizabeth",
+         "role" : "Supporting",
+         "mal_id" : 2946,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/43474.jpg?s=1faeaee22e8ba94c9f96228e314186ff"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Enari",
+         "url" : "https://myanimelist.net/character/50921/Enari",
+         "mal_id" : 50921,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/139963.jpg?s=3622b4f419eea5446046c7cf74a48ca3"
+      },
+      {
+         "mal_id" : 158408,
+         "url" : "https://myanimelist.net/character/158408/Enshou",
+         "name" : "Enshou",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/349158.jpg?s=8d61a214942f7a926fc8c1b634c580b6"
+      },
+      {
+         "mal_id" : 50907,
+         "role" : "Supporting",
+         "name" : "Fezarion, Balmung",
+         "url" : "https://myanimelist.net/character/50907/Balmung_Fezarion",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/139927.jpg?s=d78674d2a6155a05e757db6f9105f972"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/297692.jpg?s=2e3b7d1e98c5d3b7be8c820706a897ed",
+         "mal_id" : 137102,
+         "role" : "Supporting",
+         "name" : "Fujibayashi, Gaimon",
+         "url" : "https://myanimelist.net/character/137102/Gaimon_Fujibayashi"
+      },
+      {
+         "name" : "Fujieda, Mondo",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/20581/Mondo_Fujieda",
+         "mal_id" : 20581,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/47578.jpg?s=2982a0a33c2c0e90ada25dd1bc196359"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/271097.jpg?s=8c74041f7ff98b53a4eec3669fa30017",
+         "url" : "https://myanimelist.net/character/17244/Yuusuke_Fujisaki",
+         "name" : "Fujisaki, Yuusuke",
+         "role" : "Supporting",
+         "mal_id" : 17244
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/144777.jpg?s=31aa2c8a5bbd30f10f1abd95fa79f471",
+         "mal_id" : 49565,
+         "url" : "https://myanimelist.net/character/49565/Fumiko",
+         "name" : "Fumiko",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/30306/Gedoumaru",
+         "role" : "Supporting",
+         "name" : "Gedoumaru",
+         "mal_id" : 30306,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/113366.jpg?s=6db82b161c5519bf31ec6ea051c0a25b"
+      },
+      {
+         "url" : "https://myanimelist.net/character/32340/Goemon",
+         "name" : "Goemon",
+         "role" : "Supporting",
+         "mal_id" : 32340,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/115635.jpg?s=fa4e665bbb0249d917fe0403d08e339e"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/143387.jpg?s=338ef47fcc3aa716c22500c953d62cd8",
+         "role" : "Supporting",
+         "name" : "Goro",
+         "url" : "https://myanimelist.net/character/52339/Goro",
+         "mal_id" : 52339
+      },
+      {
+         "mal_id" : 20582,
+         "role" : "Supporting",
+         "name" : "Gorugo, Izayo",
+         "url" : "https://myanimelist.net/character/20582/Izayo_Gorugo",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/202539.jpg?s=fc4f4ca36abfc74b5e875bf87fa12a34"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/119719.jpg?s=959552b917175d1b59c1d3852f94d11c",
+         "mal_id" : 42416,
+         "url" : "https://myanimelist.net/character/42416/Takeru_Gouda",
+         "name" : "Gouda, Takeru",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/87841.jpg?s=48f0b6befd3ce39a1fae1f5ba5371c94",
+         "mal_id" : 32737,
+         "url" : "https://myanimelist.net/character/32737/Hachiro",
+         "name" : "Hachiro",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/115823.jpg?s=9ad056540c16baea80da102225857598",
+         "url" : "https://myanimelist.net/character/32123/Hachirous_Mother",
+         "role" : "Supporting",
+         "name" : "Hachirou&#039;s Mother",
+         "mal_id" : 32123
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/128713.jpg?s=fd10e153d54f821383c3d20bd294b203",
+         "mal_id" : 32839,
+         "url" : "https://myanimelist.net/character/32839/Haji",
+         "role" : "Supporting",
+         "name" : "Haji"
+      },
+      {
+         "mal_id" : 32229,
+         "name" : "Hanako",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/32229/Hanako",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/86251.jpg?s=dcfcb2ba8d136aa33081c854eb5c56cb"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/115826.jpg?s=d6c8a7e8f76e4cb083dfebee07cd6d57",
+         "mal_id" : 10645,
+         "name" : "Hanano, Saki",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/10645/Saki_Hanano"
+      },
+      {
+         "name" : "Hasegawa, Hatsu",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/32956/Hatsu_Hasegawa",
+         "mal_id" : 32956,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/115821.jpg?s=347ef8085ea34f4e3fae17561d3648dd"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/115541.jpg?s=8408c6fe890c02c359d9c34491224e82",
+         "mal_id" : 3760,
+         "name" : "Hasegawa, Taizou",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/3760/Taizou_Hasegawa"
+      },
+      {
+         "url" : "https://myanimelist.net/character/41779/Father_Hattori",
+         "name" : "Hattori, Father",
+         "role" : "Supporting",
+         "mal_id" : 41779,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/113705.jpg?s=e04754c369c5e6e72725fad610fb7070"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/120274.jpg?s=98bd1c408bae0865be65640d7560522d",
+         "mal_id" : 2950,
+         "role" : "Supporting",
+         "name" : "Hattori, Zenzou",
+         "url" : "https://myanimelist.net/character/2950/Zenzou_Hattori"
+      },
+      {
+         "mal_id" : 7928,
+         "name" : "Hedoro",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/7928/Hedoro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/115556.jpg?s=f6a291bd89657d7cf695987b3fc23727"
+      },
+      {
+         "mal_id" : 52331,
+         "url" : "https://myanimelist.net/character/52331/Hedoros_Father",
+         "role" : "Supporting",
+         "name" : "Hedoro&#039;s Father",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/143379.jpg?s=c3e054897b2cb2ca0d2320e09b7eb104"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Hijikata, Toushirou",
+         "url" : "https://myanimelist.net/character/2650/Toushirou_Hijikata",
+         "mal_id" : 2650,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/73155.jpg?s=61078cccb89c0b3821df5b6f65ee4a98"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/288516.jpg?s=a92787fa4fbdc162af0b521424246234",
+         "url" : "https://myanimelist.net/character/32238/Hinowa",
+         "name" : "Hinowa",
+         "role" : "Supporting",
+         "mal_id" : 32238
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/120276.jpg?s=2dbb23bfeaa8b1ffa70b7f1e49e198ba",
+         "mal_id" : 7927,
+         "role" : "Supporting",
+         "name" : "Hiraga, Gengai",
+         "url" : "https://myanimelist.net/character/7927/Gengai_Hiraga"
+      },
+      {
+         "url" : "https://myanimelist.net/character/158939/Saburou_Hiraga",
+         "name" : "Hiraga, Saburou",
+         "role" : "Supporting",
+         "mal_id" : 158939,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/287497.jpg?s=477a49f752edcb1c203350c037edc0cd",
+         "role" : "Supporting",
+         "name" : "Hitotsubashi, Nobunobu",
+         "url" : "https://myanimelist.net/character/104395/Nobunobu_Hitotsubashi",
+         "mal_id" : 104395
+      },
+      {
+         "mal_id" : 55731,
+         "role" : "Supporting",
+         "name" : "Honda, Jellybeans Vanguard",
+         "url" : "https://myanimelist.net/character/55731/Jellybeans_Vanguard_Honda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/154061.jpg?s=c787c18323335f60145fdbbacb37f9c0"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/85739.jpg?s=94d7dbd72f8c845ffff3b1785f5f98b9",
+         "name" : "Honjo, Kyoshiro",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/32124/Kyoshiro_Honjo",
+         "mal_id" : 32124
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/306807.jpg?s=25a7f6a5f38af1d1380d1f7efbe229ea",
+         "mal_id" : 137785,
+         "name" : "Hotaru",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/137785/Hotaru"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/124605.jpg?s=ef2f606d0c4b58b9edd744a84688ab17",
+         "mal_id" : 45215,
+         "url" : "https://myanimelist.net/character/45215/Houichi",
+         "role" : "Supporting",
+         "name" : "Houichi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/118198.jpg?s=2914fa9ffb6ec4c9c5d3062d668064b2",
+         "role" : "Supporting",
+         "name" : "Housen",
+         "url" : "https://myanimelist.net/character/25666/Housen",
+         "mal_id" : 25666
+      },
+      {
+         "mal_id" : 156979,
+         "url" : "https://myanimelist.net/character/156979/Ichiboshi",
+         "name" : "Ichiboshi",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "mal_id" : 131013,
+         "name" : "Ikeda, Yaemon",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/131013/Yaemon_Ikeda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/286904.jpg?s=6d182418451d34da2cba5524e378b483"
+      },
+      {
+         "url" : "https://myanimelist.net/character/103945/Asaemon_Ikeda",
+         "role" : "Supporting",
+         "name" : "Ikeda, Asaemon",
+         "mal_id" : 103945,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/286302.jpg?s=4f4177764e5b39ed1576da8b8def3f67"
+      },
+      {
+         "mal_id" : 52925,
+         "url" : "https://myanimelist.net/character/52925/Ikezawa",
+         "name" : "Ikezawa",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/145609.jpg?s=85a93f4b0cd9e8ce5e705fd49e6d8ddd"
+      },
+      {
+         "mal_id" : 55577,
+         "url" : "https://myanimelist.net/character/55577/Nobume_Imai",
+         "role" : "Supporting",
+         "name" : "Imai, Nobume",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/321324.jpg?s=6c17fd5cae27084eb1174d658a0ddf93"
+      },
+      {
+         "url" : "https://myanimelist.net/character/11458/Kamotarou_Itou",
+         "name" : "Itou, Kamotarou",
+         "role" : "Supporting",
+         "mal_id" : 11458,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/30276.jpg?s=60461a62d9e69e87b7112b0e2795ef77"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Iwamatsu",
+         "url" : "https://myanimelist.net/character/45425/Iwamatsu",
+         "mal_id" : 45425,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/139967.jpg?s=a876797e25a35502881f68f785b17ca5"
+      },
+      {
+         "mal_id" : 131566,
+         "url" : "https://myanimelist.net/character/131566/Izumi",
+         "role" : "Supporting",
+         "name" : "Izumi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/287430.jpg?s=6c183fd50aaabc11e764b021eb3fa517"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/139959.jpg?s=be6ce3e6510b795f283f61df81edac3b",
+         "mal_id" : 50917,
+         "url" : "https://myanimelist.net/character/50917/Jii-san",
+         "role" : "Supporting",
+         "name" : "Jii-san"
+      },
+      {
+         "mal_id" : 52333,
+         "url" : "https://myanimelist.net/character/52333/Jiro",
+         "role" : "Supporting",
+         "name" : "Jiro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/143381.jpg?s=d1111d04f07eede2adfb663a113c3b3a"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/127829.jpg?s=e2f3cfcd1d63b0e93cc3e1988b40c5f1",
+         "url" : "https://myanimelist.net/character/46407/Jugem",
+         "role" : "Supporting",
+         "name" : "Jugem",
+         "mal_id" : 46407
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/210607.jpg?s=a6920ef829ea97d8ab9b395a232d4aa1",
+         "role" : "Supporting",
+         "name" : "Kada",
+         "url" : "https://myanimelist.net/character/32233/Kada",
+         "mal_id" : 32233
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/338148.jpg?s=91601bc1bda9a817cca718b692a0fb57",
+         "url" : "https://myanimelist.net/character/138405/Kaiousei_Shoukaku",
+         "name" : "Kaiousei Shoukaku",
+         "role" : "Supporting",
+         "mal_id" : 138405
+      },
+      {
+         "url" : "https://myanimelist.net/character/49067/Kamemiya",
+         "name" : "Kamemiya",
+         "role" : "Supporting",
+         "mal_id" : 49067,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/134571.jpg?s=ad12e78c3f74f688060853b4d67d6ce3"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/72693.jpg?s=cc09b75b1401f55ae02c63a48b45a5fa",
+         "mal_id" : 12946,
+         "name" : "Kamui",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/12946/Kamui"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/115820.jpg?s=9e1d4f22204c4236ebb74b02a79ba730",
+         "url" : "https://myanimelist.net/character/9876/Kankou",
+         "role" : "Supporting",
+         "name" : "Kankou",
+         "mal_id" : 9876
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/30271.jpg?s=3372d38680cf1f4a26a6781d2ef8372e",
+         "role" : "Supporting",
+         "name" : "Katsura, Kotarou",
+         "url" : "https://myanimelist.net/character/1533/Kotarou_Katsura",
+         "mal_id" : 1533
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/102030.jpg?s=455bb68e2e60426f4b17137a2083a773",
+         "name" : "Kawakami, Bansai",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/2947/Bansai_Kawakami",
+         "mal_id" : 2947
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/113365.jpg?s=aeb85dd3cdd6b4b0267b9689d981487f",
+         "name" : "Ketsuno, Seimei",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/30643/Seimei_Ketsuno",
+         "mal_id" : 30643
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/113367.jpg?s=e8a048d6a8a4a2cc3a13959bfce29005",
+         "url" : "https://myanimelist.net/character/6225/Christel_Ketsuno",
+         "name" : "Ketsuno, Christel",
+         "role" : "Supporting",
+         "mal_id" : 6225
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/143389.jpg?s=3dc89a03c160f6a90221197002c98f4d",
+         "name" : "Kid",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/52341/Kid",
+         "mal_id" : 52341
+      },
+      {
+         "name" : "Kijima, Matako",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/2949/Matako_Kijima",
+         "mal_id" : 2949,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/111582.jpg?s=96270832fd10060317b20ce73ad94dc9"
+      },
+      {
+         "mal_id" : 34865,
+         "url" : "https://myanimelist.net/character/34865/Kimiko",
+         "role" : "Supporting",
+         "name" : "Kimiko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/115536.jpg?s=ce58e7f2503c7c906ac8c05896e9260d"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Kintaro",
+         "url" : "https://myanimelist.net/character/43219/Kintaro",
+         "mal_id" : 43219,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/142447.jpg?s=ee85f7d5626e13dcdae83dc65b6e0efb"
+      },
+      {
+         "name" : "Kitaooji, Itsuki",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/14659/Itsuki_Kitaooji",
+         "mal_id" : 14659,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/127313.jpg?s=5f62c380f5a56ae17ce8d693545a5c24"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/124991.jpg?s=62bbef0f90570d314f6f362050b39da9",
+         "mal_id" : 29241,
+         "url" : "https://myanimelist.net/character/29241/Daigorou_Kitaouji",
+         "name" : "Kitaouji, Daigorou",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 49533,
+         "name" : "Kobayashi",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/49533/Kobayashi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/135967.jpg?s=cc26fc361d059fbd5b930a8fb379d76d"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/303226.jpg?s=eb3607d0f44fe88ba35d1cccc02d43db",
+         "url" : "https://myanimelist.net/character/2943/Isao_Kondou",
+         "name" : "Kondou, Isao",
+         "role" : "Supporting",
+         "mal_id" : 2943
+      },
+      {
+         "mal_id" : 43084,
+         "url" : "https://myanimelist.net/character/43084/Kohei_Konishi",
+         "role" : "Supporting",
+         "name" : "Konishi, Kohei",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/129667.jpg?s=767739734e6601794bd9b2ea7ce7e1bb"
+      },
+      {
+         "mal_id" : 50953,
+         "role" : "Supporting",
+         "name" : "Koro",
+         "url" : "https://myanimelist.net/character/50953/Koro",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/140117.jpg?s=4a5c86d654f3ec443984f01700176c7c"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/303989.jpg?s=a922e4d79ca45796e302325a96f07c40",
+         "url" : "https://myanimelist.net/character/139246/Kouka",
+         "name" : "Kouka",
+         "role" : "Supporting",
+         "mal_id" : 139246
+      },
+      {
+         "url" : "https://myanimelist.net/character/17063/Heiji_Kozenigata",
+         "role" : "Supporting",
+         "name" : "Kozenigata, Heiji",
+         "mal_id" : 17063,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/120273.jpg?s=4f3abd6dc11009503022f6ee9cc44b9c"
+      },
+      {
+         "mal_id" : 42485,
+         "url" : "https://myanimelist.net/character/42485/Touma_Kuraba",
+         "name" : "Kuraba, Touma",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/115831.jpg?s=afd06a3a2d312d54dc670438e3359c90"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/129501.jpg?s=1f92f685bbcda4cbcd05458f2d7b0273",
+         "mal_id" : 32957,
+         "url" : "https://myanimelist.net/character/32957/Kurikan",
+         "role" : "Supporting",
+         "name" : "Kurikan"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/126839.jpg?s=60bb799b5c7d205175d7da4229d28b0f",
+         "role" : "Supporting",
+         "name" : "Kurogoma, Katsuo",
+         "url" : "https://myanimelist.net/character/32739/Katsuo_Kurogoma",
+         "mal_id" : 32739
+      },
+      {
+         "mal_id" : 128488,
+         "url" : "https://myanimelist.net/character/128488/Tasuke_Kurokono",
+         "name" : "Kurokono, Tasuke",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/282667.jpg?s=916c52ad87ad79062fa14582a37898f8"
+      },
+      {
+         "url" : "https://myanimelist.net/character/156198/Kusanagi",
+         "name" : "Kusanagi",
+         "role" : "Supporting",
+         "mal_id" : 156198,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "mal_id" : 8734,
+         "name" : "Lake Toya",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/8734/Lake_Toya",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/115829.jpg?s=5a9b34c87e3788a1b9e8cb491cbe94f7"
+      },
+      {
+         "mal_id" : 32259,
+         "url" : "https://myanimelist.net/character/32259/Leukocyte_King",
+         "role" : "Supporting",
+         "name" : "Leukocyte King",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/86550.jpg?s=618556b10fe791629fc7669fa9c19191"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/142953.jpg?s=3a23353741a2f6c4068f792406bda3c3",
+         "mal_id" : 49563,
+         "url" : "https://myanimelist.net/character/49563/Lord_Beida",
+         "name" : "Lord Beida",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 156582,
+         "url" : "https://myanimelist.net/character/156582/Maganagi",
+         "role" : "Supporting",
+         "name" : "Maganagi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e"
+      },
+      {
+         "url" : "https://myanimelist.net/character/32153/Kuriko_Matsudaira",
+         "role" : "Supporting",
+         "name" : "Matsudaira, Kuriko",
+         "mal_id" : 32153,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/85823.jpg?s=f20634eb109b906ade488310e5d94225"
+      },
+      {
+         "url" : "https://myanimelist.net/character/5972/Katakuriko_Matsudaira",
+         "name" : "Matsudaira, Katakuriko",
+         "role" : "Supporting",
+         "mal_id" : 5972,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/31008.jpg?s=77ff2d51dfe0097c185042cfad09bd5b"
+      },
+      {
+         "url" : "https://myanimelist.net/character/138403/Meiousei_Batou",
+         "name" : "Meiousei Batou",
+         "role" : "Supporting",
+         "mal_id" : 138403,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/338149.jpg?s=e3a2d807f916ae916d6ccc2da7443026"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/127309.jpg?s=63026b0fd575185c83b85d8bc58a01b2",
+         "role" : "Supporting",
+         "name" : "Minamito, Sui",
+         "url" : "https://myanimelist.net/character/14660/Sui_Minamito",
+         "mal_id" : 14660
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/177063.jpg?s=367a100d5a4fc817ce60a680a47a32bc",
+         "mal_id" : 42415,
+         "role" : "Supporting",
+         "name" : "Miyamoto, Shizuka",
+         "url" : "https://myanimelist.net/character/42415/Shizuka_Miyamoto"
+      },
+      {
+         "mal_id" : 68359,
+         "name" : "Mobu, Mobuta",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/68359/Mobuta_Mobu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/177459.jpg?s=85896ac79e5185f11e08fa099a42884f"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/298741.jpg?s=c5c93c1bda6b2a240665faba22738f46",
+         "mal_id" : 114749,
+         "name" : "Momochi, Rappa",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/114749/Rappa_Momochi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/86253.jpg?s=76bd99db21f36e4d8f8f319be2e735b0",
+         "url" : "https://myanimelist.net/character/32231/Mone",
+         "name" : "Mone",
+         "role" : "Supporting",
+         "mal_id" : 32231
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/279435.jpg?s=1f6f246bea980c0c59f4f20e98e8f4e7",
+         "name" : "Mother, Lake Toya&#039;s",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/126868/Lake_Toyas_Mother",
+         "mal_id" : 126868
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/115885.jpg?s=21b99ebc2de5f35e402e3414e10dcb2d",
+         "url" : "https://myanimelist.net/character/32771/Tetsuya_Murata",
+         "name" : "Murata, Tetsuya",
+         "role" : "Supporting",
+         "mal_id" : 32771
+      },
+      {
+         "mal_id" : 18016,
+         "url" : "https://myanimelist.net/character/18016/Tetsuko_Murata",
+         "role" : "Supporting",
+         "name" : "Murata, Tetsuko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/120270.jpg?s=c2179d9776490095d816a8adfb2aed9a"
+      },
+      {
+         "name" : "Musashi",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/9877/Musashi",
+         "mal_id" : 9877,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/117897.jpg?s=6214b2f90fec13801fc7f8463ad2055a"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Mutsu",
+         "url" : "https://myanimelist.net/character/12161/Mutsu",
+         "mal_id" : 12161,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/322310.jpg?s=b053b0bfd4a4520aecebbccfcfa40d77"
+      },
+      {
+         "mal_id" : 131836,
+         "role" : "Supporting",
+         "name" : "Nakasaki",
+         "url" : "https://myanimelist.net/character/131836/Nakasaki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/287946.jpg?s=08afbcd4469bda92f8b31756af3e0862"
+      },
+      {
+         "url" : "https://myanimelist.net/character/68361/Tsuneo_Namekawa",
+         "name" : "Namekawa, Tsuneo",
+         "role" : "Supporting",
+         "mal_id" : 68361,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/177695.jpg?s=91040431417ad7fbc6c34d536e8924b3"
+      },
+      {
+         "mal_id" : 50913,
+         "role" : "Supporting",
+         "name" : "Narasaki, Sachi",
+         "url" : "https://myanimelist.net/character/50913/Sachi_Narasaki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/139957.jpg?s=09dbd85e0289c06ca0e4a55146b0e956"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/114867.jpg?s=8f20661b2bd35e6c571c61afed651c70",
+         "mal_id" : 9515,
+         "name" : "Nishiki, Ikumatsu",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/9515/Ikumatsu_Nishiki"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "No. 502",
+         "url" : "https://myanimelist.net/character/10892/No_502",
+         "mal_id" : 10892,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/125563.jpg?s=148525729b2dce222a0ebf690da67cf0"
+      },
+      {
+         "mal_id" : 32218,
+         "url" : "https://myanimelist.net/character/32218/No305",
+         "role" : "Supporting",
+         "name" : "No.305",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/86143.jpg?s=9c508a1a237ca4f77a66be6a53685247"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/115825.jpg?s=4f01ea285ee8172cdcfde96145bcde4d",
+         "name" : "Noriko, Mahha",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/23618/Mahha_Noriko",
+         "mal_id" : 23618
+      },
+      {
+         "mal_id" : 80065,
+         "name" : "Obi, Hajime",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/80065/Hajime_Obi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/198343.jpg?s=000032c8a4f4c06ba9fa328ea0e6a523"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/184279.jpg?s=32f7fc9e3a32f1093a38e19f3e989675",
+         "url" : "https://myanimelist.net/character/72323/Oboro",
+         "role" : "Supporting",
+         "name" : "Oboro",
+         "mal_id" : 72323
+      },
+      {
+         "url" : "https://myanimelist.net/character/41430/Iwa_Ogami",
+         "role" : "Supporting",
+         "name" : "Ogami, Iwa",
+         "mal_id" : 41430,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/118118.jpg?s=1109f97d9e7c48dfc33050cb15db69d4"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/142449.jpg?s=7872378fd7f2e7f985bd895c4add3c77",
+         "url" : "https://myanimelist.net/character/43218/Ojii-san",
+         "name" : "Ojii-san",
+         "role" : "Supporting",
+         "mal_id" : 43218
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/111581.jpg?s=eef012141fcf2fc14100c47aea7e2eb2",
+         "mal_id" : 9534,
+         "url" : "https://myanimelist.net/character/9534/Nizou_Okada",
+         "name" : "Okada, Nizou",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/112926.jpg?s=2e89d5c1a29674d1d6c66be1c9c43498",
+         "mal_id" : 2282,
+         "url" : "https://myanimelist.net/character/2282/Sougo_Okita",
+         "role" : "Supporting",
+         "name" : "Okita, Sougo"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/115543.jpg?s=156de39345885e3cafb8759c3338d1c0",
+         "mal_id" : 15146,
+         "url" : "https://myanimelist.net/character/15146/Mitsuba_Okita",
+         "name" : "Okita, Mitsuba",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 17245,
+         "url" : "https://myanimelist.net/character/17245/Hime_Onizuka",
+         "role" : "Supporting",
+         "name" : "Onizuka, Hime",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/134801.jpg?s=538218ad44889e68c9f68321c5526780"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/139889.jpg?s=91361d9be07b3e550cc1c62f0728c354",
+         "mal_id" : 50889,
+         "url" : "https://myanimelist.net/character/50889/Sayaka_Otakai",
+         "name" : "Otakai, Sayaka",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/5970/Otose",
+         "role" : "Supporting",
+         "name" : "Otose",
+         "mal_id" : 5970,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/148723.jpg?s=1bafcbb5181de8c97b658abe9c4076f1"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/322958.jpg?s=12e138fd9ab7019df0218b222b416ccf",
+         "url" : "https://myanimelist.net/character/148558/Pakuyasa",
+         "role" : "Supporting",
+         "name" : "Pakuyasa",
+         "mal_id" : 148558
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Pandemonium",
+         "url" : "https://myanimelist.net/character/30641/Pandemonium",
+         "mal_id" : 30641,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/81205.jpg?s=c5a1c5c35958b81f00f8db37c5bcacd6"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/115537.jpg?s=390c98968cf428a195c9112c77645ada",
+         "mal_id" : 7929,
+         "role" : "Supporting",
+         "name" : "Prince Hata",
+         "url" : "https://myanimelist.net/character/7929/Prince_Hata"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/142401.jpg?s=ac2ef42f34c382603d9ffbfa2e732527",
+         "role" : "Supporting",
+         "name" : "Puke Shogun",
+         "url" : "https://myanimelist.net/character/52073/Puke_Shogun",
+         "mal_id" : 52073
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/250025.jpg?s=581666b0057e6791441b633e9d802618",
+         "role" : "Supporting",
+         "name" : "Recycle-shop Proprietress",
+         "url" : "https://myanimelist.net/character/108383/Recycle-shop_Proprietress",
+         "mal_id" : 108383
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/115535.jpg?s=2a391f2ef8a2d48b51fe3f5b922d682e",
+         "url" : "https://myanimelist.net/character/33953/Rei",
+         "name" : "Rei",
+         "role" : "Supporting",
+         "mal_id" : 33953
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/119593.jpg?s=1b696c0a32908faa2f26f540a5b72b45",
+         "mal_id" : 43598,
+         "url" : "https://myanimelist.net/character/43598/Kirie_Rokkaku",
+         "name" : "Rokkaku, Kirie",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/194703.jpg?s=746b2da8f55e55e81783dc0c8b11a59f",
+         "mal_id" : 77845,
+         "url" : "https://myanimelist.net/character/77845/Maizou_Rotten",
+         "name" : "Rotten, Maizou",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 32230,
+         "url" : "https://myanimelist.net/character/32230/Ryou",
+         "role" : "Supporting",
+         "name" : "Ryou",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/86252.jpg?s=f172c124e7acd4fa155ce83541c7e3bf"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Supporting",
+         "name" : "Saaya",
+         "url" : "https://myanimelist.net/character/156247/Saaya",
+         "mal_id" : 156247
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/143385.jpg?s=76ec260ebf4e291b128864525ec8cc0c",
+         "mal_id" : 52337,
+         "name" : "Saburo",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/52337/Saburo"
+      },
+      {
+         "mal_id" : 2651,
+         "name" : "Sadaharu",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/2651/Sadaharu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/43475.jpg?s=023317276410d932a02ab018ad0fc210"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/86365.jpg?s=eca671a6e1d6eb5bd0a122bd152abd43",
+         "name" : "Saigou, Teruhiko",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/32276/Teruhiko_Saigou",
+         "mal_id" : 32276
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/115538.jpg?s=8b82a3a089a51e027328f9a68e78f6df",
+         "mal_id" : 32275,
+         "url" : "https://myanimelist.net/character/32275/Tokumori_Saigou",
+         "name" : "Saigou, Tokumori",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/293788.jpg?s=5170e4286a12efac99ece461f6b3834a",
+         "mal_id" : 109211,
+         "url" : "https://myanimelist.net/character/109211/Shimaru_Saitou",
+         "name" : "Saitou, Shimaru",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/112383.jpg?s=072468b9f1e6c29bbfe3f7e8447b1a62",
+         "mal_id" : 2945,
+         "url" : "https://myanimelist.net/character/2945/Tatsuma_Sakamoto",
+         "role" : "Supporting",
+         "name" : "Sakamoto, Tatsuma"
+      },
+      {
+         "mal_id" : 57337,
+         "url" : "https://myanimelist.net/character/57337/Kintoki_Sakata",
+         "role" : "Supporting",
+         "name" : "Sakata, Kintoki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/182647.jpg?s=9aab7c3bc1dd2669c2c4b5fd07349a31"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/115636.jpg?s=4af4696f22cdc223429b23d27ef02ae4",
+         "name" : "Santa",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/42429/Santa",
+         "mal_id" : 42429
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/113709.jpg?s=baa7c76ae656b5d69760af76e04b7fcd",
+         "mal_id" : 1759,
+         "url" : "https://myanimelist.net/character/1759/Ayame_Sarutobi",
+         "name" : "Sarutobi, Ayame",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/195993.jpg?s=865812eb5d991d085cb9aa085fbf6a45",
+         "mal_id" : 55579,
+         "url" : "https://myanimelist.net/character/55579/Isaburou_Sasaki",
+         "name" : "Sasaki, Isaburou",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/158283.jpg?s=f76f192fe4e8c58d87ba9d8dbf126466",
+         "mal_id" : 56029,
+         "name" : "Sasaki, Tetsunosuke",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/56029/Tetsunosuke_Sasaki"
+      },
+      {
+         "url" : "https://myanimelist.net/character/50211/Isaac_Schneider",
+         "role" : "Supporting",
+         "name" : "Schneider, Isaac",
+         "mal_id" : 50211,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/139925.jpg?s=e8ecd9d3975c2de8b5ef9e249ececc2c"
+      },
+      {
+         "url" : "https://myanimelist.net/character/32239/Seita",
+         "role" : "Supporting",
+         "name" : "Seita",
+         "mal_id" : 32239,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/288515.jpg?s=6afc5f085e1d132ae824717132444dd0"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/344126.jpg?s=7cba01ddb8c24d53ba213352460ed8a5",
+         "mal_id" : 156583,
+         "name" : "Senbei",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/156583/Senbei"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/88862.jpg?s=059386c70c589142e07416cb37ac49a2",
+         "mal_id" : 32963,
+         "url" : "https://myanimelist.net/character/32963/Shachi",
+         "role" : "Supporting",
+         "name" : "Shachi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/115884.jpg?s=b3fc6ca06dd8bd8987b301999badc77c",
+         "mal_id" : 2944,
+         "url" : "https://myanimelist.net/character/2944/Tae_Shimura",
+         "name" : "Shimura, Tae",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 68523,
+         "url" : "https://myanimelist.net/character/68523/Shirama",
+         "role" : "Supporting",
+         "name" : "Shirama",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/177501.jpg?s=4a57b9d5fc1c50ac234bd4a7253e1a3e"
+      },
+      {
+         "mal_id" : 50919,
+         "url" : "https://myanimelist.net/character/50919/Pinko_Shiramizu",
+         "role" : "Supporting",
+         "name" : "Shiramizu, Pinko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/139965.jpg?s=0f42ec6be842089b385c4f2d1afe34fa"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/124783.jpg?s=ddc619ba929d8e2422262406030b020a",
+         "name" : "Shirino, Doman",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/45311/Doman_Shirino",
+         "mal_id" : 45311
+      },
+      {
+         "name" : "Shiro",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/52335/Shiro",
+         "mal_id" : 52335,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/143383.jpg?s=80da2a4f34e430114958a6eed5c5bbee"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/119602.jpg?s=f81f1479f16838655301016529cb3e3f",
+         "mal_id" : 15452,
+         "name" : "Sorachi, Hideaki",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/15452/Hideaki_Sorachi"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/210873.jpg?s=45a91c07754af5f81eb07d8f238fd039",
+         "role" : "Supporting",
+         "name" : "Suzuran",
+         "url" : "https://myanimelist.net/character/86853/Suzuran",
+         "mal_id" : 86853
+      },
+      {
+         "url" : "https://myanimelist.net/character/22551/Taka-tin",
+         "name" : "Taka-tin",
+         "role" : "Supporting",
+         "mal_id" : 22551,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/53758.jpg?s=13d0e487dc7616e44c631e8170cfe3aa"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/303201.jpg?s=a3822d10e5ca61486a9c8aa320ece1b5",
+         "mal_id" : 2948,
+         "url" : "https://myanimelist.net/character/2948/Shinsuke_Takasugi",
+         "role" : "Supporting",
+         "name" : "Takasugi, Shinsuke"
+      },
+      {
+         "url" : "https://myanimelist.net/character/18030/Hachibei_Takaya",
+         "role" : "Supporting",
+         "name" : "Takaya, Hachibei",
+         "mal_id" : 18030,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/115634.jpg?s=76986fa9a51fa61deeb91dbda4d0d1c6"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/112841.jpg?s=c434e16c074c48af73c3fad2eaa1d3fc",
+         "url" : "https://myanimelist.net/character/9535/Henpeita_Takechi",
+         "name" : "Takechi, Henpeita",
+         "role" : "Supporting",
+         "mal_id" : 9535
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/114865.jpg?s=6dd425575b63545b9bcf851c839e9a8d",
+         "name" : "Tama",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/6615/Tama",
+         "mal_id" : 6615
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/115822.jpg?s=2987dfb502d6cb7eee3ffce093f04a54",
+         "url" : "https://myanimelist.net/character/34864/Tasuke",
+         "role" : "Supporting",
+         "name" : "Tasuke",
+         "mal_id" : 34864
+      },
+      {
+         "mal_id" : 32122,
+         "url" : "https://myanimelist.net/character/32122/Tatsumi",
+         "role" : "Supporting",
+         "name" : "Tatsumi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/120272.jpg?s=b6c6c55de18db24fc330a3892ed6316d"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/338150.jpg?s=99d0345fd2eebd427f83b0d460da5ca7",
+         "name" : "Tennousei Hankai",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/138404/Tennousei_Hankai",
+         "mal_id" : 138404
+      },
+      {
+         "mal_id" : 43739,
+         "url" : "https://myanimelist.net/character/43739/Tatsugoro_Terada",
+         "name" : "Terada, Tatsugoro",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/120119.jpg?s=26bfde8785b824e8043b2072cdf0e4e0"
+      },
+      {
+         "name" : "Terakado, Father",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/42428/Father_Terakado",
+         "mal_id" : 42428,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/115632.jpg?s=a2907dc040a06001c544507ebeba64b6"
+      },
+      {
+         "url" : "https://myanimelist.net/character/6187/Tsu_Terakado",
+         "name" : "Terakado, Tsu",
+         "role" : "Supporting",
+         "mal_id" : 6187,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/112381.jpg?s=048035f8bcc0da4bb9db4038c5571323"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/117896.jpg?s=785f444aa3509ee74db315c2d3288577",
+         "url" : "https://myanimelist.net/character/32205/Ichi_Terakado",
+         "name" : "Terakado, Ichi",
+         "role" : "Supporting",
+         "mal_id" : 32205
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/70893.jpg?s=9906685ad87569c606b612d556653a0c",
+         "mal_id" : 27892,
+         "url" : "https://myanimelist.net/character/27892/Danzou_Tobita",
+         "role" : "Supporting",
+         "name" : "Tobita, Danzou"
+      },
+      {
+         "url" : "https://myanimelist.net/character/73287/Tokiko",
+         "name" : "Tokiko",
+         "role" : "Supporting",
+         "mal_id" : 73287,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/202415.jpg?s=1ea564bfa1aa890ebd289e4a0db8438c"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Tokugawa, Sadasada",
+         "url" : "https://myanimelist.net/character/77717/Sadasada_Tokugawa",
+         "mal_id" : 77717,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/194705.jpg?s=2bda57bcebfee7381a5ce287e4a5684f"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/202435.jpg?s=3de0ffcd98d98c604b107a08107a4179",
+         "mal_id" : 32214,
+         "url" : "https://myanimelist.net/character/32214/Soyo_Tokugawa",
+         "role" : "Supporting",
+         "name" : "Tokugawa, Soyo"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/202557.jpg?s=e55cff8690169624500b14128fbbbe3a",
+         "name" : "Tokugawa, Shigeshige",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/7157/Shigeshige_Tokugawa",
+         "mal_id" : 7157
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/139923.jpg?s=5ce6a617ca736ad979da7cfdc3dccd4b",
+         "mal_id" : 50909,
+         "url" : "https://myanimelist.net/character/50909/Morimori_Tokugawa",
+         "role" : "Supporting",
+         "name" : "Tokugawa, Morimori"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/154063.jpg?s=7cf2aaef0b1390605a32edd9eaf4ea86",
+         "mal_id" : 55733,
+         "url" : "https://myanimelist.net/character/55733/Tom",
+         "name" : "Tom",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 32668,
+         "url" : "https://myanimelist.net/character/32668/Tomu",
+         "role" : "Supporting",
+         "name" : "Tomu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/87683.jpg?s=8aea958a16cae0dc6d04c028d7f8bcd3"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/31005.jpg?s=82092a32345c9739a81b3f8f362aab41",
+         "role" : "Supporting",
+         "name" : "Toujou, Ayumu",
+         "url" : "https://myanimelist.net/character/8282/Ayumu_Toujou",
+         "mal_id" : 8282
+      },
+      {
+         "url" : "https://myanimelist.net/character/18823/Tsukuyo",
+         "name" : "Tsukuyo",
+         "role" : "Supporting",
+         "mal_id" : 18823,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/115534.jpg?s=1fbde5b17164bc78f833ee9a16ede608"
+      },
+      {
+         "mal_id" : 32929,
+         "url" : "https://myanimelist.net/character/32929/Uchino",
+         "name" : "Uchino",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/88703.jpg?s=bd414b75d09e4ca6098965f75d0254ab"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/113711.jpg?s=0e1e31149e34ff3ed406169add7fc8fc",
+         "mal_id" : 28987,
+         "role" : "Supporting",
+         "name" : "Ungyou",
+         "url" : "https://myanimelist.net/character/28987/Ungyou"
+      },
+      {
+         "url" : "https://myanimelist.net/character/17246/Kazuyoshi_Usui",
+         "role" : "Supporting",
+         "name" : "Usui, Kazuyoshi",
+         "mal_id" : 17246,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/113840.jpg?s=06939aabf9736cd1cf4d64fc202e7e68"
+      },
+      {
+         "url" : "https://myanimelist.net/character/129056/Utsuro",
+         "name" : "Utsuro",
+         "role" : "Supporting",
+         "mal_id" : 129056,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/301305.jpg?s=c1bd899c0f605cd4d219ff2bb7793fb8"
+      },
+      {
+         "mal_id" : 32728,
+         "url" : "https://myanimelist.net/character/32728/Kaoru_Waki",
+         "name" : "Waki, Kaoru",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/87828.jpg?s=f77ae00a860e4779059e38ba9065fa00"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/151095.jpg?s=5e9458b94b7d29595db5f06c5055f31e",
+         "mal_id" : 55275,
+         "role" : "Supporting",
+         "name" : "Yagami",
+         "url" : "https://myanimelist.net/character/55275/Yagami"
+      },
+      {
+         "name" : "Yagyu, Binbokusai",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/15580/Binbokusai_Yagyu",
+         "mal_id" : 15580,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/43476.jpg?s=f09d110e311bce439b31fcb1467efce2"
+      },
+      {
+         "url" : "https://myanimelist.net/character/15581/Koshinori_Yagyu",
+         "role" : "Supporting",
+         "name" : "Yagyu, Koshinori",
+         "mal_id" : 15581,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/208681.jpg?s=b17a29dec0a96ce5bf9478c8abc69a6d"
+      },
+      {
+         "url" : "https://myanimelist.net/character/6110/Kyuubei_Yagyuu",
+         "name" : "Yagyuu, Kyuubei",
+         "role" : "Supporting",
+         "mal_id" : 6110,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/47988.jpg?s=2487c8c35afe55ec76506c3adddbb66d"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/303204.jpg?s=2006688c445e1085ecb0390fe5196657",
+         "url" : "https://myanimelist.net/character/4653/Sagaru_Yamazaki",
+         "role" : "Supporting",
+         "name" : "Yamazaki, Sagaru",
+         "mal_id" : 4653
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Yocchan",
+         "url" : "https://myanimelist.net/character/32234/Yocchan",
+         "mal_id" : 32234,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/115633.jpg?s=6cb4cf417ac98d4ac023e0b0fbed23c0"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/298255.jpg?s=4c3e039ed2380ff426bdbfc67f3f56ae",
+         "url" : "https://myanimelist.net/character/28144/Shouyou_Yoshida",
+         "role" : "Supporting",
+         "name" : "Yoshida, Shouyou",
+         "mal_id" : 28144
+      }
+   ],
+   "title_synonyms" : "Dandelion, Shiro Kuro, Black and White, Shirokuro, 13, Thirteen, Bankara-san ga Tooru, Here Comes Mr. Uncivilised, Silver Soul",
+   "chapters" : "Unknown",
+   "scored_by" : 21900,
+   "related" : {
+      "Spin-off" : [
+         {
+            "mal_id" : 14022,
+            "url" : "https://myanimelist.net/manga/14022/3-Z_Classs_Ginpachi-sensei",
+            "type" : "manga",
+            "title" : "3-Z Class&#039;s Ginpachi-sensei"
+         }
+      ],
+      "Character" : [
+         {
+            "url" : "https://myanimelist.net/manga/1414/SKET_Dance",
+            "mal_id" : 1414,
+            "title" : "SKET Dance",
+            "type" : "manga"
+         }
+      ],
+      "Other" : [
+         {
+            "url" : "https://myanimelist.net/manga/91209/Gekijouban_Gintama__Kanketsu-hen_-_Yorozuya_yo_Eien_Nare",
+            "mal_id" : 91209,
+            "title" : "Gekijouban Gintama: Kanketsu-hen - Yorozuya yo Eien Nare",
+            "type" : "manga"
+         }
+      ],
+      "Adaptation" : [
+         {
+            "type" : "anime",
+            "title" : "Gintama: Shiroyasha Koutan",
+            "mal_id" : 6945,
+            "url" : "https://myanimelist.net/anime/6945/Gintama__Shiroyasha_Koutan"
+         },
+         {
+            "mal_id" : 32366,
+            "url" : "https://myanimelist.net/anime/32366/Gintama°__Aizome_Kaori-hen",
+            "type" : "anime",
+            "title" : "Gintama°: Aizome Kaori-hen"
+         },
+         {
+            "title" : "Gintama&#039;",
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/9969/Gintama",
+            "mal_id" : 9969
+         },
+         {
+            "url" : "https://myanimelist.net/anime/21899/Gintama__Yorinuki_Gintama-san_on_Theater_2D",
+            "mal_id" : 21899,
+            "title" : "Gintama: Yorinuki Gintama-san on Theater 2D",
+            "type" : "anime"
+         },
+         {
+            "url" : "https://myanimelist.net/anime/918/Gintama",
+            "mal_id" : 918,
+            "title" : "Gintama",
+            "type" : "anime"
+         },
+         {
+            "type" : "anime",
+            "title" : "Gintama: Nanigoto mo Saiyo ga Kanjin nano de Tasho Senobisuru Kurai ga Choudoyoi",
+            "mal_id" : 2951,
+            "url" : "https://myanimelist.net/anime/2951/Gintama__Nanigoto_mo_Saiyo_ga_Kanjin_nano_de_Tasho_Senobisuru_Kurai_ga_Choudoyoi"
+         },
+         {
+            "mal_id" : 7472,
+            "url" : "https://myanimelist.net/anime/7472/Gintama_Movie_1__Shinyaku_Benizakura-hen",
+            "type" : "anime",
+            "title" : "Gintama Movie 1: Shinyaku Benizakura-hen"
+         },
+         {
+            "type" : "anime",
+            "title" : "Gintama°",
+            "mal_id" : 28977,
+            "url" : "https://myanimelist.net/anime/28977/Gintama°"
+         },
+         {
+            "type" : "anime",
+            "title" : "Gintama.",
+            "mal_id" : 34096,
+            "url" : "https://myanimelist.net/anime/34096/Gintama"
+         },
+         {
+            "title" : "Gintama&#039;: Enchousen",
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/15417/Gintama__Enchousen",
+            "mal_id" : 15417
+         },
+         {
+            "title" : "Gintama.: Porori-hen",
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/35843/Gintama__Porori-hen",
+            "mal_id" : 35843
+         },
+         {
+            "title" : "Gintama.: Shirogane no Tamashii-hen",
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/36838/Gintama__Shirogane_no_Tamashii-hen",
+            "mal_id" : 36838
+         }
+      ]
+   },
+   "popularity" : 83,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/1/143121.jpg",
+   "status" : "Publishing",
+   "published" : {
+      "from" : "2003-12-08",
+      "to" : null
+   },
+   "score" : 8.43,
+   "title" : "Gintama",
+   "type" : "Manga",
+   "title_japanese" : "銀魂",
+   "favorites" : 5762,
+   "rank" : 189,
+   "publishing" : true,
+   "published_string" : "Dec  8, 2003 to ?",
+   "mal_id" : 44,
+   "serialization" : [
+      {
+         "url" : "https://myanimelist.net/manga/magazine/83/Shounen_Jump_Weekly",
+         "name" : "Shounen Jump (Weekly)"
+      }
+   ],
+   "genre" : [
+      {
+         "name" : "Action",
+         "url" : "https://myanimelist.net/manga/genre/1/Action"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/4/Comedy",
+         "name" : "Comedy"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/20/Parody",
+         "name" : "Parody"
+      },
+      {
+         "name" : "Samurai",
+         "url" : "https://myanimelist.net/manga/genre/21/Samurai"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/24/Sci-Fi",
+         "name" : "Sci-Fi"
+      },
+      {
+         "name" : "Shounen",
+         "url" : "https://myanimelist.net/manga/genre/27/Shounen"
+      }
+   ]
+}

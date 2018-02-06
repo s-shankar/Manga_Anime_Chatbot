@@ -1,0 +1,282 @@
+{
+   "chapters" : 249,
+   "published" : {
+      "to" : "2006-04-24",
+      "from" : "1999-09-27"
+   },
+   "author" : [
+      {
+         "name" : "Urasawa, Naoki",
+         "url" : "https://myanimelist.net/people/1867/Naoki_Urasawa"
+      }
+   ],
+   "members" : 67780,
+   "synopsis" : "As the 20th century approaches its end, people all over the world are anxious that the world is changing. And probably not for the better. Kenji Endo is a normal convenience store manager who&#039;s just trying to get by. But when he learns that one of his old friends going by the name \"Donkey\" has suddenly committed suicide, and that a new cult led by a figure known as \"Friend\" is becoming more notorious, Kenji starts to feel that something isn&#039;t right. With a few key clues left behind by his deceased friend, Kenji realizes that this cult is much more than he ever thought it would be—not only is this mysterious organization directly targeting him and his childhood friends, but the whole world also faces a grave danger that only the friends have the key to stop. Kenji&#039;s simple life of barely making ends meet is flipped upside down when he reunites with his childhood friends, and together they must figure out the truth of how their past is connected to the cult, as the turn of the century could mean the possible end of the world. [Written by MAL Rewrite]",
+   "mal_id" : 3,
+   "title_synonyms" : "20 Seiki Shounen, Nijuu Seiki Shounen, Nijuusseiki Shounen, 20thCB",
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/1/54437.jpg",
+   "score" : 8.98,
+   "status" : "Finished",
+   "serialization" : [
+      {
+         "url" : "https://myanimelist.net/manga/magazine/3/Big_Comic_Spirits",
+         "name" : "Big Comic Spirits"
+      }
+   ],
+   "character" : [
+      {
+         "mal_id" : 3442,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/239513.jpg?s=3613460a09d481edb9cde937a611718c",
+         "role" : "Main",
+         "name" : "Endo, Kenji",
+         "url" : "https://myanimelist.net/character/3442/Kenji_Endo"
+      },
+      {
+         "url" : "https://myanimelist.net/character/9730/Kanna_Endo",
+         "name" : "Endo, Kanna",
+         "role" : "Main",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/307680.jpg?s=bef5140e36e3fd9b77a4530204f19dee",
+         "mal_id" : 9730
+      },
+      {
+         "url" : "https://myanimelist.net/character/14314/Friend",
+         "name" : "Friend",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/274844.jpg?s=33259a5e09588ad826869c13df1e1e9e",
+         "role" : "Main",
+         "mal_id" : 14314
+      },
+      {
+         "name" : "Chono, Shohei",
+         "url" : "https://myanimelist.net/character/34846/Shohei_Chono",
+         "mal_id" : 34846,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/94966.jpg?s=f08c25a09327c11c5e0367ad0f317eb7",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Endo, Kiriko",
+         "url" : "https://myanimelist.net/character/29789/Kiriko_Endo",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/77616.jpg?s=00b4fa6ed5688e6eddc2eb86c3646c3f",
+         "mal_id" : 29789
+      },
+      {
+         "mal_id" : 82559,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/202897.jpg?s=16efa30d0245635707d12af1a4b28984",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/82559/Keitaro_Fukuda",
+         "name" : "Fukuda, Keitaro"
+      },
+      {
+         "name" : "Hattori, Fukubei",
+         "url" : "https://myanimelist.net/character/21461/Fukubei_Hattori",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/50039.jpg?s=2d5f165422ce284ae47b9d298c389402",
+         "role" : "Supporting",
+         "mal_id" : 21461
+      },
+      {
+         "name" : "Imano, Yûichi",
+         "url" : "https://myanimelist.net/character/82555/Yûichi_Imano",
+         "mal_id" : 82555,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/202893.jpg?s=19e67662e8896c575e01f576555d2b0b",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/8116/Kyuutaro_Kaminaga",
+         "name" : "Kaminaga, Kyuutaro",
+         "mal_id" : 8116,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/25602.jpg?s=124f57cbfb62e4701c6a6a9eee31145f",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/202923.jpg?s=e6ff978810bdee242d24ee2ce0e78d22",
+         "mal_id" : 82589,
+         "url" : "https://myanimelist.net/character/82589/Tadanobu_Katsumata",
+         "name" : "Katsumata, Tadanobu"
+      },
+      {
+         "mal_id" : 82557,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/202895.jpg?s=2ebec1b5d5c1e764e5c9c4e69a21526e",
+         "url" : "https://myanimelist.net/character/82557/Saburô_Kido",
+         "name" : "Kido, Saburô"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/105643.jpg?s=71d48b4cee52285904ec08e84913b01e",
+         "role" : "Supporting",
+         "mal_id" : 38517,
+         "url" : "https://myanimelist.net/character/38517/Kyoko_Koizumi",
+         "name" : "Koizumi, Kyoko"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/202891.jpg?s=1c35c8e61a497c8078f11a7ec5307100",
+         "role" : "Supporting",
+         "mal_id" : 82553,
+         "url" : "https://myanimelist.net/character/82553/Masaaki_Komon",
+         "name" : "Komon, Masaaki"
+      },
+      {
+         "mal_id" : 38515,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/105641.jpg?s=0955cb154890fcff7f26bd3d4e9ed6e6",
+         "name" : "Manjoume, Inshu",
+         "url" : "https://myanimelist.net/character/38515/Inshu_Manjoume"
+      },
+      {
+         "mal_id" : 26415,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/105678.jpg?s=0eb556f267105b693cfac6c3d0ecd8f5",
+         "role" : "Supporting",
+         "name" : "Maruo",
+         "url" : "https://myanimelist.net/character/26415/Maruo"
+      },
+      {
+         "name" : "Minamoto, Yoshitsune",
+         "url" : "https://myanimelist.net/character/20072/Yoshitsune_Minamoto",
+         "mal_id" : 20072,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/46018.jpg?s=86625939bc464c5225a67c877327251b",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Ochiai, Chouji",
+         "url" : "https://myanimelist.net/character/6004/Chouji_Ochiai",
+         "mal_id" : 6004,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/87266.jpg?s=665074d52ec2ba4603ba3c2e7aa3d936"
+      },
+      {
+         "name" : "Sada, Kiyoshi",
+         "url" : "https://myanimelist.net/character/27225/Kiyoshi_Sada",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/68920.jpg?s=bb6cf86f1a843a18a39d2595aca5dcdc",
+         "role" : "Supporting",
+         "mal_id" : 27225
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/105646.jpg?s=f6ba6f33c482fa8cec38f81492bd4532",
+         "mal_id" : 38519,
+         "url" : "https://myanimelist.net/character/38519/Sanae",
+         "name" : "Sanae"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/11383.jpg?s=a0648a4300855c8e2dd481f6b186e753",
+         "mal_id" : 7271,
+         "url" : "https://myanimelist.net/character/7271/Yukiji_Setoguchi",
+         "name" : "Setoguchi, Yukiji"
+      },
+      {
+         "name" : "Shikishima, Lena",
+         "url" : "https://myanimelist.net/character/82575/Lena_Shikishima",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/202909.jpg?s=b03b5e7b50c6b9f8a178c63044224636",
+         "role" : "Supporting",
+         "mal_id" : 82575
+      },
+      {
+         "url" : "https://myanimelist.net/character/82577/Shikishima",
+         "name" : "Shikishima",
+         "mal_id" : 82577,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/202911.jpg?s=f50fb4e981f08545ea27a2783019a609"
+      },
+      {
+         "url" : "https://myanimelist.net/character/145492/Mitsuyo_Takasu",
+         "name" : "Takasu, Mitsuyo",
+         "mal_id" : 145492,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/202903.jpg?s=91af8a4b5171c5547162a0ada2da6267",
+         "mal_id" : 82565,
+         "url" : "https://myanimelist.net/character/82565/Masao_Tamura",
+         "name" : "Tamura, Masao"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/284604.jpg?s=7f9e32b884044a4278a8dc8a618a8337",
+         "role" : "Supporting",
+         "mal_id" : 82571,
+         "url" : "https://myanimelist.net/character/82571/The_Killer",
+         "name" : "The Killer"
+      },
+      {
+         "name" : "Yamane",
+         "url" : "https://myanimelist.net/character/82563/Yamane",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/202901.jpg?s=6ec8a6428531c865a86822315cf1b1a8",
+         "role" : "Supporting",
+         "mal_id" : 82563
+      },
+      {
+         "name" : "Yanbo and Mabo",
+         "url" : "https://myanimelist.net/character/82573/Yanbo_and_Mabo",
+         "mal_id" : 82573,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/202907.jpg?s=6104e0cebbda4a944a68aa5580a7e7cf"
+      }
+   ],
+   "background" : "20th Century Boys won the Kodansha Manga Award in the general category in 2001, an Excellence Prize at the Japan Media Arts Festival in 2002, and the Shogakukan Manga Award in the general category in 2003. The series&#039; combined storyline won the Grand Prize at the 37th Japan Cartoonist Awards on May 9, 2008.VIZ Media published the series in English under the VIZ Signature imprint from February 17, 2009 to September 18, 2012. VIZ Media licensed the series in 2005; however, at Urasawa&#039;s request, it was rescheduled for release after Monster finished its English publication due to a change in art style over time. The series has also been published in Brazilian Portuguese by Panini Comics/Planet Manga since September 2012.The series was adapted into a trilogy of live-action films which released in Japan between August 30, 2008 and August 29, 2009. ",
+   "popularity" : 49,
+   "type" : "Manga",
+   "related" : {
+      "Spin-off" : [
+         {
+            "url" : "https://myanimelist.net/manga/15691/20_Seiki_Shounen__Ujiko_Ujio_Sakuhinshuu",
+            "title" : "20 Seiki Shounen: Ujiko Ujio Sakuhinshuu",
+            "type" : "manga",
+            "mal_id" : 15691
+         }
+      ],
+      "Sequel" : [
+         {
+            "mal_id" : 743,
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/743/21st_Century_Boys",
+            "title" : "21st Century Boys"
+         }
+      ],
+      "Side story" : [
+         {
+            "mal_id" : 90757,
+            "type" : "manga",
+            "title" : "20 Seiki Shounen Tanteidan",
+            "url" : "https://myanimelist.net/manga/90757/20_Seiki_Shounen_Tanteidan"
+         }
+      ]
+   },
+   "title" : "20th Century Boys",
+   "title_english" : "20th Century Boys",
+   "link_canonical" : "https://myanimelist.net/manga/3/20th_Century_Boys",
+   "title_japanese" : "20世紀少年",
+   "genre" : [
+      {
+         "name" : "Mystery",
+         "url" : "https://myanimelist.net/manga/genre/7/Mystery"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/8/Drama",
+         "name" : "Drama"
+      },
+      {
+         "name" : "Historical",
+         "url" : "https://myanimelist.net/manga/genre/13/Historical"
+      },
+      {
+         "name" : "Sci-Fi",
+         "url" : "https://myanimelist.net/manga/genre/24/Sci-Fi"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/40/Psychological",
+         "name" : "Psychological"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/41/Seinen",
+         "name" : "Seinen"
+      }
+   ],
+   "volumes" : 22,
+   "favorites" : 7627,
+   "scored_by" : 27761,
+   "published_string" : "Sep  27, 1999 to Apr  24, 2006",
+   "rank" : 9,
+   "publishing" : false
+}

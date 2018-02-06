@@ -1,0 +1,155 @@
+{
+   "popularity" : 1249,
+   "related" : {
+      "Adaptation" : [
+         {
+            "mal_id" : 20969,
+            "title" : "Tezuka Osamu no Buddha: Owarinaki Tabi",
+            "url" : "https://myanimelist.net/anime/20969/Tezuka_Osamu_no_Buddha__Owarinaki_Tabi",
+            "type" : "anime"
+         },
+         {
+            "url" : "https://myanimelist.net/anime/7014/Tezuka_Osamu_no_Buddha__Akai_Sabaku_yo_Utsukushiku",
+            "title" : "Tezuka Osamu no Buddha: Akai Sabaku yo! Utsukushiku",
+            "mal_id" : 7014,
+            "type" : "anime"
+         }
+      ]
+   },
+   "status" : "Finished",
+   "scored_by" : 1938,
+   "title_japanese" : "ブッダ",
+   "background" : "Buddha received the Bungei Shunju Manga Award in 1975.The series was published in English by Vertical Inc. in 8 volumes in both hardcover and paperback format. Hardcover was released from October 1, 2003 to December 1, 2005 while paperback was released from May 2, 2006 to July 3, 2007. A complete paperback box set was released on July 1, 2014. The publisher has been digitally releasing the series since November 1, 2017.  It was also published in Brazilian Portuguese by Conrad from February 2005 to March 2006.",
+   "serialization" : [
+      {
+         "url" : "https://myanimelist.net/manga/magazine/233/Kibou_no_Tomo",
+         "name" : "Kibou no Tomo"
+      }
+   ],
+   "genre" : [
+      {
+         "name" : "Drama",
+         "url" : "https://myanimelist.net/manga/genre/8/Drama"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/13/Historical",
+         "name" : "Historical"
+      },
+      {
+         "name" : "Supernatural",
+         "url" : "https://myanimelist.net/manga/genre/37/Supernatural"
+      }
+   ],
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/4/941.jpg",
+   "title_synonyms" : null,
+   "link_canonical" : "https://myanimelist.net/manga/1111/Buddha",
+   "synopsis" : "In ancient India, the lives of the people are plagued by drought, famine, constant warfare and the injustices of the strict caste system. The intertwining lives of many unhappy souls are drawn together by the birth of the young prince Siddhartha, who embarks on a spiritual journey, becomes Buddha, \"the Enlightened One,\" and attempts to bring about a spiritual rebirth of the people in this desperate age. (Source: ANN)",
+   "publishing" : false,
+   "title_english" : "Buddha",
+   "volumes" : 14,
+   "title" : "Buddha",
+   "published" : {
+      "from" : "1972-09-01",
+      "to" : "1983-11-01"
+   },
+   "favorites" : 246,
+   "author" : [
+      {
+         "url" : "https://myanimelist.net/people/1938/Osamu_Tezuka",
+         "name" : "Tezuka, Osamu"
+      }
+   ],
+   "rank" : 195,
+   "type" : "Manga",
+   "published_string" : "Sep 1972 to Nov 1983",
+   "mal_id" : 1111,
+   "members" : 6283,
+   "score" : 8.43,
+   "character" : [
+      {
+         "url" : "https://myanimelist.net/character/5780/Siddhartha_Gautama",
+         "name" : "Gautama, Siddhartha",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/298501.jpg?s=92de1f7ff366404a49f5fc0a42679fcb",
+         "mal_id" : 5780,
+         "role" : "Main"
+      },
+      {
+         "name" : "Tatta",
+         "url" : "https://myanimelist.net/character/20083/Tatta",
+         "role" : "Main",
+         "mal_id" : 20083,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/337507.jpg?s=00289793c381edfcf111167ba501d734"
+      },
+      {
+         "name" : "Ajatasattu",
+         "url" : "https://myanimelist.net/character/132315/Ajatasattu",
+         "role" : "Supporting",
+         "mal_id" : 132315,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/288844.jpg?s=b210172e1d49a3c37c289d7c8c927f5a"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/288841.jpg?s=accdc816488b92794e12e848d3690db0",
+         "role" : "Supporting",
+         "mal_id" : 132312,
+         "url" : "https://myanimelist.net/character/132312/Ananda",
+         "name" : "Ananda"
+      },
+      {
+         "mal_id" : 132314,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/288843.jpg?s=52b1f78e6a9b77044a40b7973b91abef",
+         "name" : "Bimbisara",
+         "url" : "https://myanimelist.net/character/132314/Bimbisara"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/169691.jpg?s=ff0131428acc748277a2d1ce15f82748",
+         "mal_id" : 62161,
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/62161/Chapra",
+         "name" : "Chapra"
+      },
+      {
+         "url" : "https://myanimelist.net/character/132313/Devadatta",
+         "name" : "Devadatta",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/288842.jpg?s=eca9e52f94dff0e6167f3507aff3e4ba",
+         "mal_id" : 132313,
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/118366.jpg?s=6e9d22ab9ab8ddff950d5565216a7e40",
+         "role" : "Supporting",
+         "mal_id" : 18172,
+         "url" : "https://myanimelist.net/character/18172/Hige_Oyaji",
+         "name" : "Hige Oyaji"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/307140.jpg?s=cd8b6331d8eb7a081f7041cb37b1f41d",
+         "role" : "Supporting",
+         "mal_id" : 16092,
+         "url" : "https://myanimelist.net/character/16092/Sharaku_Hosuke",
+         "name" : "Hosuke, Sharaku"
+      },
+      {
+         "name" : "Migaila",
+         "url" : "https://myanimelist.net/character/62165/Migaila",
+         "mal_id" : 62165,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/235991.jpg?s=66c53bc80c84f148d78c2adc4a4dec46"
+      },
+      {
+         "mal_id" : 132311,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/288840.jpg?s=b356cce1f9ab9953890b0d7e1f2ca1e1",
+         "name" : "Virudhaka",
+         "url" : "https://myanimelist.net/character/132311/Virudhaka"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/288845.jpg?s=6885ae336f9f24390d9888b2eca29aa1",
+         "mal_id" : 132316,
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/132316/Yatala",
+         "name" : "Yatala"
+      }
+   ],
+   "chapters" : 66
+}

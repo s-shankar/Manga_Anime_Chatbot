@@ -1,0 +1,321 @@
+{
+   "score" : 8.43,
+   "genre" : [
+      {
+         "name" : "Comedy",
+         "url" : "https://myanimelist.net/manga/genre/4/Comedy"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/7/Mystery",
+         "name" : "Mystery"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/8/Drama",
+         "name" : "Drama"
+      },
+      {
+         "name" : "Magic",
+         "url" : "https://myanimelist.net/manga/genre/16/Magic"
+      },
+      {
+         "name" : "Supernatural",
+         "url" : "https://myanimelist.net/manga/genre/37/Supernatural"
+      },
+      {
+         "name" : "Seinen",
+         "url" : "https://myanimelist.net/manga/genre/41/Seinen"
+      }
+   ],
+   "published" : {
+      "from" : "2003-02-24",
+      "to" : "2011-02-09"
+   },
+   "publishing" : false,
+   "title" : "xxxHOLiC",
+   "serialization" : [
+      {
+         "name" : "Young Magazine (Weekly)",
+         "url" : "https://myanimelist.net/manga/magazine/10/Young_Magazine_Weekly"
+      }
+   ],
+   "link_canonical" : "https://myanimelist.net/manga/10/xxxHOLiC",
+   "published_string" : "Feb  24, 2003 to Feb  9, 2011",
+   "type" : "Manga",
+   "scored_by" : 23794,
+   "synopsis" : "Revolves around a boy named Watanuki and how he stumbled upon a shop owned by a woman named Yuuko. Yuuko&#039;s power is to grant wishes, but she can only do so with proper payment. Since Watanuki has seen spirits ever since he was born, Yuuko offers to take away his sight of the spirits in exchange for him working at the shop. He agrees and works at the shop until his debt is repaid. (Source: xxxHOLIC Wikia) ",
+   "title_synonyms" : "xxxHolic Rou, xxxHolic Cage, xxxHolic•Rou",
+   "related" : {
+      "Side story" : [
+         {
+            "url" : "https://myanimelist.net/manga/10183/xxxHOLiC__AnotherHOLiC",
+            "type" : "manga",
+            "mal_id" : 10183,
+            "title" : "xxxHOLiC: AnotherHOLiC"
+         }
+      ],
+      "Spin-off" : [
+         {
+            "url" : "https://myanimelist.net/manga/14368/Shiritsu_Horitsuba_Gakuen",
+            "type" : "manga",
+            "mal_id" : 14368,
+            "title" : "Shiritsu Horitsuba Gakuen"
+         }
+      ],
+      "Adaptation" : [
+         {
+            "url" : "https://myanimelist.net/anime/861/xxxHOLiC",
+            "mal_id" : 861,
+            "type" : "anime",
+            "title" : "xxxHOLiC"
+         },
+         {
+            "mal_id" : 3091,
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/3091/xxxHOLiC_Kei",
+            "title" : "xxxHOLiC Kei"
+         },
+         {
+            "type" : "anime",
+            "mal_id" : 6864,
+            "url" : "https://myanimelist.net/anime/6864/xxxHOLiC_Rou",
+            "title" : "xxxHOLiC Rou"
+         },
+         {
+            "url" : "https://myanimelist.net/anime/4918/xxxHOLiC_Shunmuki",
+            "type" : "anime",
+            "mal_id" : 4918,
+            "title" : "xxxHOLiC Shunmuki"
+         }
+      ],
+      "Other" : [
+         {
+            "url" : "https://myanimelist.net/manga/16010/K-Dash",
+            "type" : "manga",
+            "mal_id" : 16010,
+            "title" : "K-Dash"
+         },
+         {
+            "url" : "https://myanimelist.net/manga/9/Tsubasa__RESERVoir_CHRoNiCLE",
+            "type" : "manga",
+            "mal_id" : 9,
+            "title" : "Tsubasa: RESERVoir CHRoNiCLE"
+         },
+         {
+            "title" : "Drug &amp; Drop",
+            "url" : "https://myanimelist.net/manga/32037/Drug___Drop",
+            "type" : "manga",
+            "mal_id" : 32037
+         }
+      ],
+      "Sequel" : [
+         {
+            "type" : "manga",
+            "mal_id" : 46010,
+            "url" : "https://myanimelist.net/manga/46010/xxxHOLiC__Rei",
+            "title" : "xxxHOLiC: Rei"
+         }
+      ]
+   },
+   "rank" : 188,
+   "members" : 49018,
+   "popularity" : 81,
+   "title_english" : "xxxHOLiC",
+   "status" : "Finished",
+   "background" : "xxxHOLiC was previously serialized in Young Magazine, but moved to Bessatsu Shounen Magazine in June 2010.The series was released in English by the now defunct Del Rey from April 27, 2004 to February 21, 2012. Kodansha Comics USA has republished the series in an omnibus edition from March 18, 2014 to September 8, 2015 the final two volumes were 2-in-1, while the previous were all 3-in-1. It was also published in Spanish by Norma Editorial from July 2004 to October 2011.",
+   "mal_id" : 10,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/3/1482.jpg",
+   "title_japanese" : "xxxHOLiC",
+   "favorites" : 4271,
+   "volumes" : 19,
+   "character" : [
+      {
+         "url" : "https://myanimelist.net/character/567/Shizuka_Doumeki",
+         "mal_id" : 567,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/148967.jpg?s=4edc709c0bcdd820a60abc9c2033687a",
+         "name" : "Doumeki, Shizuka",
+         "role" : "Main"
+      },
+      {
+         "url" : "https://myanimelist.net/character/236/Yuuko_Ichihara",
+         "mal_id" : 236,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/93193.jpg?s=b479c4a3490ef7e7eaab0faf81f8501f",
+         "role" : "Main",
+         "name" : "Ichihara, Yuuko"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/93201.jpg?s=e0d6b3929966d0ec4b21fd23d3214bf3",
+         "mal_id" : 568,
+         "url" : "https://myanimelist.net/character/568/Himawari_Kunogi",
+         "name" : "Kunogi, Himawari",
+         "role" : "Main"
+      },
+      {
+         "name" : "Modoki, Mokona",
+         "role" : "Main",
+         "url" : "https://myanimelist.net/character/6887/Mokona_Modoki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/52268.jpg?s=edfbf6dfbf1b4e25a22e548cdff98471",
+         "mal_id" : 6887
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/93209.jpg?s=a7762bea47a996cf7b37148013312b70",
+         "mal_id" : 3239,
+         "url" : "https://myanimelist.net/character/3239/Kohane_Tsuyuri",
+         "role" : "Main",
+         "name" : "Tsuyuri, Kohane"
+      },
+      {
+         "role" : "Main",
+         "name" : "Watanuki, Kimihiro",
+         "url" : "https://myanimelist.net/character/235/Kimihiro_Watanuki",
+         "mal_id" : 235,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/47223.jpg?s=61dcbebdd5aa2e98dd9a51363fdc6f96"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/93213.jpg?s=55d4333d8a5a5d95f5abcb11152025ad",
+         "mal_id" : 5232,
+         "url" : "https://myanimelist.net/character/5232/Ame-warashi",
+         "role" : "Supporting",
+         "name" : "Ame-warashi"
+      },
+      {
+         "name" : "Chibi Kitsune",
+         "role" : "Supporting",
+         "mal_id" : 37389,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/146395.jpg?s=f06cf3c8758d64af732625b000a32002",
+         "url" : "https://myanimelist.net/character/37389/Chibi_Kitsune"
+      },
+      {
+         "name" : "Doumeki, Haruka",
+         "role" : "Supporting",
+         "mal_id" : 13510,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/36220.jpg?s=89184e96de1374e97b48035c56ab62dc",
+         "url" : "https://myanimelist.net/character/13510/Haruka_Doumeki"
+      },
+      {
+         "url" : "https://myanimelist.net/character/9702/Fai_D_Flourite",
+         "mal_id" : 9702,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/27431.jpg?s=399867157927572de5d822a283b36905",
+         "role" : "Supporting",
+         "name" : "Flourite, Fai D."
+      },
+      {
+         "mal_id" : 4913,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/85244.jpg?s=f9ed979f28e37b38407e98daad262443",
+         "url" : "https://myanimelist.net/character/4913/Rikuo_Himura",
+         "name" : "Himura, Rikuo",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Jorougumo",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/25335/Jorougumo",
+         "mal_id" : 25335,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/65486.jpg?s=f476663a3d181c235f9a7a6afb2eeb80"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Kudou, Kazahaya",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/85237.jpg?s=e25e19135a62797613ddec51676b666d",
+         "mal_id" : 4360,
+         "url" : "https://myanimelist.net/character/4360/Kazahaya_Kudou"
+      },
+      {
+         "url" : "https://myanimelist.net/character/129/Kurogane",
+         "mal_id" : 129,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/77672.jpg?s=466fd956c8c8e607af40c9aa76c2467e",
+         "name" : "Kurogane",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Li, Syaoran",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/89318.jpg?s=0fd04b4fe9132f0e6f34096f76ba116d",
+         "mal_id" : 4713,
+         "url" : "https://myanimelist.net/character/4713/Syaoran_Li"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Maru",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/93219.jpg?s=eabd796828ab0c2aec54caf442a68c37",
+         "mal_id" : 3758,
+         "url" : "https://myanimelist.net/character/3758/Maru"
+      },
+      {
+         "url" : "https://myanimelist.net/character/2074/Mokona_Modoki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/53075.jpg?s=6b86264af2df23d9d0f99d3179300e78",
+         "mal_id" : 2074,
+         "role" : "Supporting",
+         "name" : "Modoki, Mokona"
+      },
+      {
+         "mal_id" : 29311,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/93227.jpg?s=212ae1692cf21c5efde5ece327073d9e",
+         "url" : "https://myanimelist.net/character/29311/Moro",
+         "name" : "Moro",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Mugetsu",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/9541/Mugetsu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/65485.jpg?s=f25f3ef821db48254bc90cd4da0f6e88",
+         "mal_id" : 9541
+      },
+      {
+         "name" : "Nanami",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/137916/Nanami",
+         "mal_id" : 137916,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/299059.jpg?s=748d26c889e04372f531fef2884275ad"
+      },
+      {
+         "url" : "https://myanimelist.net/character/14831/Neko_Musume",
+         "mal_id" : 14831,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/93211.jpg?s=0bab767a85dc9144dca2b9614f71ef21",
+         "role" : "Supporting",
+         "name" : "Neko Musume"
+      },
+      {
+         "url" : "https://myanimelist.net/character/6729/Fei_Wong_Reed",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/54330.jpg?s=7a928c2cebd3ec20bdad8cc51fd2c93b",
+         "mal_id" : 6729,
+         "role" : "Supporting",
+         "name" : "Reed, Fei Wong"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Reed, Clow",
+         "url" : "https://myanimelist.net/character/3612/Clow_Reed",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/81882.jpg?s=2feaf4ad0eceee3e2ed8373721898c9d",
+         "mal_id" : 3612
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Sakura",
+         "url" : "https://myanimelist.net/character/127/Sakura",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/47457.jpg?s=f9882321f6b6a458e403394d04446691",
+         "mal_id" : 127
+      },
+      {
+         "url" : "https://myanimelist.net/character/126/Syaoran",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/88326.jpg?s=97beb096f8a83fe77ce21e15e1798862",
+         "mal_id" : 126,
+         "name" : "Syaoran",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Zashiki-warashi",
+         "mal_id" : 569,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/28484.jpg?s=c7d8e3306d85fd422a6af25c3900be4c",
+         "url" : "https://myanimelist.net/character/569/Zashiki-warashi"
+      }
+   ],
+   "author" : [
+      {
+         "name" : "CLAMP",
+         "url" : "https://myanimelist.net/people/1877/CLAMP"
+      }
+   ],
+   "chapters" : 213
+}

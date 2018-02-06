@@ -1,0 +1,499 @@
+{
+   "status" : "Finished",
+   "rank" : 30,
+   "title_japanese" : "DEATH NOTE",
+   "background" : "Death Note has inspired three live-action films, a TV drama series as well as a stage musical. The series has also inspired numerous copycat crimes outside of Japan.The manga was published in English by VIZ Media under the Shonen Jump Advanced imprint from October 10, 2005 and July 3, 2007 and again in 2-in-1 omnibuses (subtitled Black edition) from December 28, 2010 to November 1, 2011. There have been several more rereleases of the series: a special hardcover edition of the first volume on September 16, 2008, a complete box set on October 7, 2008, which included a guidebook titled Death Note 13: How to Read, and a complete omnibus on September 5, 2017. It was also published in Italy by Planet Manga from November 2006 to September 2008; in Brazil by JBC from June 2007 to August 2008, and again in 2-in-1 edition (Black Edition) from June 2013 to December 2013; in Argentina by LARP Editores from May 20, 2009 to April 2012;and in Spanish by Gl&eacute;nat Espa&ntilde;a from June 30, 2006 to Septmber 30, 2007. Norma Editorial republished the series in Spanish as the Black edition from April 11 to September 27, 2013.",
+   "volumes" : 12,
+   "published" : {
+      "to" : "2006-05-15",
+      "from" : "2003-12-01"
+   },
+   "score" : 8.77,
+   "mal_id" : 21,
+   "author" : [
+      {
+         "url" : "https://myanimelist.net/people/1888/Takeshi_Obata",
+         "name" : "Obata, Takeshi"
+      },
+      {
+         "name" : "Ohba, Tsugumi",
+         "url" : "https://myanimelist.net/people/2111/Tsugumi_Ohba"
+      }
+   ],
+   "members" : 185755,
+   "title_synonyms" : null,
+   "title_english" : "Death Note",
+   "chapters" : 108,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/2/54453.jpg",
+   "serialization" : [
+      {
+         "url" : "https://myanimelist.net/manga/magazine/83/Shounen_Jump_Weekly",
+         "name" : "Shounen Jump (Weekly)"
+      }
+   ],
+   "link_canonical" : "https://myanimelist.net/manga/21/Death_Note",
+   "synopsis" : "A shinigami, as a god of death, can kill any person—provided they see their victim&#039;s face and write their victim&#039;s name in a notebook called a Death Note. One day, Ryuk, bored by the shinigami lifestyle and interested in seeing how a human would use a Death Note, drops one into the human realm. High school student and prodigy Light Yagami stumbles upon the Death Note and—since he deplores the state of the world—tests the deadly notebook by writing a criminal&#039;s name in it. When the criminal dies immediately following his experiment with the Death Note, Light is greatly surprised and quickly recognizes how devastating the power that has fallen into his hands could be. With this divine capability, Light decides to extinguish all criminals in order to build a new world where crime does not exist and people worship him as a god. Police, however, quickly discover that a serial killer is targeting criminals and, consequently, try to apprehend the culprit. To do this, the Japanese investigators count on the assistance of the best detective in the world: a young and eccentric man known only by the name of L. [Written by MAL Rewrite]",
+   "publishing" : false,
+   "scored_by" : 116181,
+   "published_string" : "Dec  1, 2003 to May  15, 2006",
+   "favorites" : 23434,
+   "genre" : [
+      {
+         "url" : "https://myanimelist.net/manga/genre/7/Mystery",
+         "name" : "Mystery"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/8/Drama",
+         "name" : "Drama"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/27/Shounen",
+         "name" : "Shounen"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/37/Supernatural",
+         "name" : "Supernatural"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/40/Psychological",
+         "name" : "Psychological"
+      }
+   ],
+   "popularity" : 5,
+   "type" : "Manga",
+   "character" : [
+      {
+         "mal_id" : 71,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/249647.jpg?s=e84328a522961e1235972f4e32f53907",
+         "url" : "https://myanimelist.net/character/71/L_Lawliet",
+         "role" : "Main",
+         "name" : "Lawliet, L"
+      },
+      {
+         "name" : "Ryuk",
+         "role" : "Main",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/59125.jpg?s=ca239addaad5dbd24c7e0b8b41ca724d",
+         "mal_id" : 75,
+         "url" : "https://myanimelist.net/character/75/Ryuk"
+      },
+      {
+         "name" : "Yagami, Light",
+         "url" : "https://myanimelist.net/character/80/Light_Yagami",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/63870.jpg?s=c7e7a8f4e364f67f86cc60d55ec57aac",
+         "mal_id" : 80,
+         "role" : "Main"
+      },
+      {
+         "role" : "Supporting",
+         "mal_id" : 84531,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/206679.jpg?s=57ec364388e7ccd0b6bf694bd0d65bf0",
+         "url" : "https://myanimelist.net/character/84531/Eriko_Aizawa",
+         "name" : "Aizawa, Eriko"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/206675.jpg?s=47b23c79920b3ddf8c514a550111c5ff",
+         "mal_id" : 84527,
+         "url" : "https://myanimelist.net/character/84527/Yumi_Aizawa",
+         "name" : "Aizawa, Yumi"
+      },
+      {
+         "name" : "Aizawa, Shuuichi",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/3767/Shuuichi_Aizawa",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/55515.jpg?s=0c5e2f745b0135228e0c85bc3598ca1a",
+         "mal_id" : 3767
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/30971.jpg?s=8723bc76955bc9d608d0470ef8220f37",
+         "mal_id" : 835,
+         "url" : "https://myanimelist.net/character/835/Misa_Amane",
+         "role" : "Supporting",
+         "name" : "Amane, Misa"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/58404.jpg?s=e24acd3ce6218f908d39d038f8955fee",
+         "mal_id" : 3769,
+         "url" : "https://myanimelist.net/character/3769/Halle_Bullook",
+         "role" : "Supporting",
+         "name" : "Bullook, Halle"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/68292.jpg?s=2717e0629400bc1f91e919685bb31919",
+         "mal_id" : 23514,
+         "url" : "https://myanimelist.net/character/23514/Anthony_Carter",
+         "name" : "Carter, Anthony"
+      },
+      {
+         "role" : "Supporting",
+         "mal_id" : 84517,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/206665.jpg?s=a1bfbaf99d4d128c96c61403585f1cde",
+         "url" : "https://myanimelist.net/character/84517/Larry_Conners",
+         "name" : "Conners, Larry"
+      },
+      {
+         "url" : "https://myanimelist.net/character/84515/Carl_Darlingbin",
+         "mal_id" : 84515,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/206663.jpg?s=1620ace949763b2e8b2f3b0420d9e3e5",
+         "role" : "Supporting",
+         "name" : "Darlingbin, Carl"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/30939/Hitoshi_Demegawa",
+         "mal_id" : 30939,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/102805.jpg?s=ab5c0612543aecea252b313ee1f3b4a5",
+         "name" : "Demegawa, Hitoshi"
+      },
+      {
+         "name" : "Gook",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/196757.jpg?s=4faa57351dfb0d12efa46dae093e9d6a",
+         "mal_id" : 79469,
+         "url" : "https://myanimelist.net/character/79469/Gook"
+      },
+      {
+         "name" : "Gordon, Dwhite",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/177547.jpg?s=7c06b961d9c20c6357687b2ca24b43bc",
+         "mal_id" : 37996,
+         "url" : "https://myanimelist.net/character/37996/Dwhite_Gordon",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Hatori, Arayoshi",
+         "role" : "Supporting",
+         "mal_id" : 1930,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/68293.jpg?s=b1642368c1da9db500911ac580211b3c",
+         "url" : "https://myanimelist.net/character/1930/Arayoshi_Hatori"
+      },
+      {
+         "role" : "Supporting",
+         "mal_id" : 1928,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/141669.jpg?s=659c2cafb85849df1b9939f41b056e56",
+         "url" : "https://myanimelist.net/character/1928/Kyousuke_Higuchi",
+         "name" : "Higuchi, Kyousuke"
+      },
+      {
+         "mal_id" : 84509,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/206657.jpg?s=eddcb7e1545ededfd2c1568e9cb934a9",
+         "url" : "https://myanimelist.net/character/84509/David_Hoope",
+         "role" : "Supporting",
+         "name" : "Hoope, David"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/68300.jpg?s=b67dec08542307ca13ed369084f1db89",
+         "mal_id" : 20002,
+         "url" : "https://myanimelist.net/character/20002/Hideki_Ide",
+         "role" : "Supporting",
+         "name" : "Ide, Hideki"
+      },
+      {
+         "role" : "Supporting",
+         "mal_id" : 3883,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/68291.jpg?s=7ec2e4ddf2d1a0b1a81596cd7d053463",
+         "url" : "https://myanimelist.net/character/3883/Jealous",
+         "name" : "Jealous"
+      },
+      {
+         "mal_id" : 2730,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/42363.jpg?s=f1ba9d7f5b30938fa52027653072a6a4",
+         "url" : "https://myanimelist.net/character/2730/Mail_Jeevas",
+         "role" : "Supporting",
+         "name" : "Jeevas, Mail"
+      },
+      {
+         "name" : "Keehl, Mihael",
+         "url" : "https://myanimelist.net/character/463/Mihael_Keehl",
+         "mal_id" : 463,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/31498.jpg?s=62ac2d02c06671ddcc5d625cbed905aa",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Kenwood, Mary",
+         "role" : "Supporting",
+         "mal_id" : 1933,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/36923.jpg?s=f3d8b94a60658f2ac5f0a1df7b72667c",
+         "url" : "https://myanimelist.net/character/1933/Mary_Kenwood"
+      },
+      {
+         "name" : "Kida, Masahiko",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/54038.jpg?s=50189a1a1ebdbb63e485bb5d83bfebcd",
+         "mal_id" : 1931,
+         "url" : "https://myanimelist.net/character/1931/Masahiko_Kida"
+      },
+      {
+         "name" : "Kitamura, Koreyoshi",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/206667.jpg?s=057f3dda01fadb233aa548f326b9d628",
+         "mal_id" : 84519,
+         "url" : "https://myanimelist.net/character/84519/Koreyoshi_Kitamura"
+      },
+      {
+         "url" : "https://myanimelist.net/character/3770/Stephen_Loud",
+         "mal_id" : 3770,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/55516.jpg?s=28234da79f3b41c3c99c1321329b7da6",
+         "role" : "Supporting",
+         "name" : "Loud, Stephen"
+      },
+      {
+         "name" : "Mason, Steve",
+         "mal_id" : 84525,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/206673.jpg?s=ccada97925317ec8ca37e6e735ff4572",
+         "url" : "https://myanimelist.net/character/84525/Steve_Mason",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Matsuda, Touta",
+         "role" : "Supporting",
+         "mal_id" : 1906,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/68302.jpg?s=331022cb61aebf8a80ccdedf3dca1780",
+         "url" : "https://myanimelist.net/character/1906/Touta_Matsuda"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/177549.jpg?s=3041a0ea2f99590c965ef16736507f44",
+         "mal_id" : 5174,
+         "url" : "https://myanimelist.net/character/5174/Shingo_Midou",
+         "role" : "Supporting",
+         "name" : "Midou, Shingo"
+      },
+      {
+         "name" : "Mikami, Teru",
+         "url" : "https://myanimelist.net/character/1904/Teru_Mikami",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/36951.jpg?s=634d8f194239612d522f582158b6c62b",
+         "mal_id" : 1904,
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Misora, Naomi",
+         "url" : "https://myanimelist.net/character/4959/Naomi_Misora",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/146595.jpg?s=747ceb8e37e770cb3a3759abe85a0581",
+         "mal_id" : 4959,
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/3766/Kanzou_Mogi",
+         "mal_id" : 3766,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/57644.jpg?s=2ba3e50a4a27dc53078c9989ff3cfd80",
+         "name" : "Mogi, Kanzou"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/1932/Tierry_Morello",
+         "mal_id" : 1932,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/36922.jpg?s=c67e4bd3931cdf85db2f16cef3502752",
+         "name" : "Morello, Tierry"
+      },
+      {
+         "name" : "Namikawa, Reiji",
+         "url" : "https://myanimelist.net/character/1929/Reiji_Namikawa",
+         "mal_id" : 1929,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/57873.jpg?s=818038115eebaa24c3af8d3622197044",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "mal_id" : 84529,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/206677.jpg?s=f023fe545b75e5e13a9269809dbdac73",
+         "url" : "https://myanimelist.net/character/84529/Noriko",
+         "name" : "Noriko"
+      },
+      {
+         "name" : "Ooi, Takeshi",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/84507/Takeshi_Ooi",
+         "mal_id" : 84507,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/206655.jpg?s=25e4bcbac75882c91d5f76e29eb93ca7"
+      },
+      {
+         "name" : "Osoreda, Kiichiro",
+         "mal_id" : 84513,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/206661.jpg?s=734c5da4030c9e0979af121d57c3054e",
+         "url" : "https://myanimelist.net/character/84513/Kiichiro_Osoreda",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Penber, Raye",
+         "url" : "https://myanimelist.net/character/7044/Raye_Penber",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/56933.jpg?s=d3d0ef34abd307499083d65c85eab42f",
+         "mal_id" : 7044,
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/84511/George_Psyeruth",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/206659.jpg?s=d46c3cb671284eac9acc6a2a6fb2c289",
+         "mal_id" : 84511,
+         "role" : "Supporting",
+         "name" : "Psyeruth, George"
+      },
+      {
+         "name" : "Rem",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/1905/Rem",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/28562.jpg?s=b40bfebd761a00481f6767813eaba270",
+         "mal_id" : 1905
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/464/Nate_River",
+         "mal_id" : 464,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/77339.jpg?s=0c14316b5b17ee8bdff5c49997e6a097",
+         "name" : "River, Nate"
+      },
+      {
+         "url" : "https://myanimelist.net/character/46237/Takuo_Shibuimaru",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/177551.jpg?s=314f780e5d115c7535fce43617bf2515",
+         "mal_id" : 46237,
+         "role" : "Supporting",
+         "name" : "Shibuimaru, Takuo"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/2402/Shidoh",
+         "mal_id" : 2402,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/62331.jpg?s=7127661aa3d29f3e4b0661335475842b",
+         "name" : "Shidoh"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/206651.jpg?s=b5a0c94a688bc5f6c322dab8f77fb493",
+         "mal_id" : 84503,
+         "url" : "https://myanimelist.net/character/84503/Suguru_Shimura",
+         "role" : "Supporting",
+         "name" : "Shimura, Suguru"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/30944/Lind_L_Tailor",
+         "mal_id" : 30944,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/177553.jpg?s=32dec49ea2988ab442be299ceea88894",
+         "name" : "Tailor, Lind L."
+      },
+      {
+         "name" : "Takada, Kiyomi",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/3765/Kiyomi_Takada",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/36947.jpg?s=c2ff7fcafe4762e02882ef92aa34550c",
+         "mal_id" : 3765
+      },
+      {
+         "name" : "Takahashi, Eiichi",
+         "role" : "Supporting",
+         "mal_id" : 84505,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/206653.jpg?s=1d67eb58f88660c0012d049fc0ac1a68",
+         "url" : "https://myanimelist.net/character/84505/Eiichi_Takahashi"
+      },
+      {
+         "name" : "Takimura, Kanichi",
+         "url" : "https://myanimelist.net/character/84523/Kanichi_Takimura",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/206671.jpg?s=e390511f8c319d416e20131d83b96d34",
+         "mal_id" : 84523,
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Ukita, Hirokazu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/57155.jpg?s=b1e5f7031aee238686b1404ff56b401e",
+         "mal_id" : 17555,
+         "url" : "https://myanimelist.net/character/17555/Hirokazu_Ukita",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/2179/Quillsh_Wammy",
+         "mal_id" : 2179,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/57165.jpg?s=6c95f6bd24c8001a834214b15c97f4ab",
+         "role" : "Supporting",
+         "name" : "Wammy, Quillsh"
+      },
+      {
+         "name" : "Yagami, Sayu",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/262773.jpg?s=898c2ad335df61cc36812f41d7b1f1f2",
+         "mal_id" : 8135,
+         "url" : "https://myanimelist.net/character/8135/Sayu_Yagami"
+      },
+      {
+         "name" : "Yagami, Souichirou",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/1927/Souichirou_Yagami",
+         "mal_id" : 1927,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/45270.jpg?s=929b7ae532b7f90c3518876bcc6446a4"
+      },
+      {
+         "name" : "Yagami, Sachiko",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/14735/Sachiko_Yagami",
+         "mal_id" : 14735,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/68303.jpg?s=313eae90826d2e8472347a4013e175fb"
+      },
+      {
+         "mal_id" : 84521,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "url" : "https://myanimelist.net/character/84521/Yamamoto",
+         "role" : "Supporting",
+         "name" : "Yamamoto"
+      },
+      {
+         "name" : "Yuri",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/53663/Yuri",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/177545.jpg?s=ebdeccb054908b8a2bd95d293f4484ec",
+         "mal_id" : 53663
+      }
+   ],
+   "title" : "Death Note",
+   "related" : {
+      "Alternative version" : [
+         {
+            "type" : "manga",
+            "mal_id" : 3645,
+            "url" : "https://myanimelist.net/manga/3645/Death_Note",
+            "title" : "Death Note"
+         }
+      ],
+      "Adaptation" : [
+         {
+            "title" : "Death Note Rewrite",
+            "url" : "https://myanimelist.net/anime/2994/Death_Note_Rewrite",
+            "type" : "anime",
+            "mal_id" : 2994
+         },
+         {
+            "title" : "Death Note",
+            "url" : "https://myanimelist.net/anime/1535/Death_Note",
+            "type" : "anime",
+            "mal_id" : 1535
+         }
+      ],
+      "Sequel" : [
+         {
+            "title" : "Death Note Tokubetsu-hen",
+            "type" : "manga",
+            "mal_id" : 4941,
+            "url" : "https://myanimelist.net/manga/4941/Death_Note_Tokubetsu-hen"
+         }
+      ],
+      "Prequel" : [
+         {
+            "mal_id" : 7458,
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/7458/Death_Note_Another_Note__Los_Angeles_BB_Renzoku_Satsujin_Jiken",
+            "title" : "Death Note Another Note: Los Angeles BB Renzoku Satsujin Jiken"
+         }
+      ],
+      "Side story" : [
+         {
+            "mal_id" : 8158,
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/8158/L_Change_the_WorLd",
+            "title" : "L Change the WorLd"
+         },
+         {
+            "mal_id" : 70815,
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/70815/Death_Note__L_FILE_No_15",
+            "title" : "Death Note: L FILE No. 15"
+         }
+      ]
+   }
+}

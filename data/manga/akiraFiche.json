@@ -1,0 +1,303 @@
+{
+   "favorites" : 3135,
+   "genre" : [
+      {
+         "name" : "Action",
+         "url" : "https://myanimelist.net/manga/genre/1/Action"
+      },
+      {
+         "name" : "Sci-Fi",
+         "url" : "https://myanimelist.net/manga/genre/24/Sci-Fi"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/41/Seinen",
+         "name" : "Seinen"
+      }
+   ],
+   "synopsis" : "1988: It is World War III. Tokyo is decimated by a mysterious black explosion, unmatched in magnitude. 2019: Fast forward 31 years. Neo-Tokyo, hastily built on the ruins of old Tokyo, is a sprawling cityscape of neon extravaganza. It is a fusion of towering skyscrapers and cutting-edge technology that is permeated through and through with an explosive, hyper-violent cocktail of biker gangs, poverty, and revolutionaries. In this derelict metropolis live Tetsuo Shima and Shoutarou Kaneda, two bikers who are the best of friends and the fiercest of rivals, despite being affiliated with the same gang. Desperate to prove himself as Kaneda&#039;s equal, Tetsuo unwittingly pulls a stunt that culminates in the awakening of a cryptic existence that threatens to change both the face of Neo-Tokyo and the lives of those who call the city their home—the awakening of a government secret simply known as Akira. [Written by MAL Rewrite]",
+   "type" : "Manga",
+   "link_canonical" : "https://myanimelist.net/manga/664/Akira",
+   "character" : [
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/114608.jpg?s=17c06cde3062d9898a9133de4408134f",
+         "mal_id" : 24735,
+         "url" : "https://myanimelist.net/character/24735/Akira",
+         "name" : "Akira",
+         "role" : "Main"
+      },
+      {
+         "mal_id" : 2588,
+         "url" : "https://myanimelist.net/character/2588/Shoutarou_Kaneda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/114607.jpg?s=6aa826044ad690f8e28ab87f3f514563",
+         "name" : "Kaneda, Shoutarou",
+         "role" : "Main"
+      },
+      {
+         "url" : "https://myanimelist.net/character/9875/Kei",
+         "mal_id" : 9875,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/287401.jpg?s=7d274edbfb259fd11a8129521bb3c7d7",
+         "role" : "Main",
+         "name" : "Kei"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/295744.jpg?s=7db91471bb5279d9988aefe3ff2e2d51",
+         "url" : "https://myanimelist.net/character/91891/Miyako",
+         "mal_id" : 91891,
+         "role" : "Main",
+         "name" : "Miyako"
+      },
+      {
+         "role" : "Main",
+         "name" : "Shima, Tetsuo",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/30617.jpg?s=b9d3527ab26c5dc9e7500b0f23ef3eda",
+         "mal_id" : 2589,
+         "url" : "https://myanimelist.net/character/2589/Tetsuo_Shima"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Admiral",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/311153.jpg?s=bc806b0847566e81c8d2e74b2230d4fc",
+         "url" : "https://myanimelist.net/character/143919/Admiral",
+         "mal_id" : 143919
+      },
+      {
+         "mal_id" : 143917,
+         "url" : "https://myanimelist.net/character/143917/Bernardi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/311151.jpg?s=757ec13995f200ff085327d199ea1112",
+         "role" : "Supporting",
+         "name" : "Bernardi"
+      },
+      {
+         "url" : "https://myanimelist.net/character/91889/Chiyoko",
+         "mal_id" : 91889,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/311130.jpg?s=e7c4ac9b7cb214c76eb3239169979f18",
+         "role" : "Supporting",
+         "name" : "Chiyoko"
+      },
+      {
+         "name" : "Doctor Onishi",
+         "role" : "Supporting",
+         "mal_id" : 128874,
+         "url" : "https://myanimelist.net/character/128874/Doctor_Onishi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/283831.jpg?s=6ac611c077ff610d4f2dd59ffb6c196e"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Dubrovsky",
+         "mal_id" : 143913,
+         "url" : "https://myanimelist.net/character/143913/Dubrovsky",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/311148.jpg?s=575662bce0b8e2cb35ba2e9a5bbd85d9"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Harukiya Barkeeper",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/282612.jpg?s=fe42689766d0f998dfe22bae39a27618",
+         "mal_id" : 128843,
+         "url" : "https://myanimelist.net/character/128843/Harukiya_Barkeeper"
+      },
+      {
+         "url" : "https://myanimelist.net/character/143916/George_Hock",
+         "mal_id" : 143916,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/questionmark_23.gif?s=368162569b0f2cedaed4ee70adb1f59e",
+         "name" : "Hock, George",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 143911,
+         "url" : "https://myanimelist.net/character/143911/Houzuki_Otoko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/311146.jpg?s=fdcb21ac19dbc51fef3254361fb61f34",
+         "name" : "Houzuki Otoko",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Joker",
+         "url" : "https://myanimelist.net/character/128844/Joker",
+         "mal_id" : 128844,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/287394.jpg?s=325744f95d5048c7eede173f5ee6937f"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Jorris",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/311150.jpg?s=be2e33bcc464593c66106c02c4463cf0",
+         "url" : "https://myanimelist.net/character/143915/Jorris",
+         "mal_id" : 143915
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Kai",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/114611.jpg?s=5963b6d047e9f1e032a4139a13452803",
+         "mal_id" : 28166,
+         "url" : "https://myanimelist.net/character/28166/Kai"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/114609.jpg?s=4b5eb7212e6b67756cf7dadc9922eb9b",
+         "url" : "https://myanimelist.net/character/16289/Kaori",
+         "mal_id" : 16289,
+         "name" : "Kaori",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Kiyoko",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/287471.jpg?s=90a5f54f7a2aca16775aa0cd4c58a00e",
+         "mal_id" : 111817,
+         "url" : "https://myanimelist.net/character/111817/Kiyoko"
+      },
+      {
+         "url" : "https://myanimelist.net/character/71643/Masaru",
+         "mal_id" : 71643,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/311137.jpg?s=104d1acd90e41293186b4175033e8c36",
+         "name" : "Masaru",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/311154.jpg?s=0f8f8b92ef5523df11b687ab47aa27b7",
+         "url" : "https://myanimelist.net/character/143920/Mike",
+         "mal_id" : 143920,
+         "role" : "Supporting",
+         "name" : "Mike"
+      },
+      {
+         "mal_id" : 135916,
+         "url" : "https://myanimelist.net/character/135916/Nezu",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/295491.jpg?s=409c1293d9633153bc8134592d6d0574",
+         "role" : "Supporting",
+         "name" : "Nezu"
+      },
+      {
+         "name" : "Nurse",
+         "role" : "Supporting",
+         "mal_id" : 143921,
+         "url" : "https://myanimelist.net/character/143921/Nurse",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/311155.jpg?s=4d650b299b00928464db320ef32084d8"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/282616.jpg?s=2efc60471338647537b94d021aebbaf4",
+         "mal_id" : 18439,
+         "url" : "https://myanimelist.net/character/18439/Resistance_Member",
+         "role" : "Supporting",
+         "name" : "Resistance Member"
+      },
+      {
+         "url" : "https://myanimelist.net/character/135917/Ryuusaku",
+         "mal_id" : 135917,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/295492.jpg?s=7f218d7ad8cf7f33bc984d402e0299b1",
+         "role" : "Supporting",
+         "name" : "Ryuusaku"
+      },
+      {
+         "url" : "https://myanimelist.net/character/16288/Shikishima",
+         "mal_id" : 16288,
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/287395.jpg?s=bf800ac6023d45dd441c6992b773965a",
+         "role" : "Supporting",
+         "name" : "Shikishima"
+      },
+      {
+         "mal_id" : 143914,
+         "url" : "https://myanimelist.net/character/143914/Stanley_Simmons",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/311149.jpg?s=154c776bfd6d6bfefbd75759374fbcf5",
+         "role" : "Supporting",
+         "name" : "Simmons, Stanley"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/311143.jpg?s=5e512609897f46e30eca8e156d57c45b",
+         "url" : "https://myanimelist.net/character/143908/Spy",
+         "mal_id" : 143908,
+         "name" : "Spy",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 143909,
+         "url" : "https://myanimelist.net/character/143909/Taichou",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/311422.jpg?s=7b2a2936fc937b678a61ae7bfadad8c8",
+         "name" : "Taichou",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/311142.jpg?s=a8cc755b7cbe9921807a0d7dba8e04db",
+         "url" : "https://myanimelist.net/character/143907/Takaba",
+         "mal_id" : 143907,
+         "role" : "Supporting",
+         "name" : "Takaba"
+      },
+      {
+         "mal_id" : 130542,
+         "url" : "https://myanimelist.net/character/130542/Takashi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/285644.jpg?s=12183edea41c7de5f7e22b0f2c7f0967",
+         "role" : "Supporting",
+         "name" : "Takashi"
+      },
+      {
+         "name" : "Tangi, Karma",
+         "role" : "Supporting",
+         "mal_id" : 143918,
+         "url" : "https://myanimelist.net/character/143918/Karma_Tangi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/311152.jpg?s=d873afbf5b260a22bcd723d41896fbf2"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Tori Otoko",
+         "mal_id" : 143910,
+         "url" : "https://myanimelist.net/character/143910/Tori_Otoko",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/311145.jpg?s=7eb2156fc88a35efec87bc46ea2513b2"
+      },
+      {
+         "name" : "Yamada, George",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/311147.jpg?s=6cbb3596d5c72f1b0de6e7db951bbe66",
+         "mal_id" : 143912,
+         "url" : "https://myanimelist.net/character/143912/George_Yamada"
+      },
+      {
+         "name" : "Yamagata",
+         "role" : "Supporting",
+         "mal_id" : 20463,
+         "url" : "https://myanimelist.net/character/20463/Yamagata",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/310478.jpg?s=dc4ca45b9e1cd87e848b9e8749560b65"
+      }
+   ],
+   "scored_by" : 15865,
+   "title_japanese" : "AKIRA",
+   "author" : [
+      {
+         "url" : "https://myanimelist.net/people/1872/Katsuhiro_Otomo",
+         "name" : "Otomo, Katsuhiro"
+      }
+   ],
+   "title_english" : "Akira",
+   "members" : 41565,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/2/157929.jpg",
+   "status" : "Finished",
+   "title_synonyms" : null,
+   "volumes" : 6,
+   "published_string" : "Dec  6, 1982 to Jun  11, 1990",
+   "publishing" : false,
+   "serialization" : [
+      {
+         "name" : "Young Magazine (Weekly)",
+         "url" : "https://myanimelist.net/manga/magazine/10/Young_Magazine_Weekly"
+      }
+   ],
+   "mal_id" : 664,
+   "chapters" : 120,
+   "rank" : 34,
+   "published" : {
+      "from" : "1982-12-06",
+      "to" : "1990-06-11"
+   },
+   "related" : {
+      "Adaptation" : [
+         {
+            "type" : "anime",
+            "title" : "Akira",
+            "mal_id" : 47,
+            "url" : "https://myanimelist.net/anime/47/Akira"
+         }
+      ]
+   },
+   "score" : 8.75,
+   "title" : "Akira",
+   "background" : "Akira won the 8th Kodansha Manga Award in general category in 1984, the Harvey Award for Best American Edition of Foreign Material in 1993, and was nominated for the Harvey Award for Best Graphic Album of Previously Published Work in 2002.The series was first published in English by Marvel Comics under the Epic Comics imprint and was one of the first manga to be translated in its entirety. Marvel&#039;s version was fully colorized and released in 38 trade paperback volumes from 1988 to 1996 (and later incompletely collected into 10 volumes). Dark Horse Comics republished Akira in its original 6-volume format from December 13, 2000 to March 27, 2002. Kodansha Comics USA currently holds the license and republished the series from October 13, 2009 to April 12, 2011. They rereleased the series in a 35th anniversary box set on October 31, 2017. The set contained 6 hardcover volumes in the original right-to-left reading format for the first time, as well as the artbook Akira Club. The manga has also been published in Brazilian Portuguese by JBC since 2016.",
+   "popularity" : 110
+}

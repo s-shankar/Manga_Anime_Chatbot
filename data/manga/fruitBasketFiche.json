@@ -1,0 +1,317 @@
+{
+   "synopsis" : "Tooru Honda is an orphan with nowhere to go but a tent in the woods, until the Souma family takes her in. However, the Souma family is no ordinary family, and they hide a grave secret: when they are hugged by someone of the opposite gender, they turn into animals from the Chinese Zodiac! Now, Tooru must help Kyou and Yuki Souma hide their curse from their classmates, as well as her friends Arisa Uotani and Megumi Hanajima. As she is drawn further into the mysterious world of the Soumas, she meets more of the family, forging friendships along the way. But this curse has caused much suffering; it has broken many Soumas. Despite this, Tooru may just be able to heal their hearts and soothe their souls. [Written by MAL Rewrite]",
+   "chapters" : 136,
+   "title_synonyms" : "FuruBa",
+   "type" : "Manga",
+   "score" : 8.5,
+   "serialization" : [
+      {
+         "url" : "https://myanimelist.net/manga/magazine/21/Hana_to_Yume",
+         "name" : "Hana to Yume"
+      }
+   ],
+   "link_canonical" : "https://myanimelist.net/manga/102/Fruits_Basket",
+   "background" : "Fruits Basket received the 2001 Kodansha Manga Award in the shoujo manga category and the \"Best Manga\" award at the 2007 American Anime Awards.Fruits Basket was published in English by Tokyopop from February 10, 2004 to July 6, 2009. A box set with the complete series was released on September 29, 2010. All volumes were re-released in \"Ultimate Editions\" from October 9, 2007 to July 12, 2011, with two sequential volumes combined in a single hard-cover volume, including new cover art. Those releases were met with mixed reviews as they were exact reproductions of the previously released volumes and did not adjust page numbers or correct prior errors. Yen Press republished the series in 12 volume Collector&#039;s Edition from June 28, 2016 to April 18, 2017.",
+   "popularity" : 30,
+   "scored_by" : 47529,
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/2/26105.jpg",
+   "publishing" : false,
+   "genre" : [
+      {
+         "name" : "Comedy",
+         "url" : "https://myanimelist.net/manga/genre/4/Comedy"
+      },
+      {
+         "name" : "Drama",
+         "url" : "https://myanimelist.net/manga/genre/8/Drama"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/22/Romance",
+         "name" : "Romance"
+      },
+      {
+         "name" : "School",
+         "url" : "https://myanimelist.net/manga/genre/23/School"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/25/Shoujo",
+         "name" : "Shoujo"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/37/Supernatural",
+         "name" : "Supernatural"
+      }
+   ],
+   "mal_id" : 102,
+   "rank" : 139,
+   "author" : [
+      {
+         "name" : "Takaya, Natsuki",
+         "url" : "https://myanimelist.net/people/1873/Natsuki_Takaya"
+      }
+   ],
+   "status" : "Finished",
+   "published_string" : "Jul  18, 1998 to Nov  20, 2006",
+   "title_japanese" : "フルーツバスケット",
+   "volumes" : 23,
+   "members" : 82601,
+   "published" : {
+      "from" : "1998-07-18",
+      "to" : "2006-11-20"
+   },
+   "related" : {
+      "Other" : [
+         {
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/20845/Meisaku_4-koma_Hakurankai",
+            "title" : "Meisaku 4-koma Hakurankai",
+            "mal_id" : 20845
+         }
+      ],
+      "Adaptation" : [
+         {
+            "title" : "Fruits Basket",
+            "mal_id" : 120,
+            "type" : "anime",
+            "url" : "https://myanimelist.net/anime/120/Fruits_Basket"
+         }
+      ],
+      "Sequel" : [
+         {
+            "type" : "manga",
+            "url" : "https://myanimelist.net/manga/91484/Fruits_Basket__Another",
+            "title" : "Fruits Basket: Another",
+            "mal_id" : 91484
+         }
+      ]
+   },
+   "title" : "Fruits Basket",
+   "favorites" : 10892,
+   "title_english" : "Fruits Basket",
+   "character" : [
+      {
+         "role" : "Main",
+         "url" : "https://myanimelist.net/character/207/Tooru_Honda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/31133.jpg?s=c6ec84ea10610b6e15e40da67146ce92",
+         "name" : "Honda, Tooru",
+         "mal_id" : 207
+      },
+      {
+         "role" : "Main",
+         "name" : "Souma, Kyou",
+         "url" : "https://myanimelist.net/character/209/Kyou_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/116187.jpg?s=abd6bc5e14b8c0f37276a9c884a4690b",
+         "mal_id" : 209
+      },
+      {
+         "mal_id" : 208,
+         "url" : "https://myanimelist.net/character/208/Yuki_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/47921.jpg?s=faccd3aca7e60de82263738ceb0cb4b5",
+         "name" : "Souma, Yuki",
+         "role" : "Main"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/116048.jpg?s=edaad723250b6d2a2d74be73ddb81a22",
+         "url" : "https://myanimelist.net/character/376/Saki_Hanajima",
+         "name" : "Hanajima, Saki",
+         "mal_id" : 376
+      },
+      {
+         "mal_id" : 15870,
+         "url" : "https://myanimelist.net/character/15870/Megumi_Hanajima",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/52299.jpg?s=4967b9164eb5a9e886959f927a6568ff",
+         "name" : "Hanajima, Megumi",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/9754/Kyouko_Honda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/52300.jpg?s=6821ff317ab78aaa9b7e986c31705346",
+         "name" : "Honda, Kyouko",
+         "role" : "Supporting",
+         "mal_id" : 9754
+      },
+      {
+         "mal_id" : 9230,
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/9230/Katsuya_Honda",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/61065.jpg?s=fdf3e860602cec5e1b1507cbed831ee6",
+         "name" : "Honda, Katsuya"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Kuragi, Machi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/37951.jpg?s=5821b8c5a0326f31d871adc831e90b51",
+         "url" : "https://myanimelist.net/character/6571/Machi_Kuragi",
+         "mal_id" : 6571
+      },
+      {
+         "mal_id" : 13956,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/59757.jpg?s=de4226676e1e10b89f9379636fe2aba6",
+         "url" : "https://myanimelist.net/character/13956/Mine_Kuramae",
+         "name" : "Kuramae, Mine"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Manabe, Kakeru",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/37952.jpg?s=412eb9134a35c413cde8dcab895dd10c",
+         "url" : "https://myanimelist.net/character/4957/Kakeru_Manabe",
+         "mal_id" : 4957
+      },
+      {
+         "mal_id" : 3874,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/54667.jpg?s=1fb5a91d8d1c48ac9b646b106a7ad33f",
+         "url" : "https://myanimelist.net/character/3874/Motoko_Minagawa",
+         "name" : "Minagawa, Motoko"
+      },
+      {
+         "mal_id" : 9759,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/102810.jpg?s=4d6274a3390474c79d296caa912e3b39",
+         "url" : "https://myanimelist.net/character/9759/Mitsuru",
+         "name" : "Mitsuru"
+      },
+      {
+         "mal_id" : 6573,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/59608.jpg?s=d083526f34aa2295cd74f91aa679dcc3",
+         "url" : "https://myanimelist.net/character/6573/Naohito_Sakuragi",
+         "name" : "Sakuragi, Naohito"
+      },
+      {
+         "mal_id" : 27831,
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/27831/Mayuko_Shiraki",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/77785.jpg?s=79627a3eaa0a995ded84ef169b985bce",
+         "name" : "Shiraki, Mayuko"
+      },
+      {
+         "mal_id" : 9755,
+         "name" : "Souma, Ren",
+         "url" : "https://myanimelist.net/character/9755/Ren_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/114178.jpg?s=50e6328c038398f21b6dba2831fcd26e",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 27832,
+         "url" : "https://myanimelist.net/character/27832/Kana_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/77784.jpg?s=9fd3161c9c922b78e1546f12a51ba217",
+         "name" : "Souma, Kana",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Souma, Momo",
+         "url" : "https://myanimelist.net/character/9760/Momo_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/90247.jpg?s=522a8c4bbce8c337e8e745321c459052",
+         "role" : "Supporting",
+         "mal_id" : 9760
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/37954.jpg?s=d01f98d9fae7038f635b0ab1dd62cf2a",
+         "url" : "https://myanimelist.net/character/4644/Kureno_Souma",
+         "name" : "Souma, Kureno",
+         "role" : "Supporting",
+         "mal_id" : 4644
+      },
+      {
+         "mal_id" : 3892,
+         "url" : "https://myanimelist.net/character/3892/Isuzu_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/59828.jpg?s=2f4359d1406fcfe93cc7f57cc86fd8a8",
+         "name" : "Souma, Isuzu",
+         "role" : "Supporting"
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Souma, Hatsuharu",
+         "url" : "https://myanimelist.net/character/369/Hatsuharu_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/31130.jpg?s=e12fa9722da758abb0990e1b70fd7e4b",
+         "mal_id" : 369
+      },
+      {
+         "mal_id" : 370,
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/370/Ayame_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/31135.jpg?s=7a8144d9bc103c6f6d70baab58d8b288",
+         "name" : "Souma, Ayame"
+      },
+      {
+         "mal_id" : 368,
+         "role" : "Supporting",
+         "name" : "Souma, Hatori",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/37358.jpg?s=0503a74ea31c0772c58799abf056f343",
+         "url" : "https://myanimelist.net/character/368/Hatori_Souma"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/367/Momiji_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/244081.jpg?s=b47b321d468fcba082ec79ed7ea94ad9",
+         "name" : "Souma, Momiji",
+         "mal_id" : 367
+      },
+      {
+         "url" : "https://myanimelist.net/character/366/Kagura_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/31510.jpg?s=081ded370a8d758be49502379c9bb864",
+         "name" : "Souma, Kagura",
+         "role" : "Supporting",
+         "mal_id" : 366
+      },
+      {
+         "role" : "Supporting",
+         "name" : "Souma, Kisa",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/31566.jpg?s=c227f8671f1643ed9b5db2871625860a",
+         "url" : "https://myanimelist.net/character/371/Kisa_Souma",
+         "mal_id" : 371
+      },
+      {
+         "mal_id" : 372,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/31511.jpg?s=ca9db4bc7a911ce0254c348ec0ab9ad7",
+         "url" : "https://myanimelist.net/character/372/Hiro_Souma",
+         "name" : "Souma, Hiro"
+      },
+      {
+         "name" : "Souma, Kazuma",
+         "url" : "https://myanimelist.net/character/377/Kazuma_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/276342.jpg?s=e792658184b0598d40dcd067c8521391",
+         "role" : "Supporting",
+         "mal_id" : 377
+      },
+      {
+         "url" : "https://myanimelist.net/character/206/Shigure_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/31132.jpg?s=89392e3202c9d0154c70abbabfb63deb",
+         "name" : "Souma, Shigure",
+         "role" : "Supporting",
+         "mal_id" : 206
+      },
+      {
+         "url" : "https://myanimelist.net/character/374/Akito_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/52301.jpg?s=af58011ed424c1d0377099ec1e589280",
+         "name" : "Souma, Akito",
+         "role" : "Supporting",
+         "mal_id" : 374
+      },
+      {
+         "name" : "Souma, Ritsu",
+         "url" : "https://myanimelist.net/character/373/Ritsu_Souma",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/11/86974.jpg?s=d23f03c008bc602476aaf7879ed92ace",
+         "role" : "Supporting",
+         "mal_id" : 373
+      },
+      {
+         "mal_id" : 6572,
+         "role" : "Supporting",
+         "name" : "Toudou, Kimi",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/59607.jpg?s=30916bf98125821e595c0e07fc26bddd",
+         "url" : "https://myanimelist.net/character/6572/Kimi_Toudou"
+      },
+      {
+         "url" : "https://myanimelist.net/character/375/Arisa_Uotani",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/13/239975.jpg?s=a14cf7eeaf05bc0dc5298293cad5d860",
+         "name" : "Uotani, Arisa",
+         "role" : "Supporting",
+         "mal_id" : 375
+      }
+   ]
+}

@@ -1,0 +1,325 @@
+{
+   "volumes" : "Unknown",
+   "synopsis" : "Thorfinn, son of one of the Vikings&#039; greatest warriors, is among the finest fighters in the merry band of mercenaries run by the cunning Askeladd, an impressive feat for a person his age. However, Thorfinn is not part of the group for the plunder it entails—instead, for having caused his family great tragedy, the boy has vowed to kill Askeladd in a fair duel. Not yet skilled enough to defeat him, but unable to abandon his vengeance, Thorfinn spends his boyhood with the mercenary crew, honing his skills on the battlefield among the war-loving Danes, where killing is just another pleasure of life. One day, when Askeladd receives word that Danish prince Canute has been taken hostage, he hatches an ambitious plot—one that will decide the next King of England and drastically alter the lives of Thorfinn, Canute, and himself. Set in 11th century Europe, Vinland Saga tells a bloody epic in an era where violence, madness, and injustice are inescapable, providing a paradise for the battle-crazed and utter hell for the rest who live in it. [Written by MAL Rewrite]",
+   "background" : "Vinland Saga won the 13th Japan Media Arts Award Grand Prize in the Manga division and the 36th Kodansha Manga Award for Best General Manga (which mangaka Makoto Yukimura accepted in full viking gear). An animated crossover between Vinland Saga and Ponkotsu Quest titled Ponkotsuland Saga was released on October 24, 2015.The series has been published in English by Kodansha Comics USA in 2-in-1 hardcover omnibuses since October 14, 2013. The release includes Makoto Yukimura&#039;s Sayonara ga Chikai no de (For Our Farewell Is Near) spread across the first five volumes. It is also published in Brazilian Portuguese by Panini Comics since February 2014; in Spanish by Planeta C&oacute;mic since October 21, 2014; and in Polish by Hanami since January 2017.",
+   "published_string" : "Jul  15, 2005 to ?",
+   "title_english" : "Vinland Saga",
+   "mal_id" : 642,
+   "members" : 56287,
+   "genre" : [
+      {
+         "url" : "https://myanimelist.net/manga/genre/1/Action",
+         "name" : "Action"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/2/Adventure",
+         "name" : "Adventure"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/8/Drama",
+         "name" : "Drama"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/13/Historical",
+         "name" : "Historical"
+      },
+      {
+         "url" : "https://myanimelist.net/manga/genre/41/Seinen",
+         "name" : "Seinen"
+      }
+   ],
+   "chapters" : "Unknown",
+   "type" : "Manga",
+   "favorites" : 5027,
+   "score" : 8.74,
+   "status" : "Publishing",
+   "serialization" : [
+      {
+         "name" : "Afternoon",
+         "url" : "https://myanimelist.net/manga/magazine/4/Afternoon"
+      }
+   ],
+   "published" : {
+      "from" : "2005-07-15",
+      "to" : null
+   },
+   "title_japanese" : "ヴィンランド・サガ",
+   "link_canonical" : "https://myanimelist.net/manga/642/Vinland_Saga",
+   "author" : [
+      {
+         "name" : "Yukimura, Makoto",
+         "url" : "https://myanimelist.net/people/2034/Makoto_Yukimura"
+      }
+   ],
+   "character" : [
+      {
+         "role" : "Main",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/309800.jpg?s=bfe42ea4b9850458f0ddcf1e9cd1ca09",
+         "url" : "https://myanimelist.net/character/13020/Askeladd",
+         "name" : "Askeladd",
+         "mal_id" : 13020
+      },
+      {
+         "role" : "Main",
+         "url" : "https://myanimelist.net/character/17438/Canute",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/153471.jpg?s=826d9b55bb6b90d56395012f64b65e02",
+         "name" : "Canute",
+         "mal_id" : 17438
+      },
+      {
+         "role" : "Main",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/309871.jpg?s=95beb05756add3a53e2b31b9ac1f688a",
+         "url" : "https://myanimelist.net/character/10138/Thorfinn",
+         "mal_id" : 10138,
+         "name" : "Thorfinn"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/145406/Ake",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/314621.jpg?s=93803a32f472aa698d15b48252dd8aea",
+         "name" : "Ake",
+         "mal_id" : 145406
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143204/Anne",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/3/309753.jpg?s=836f9fb7b5df5a6f80cc033a86637a40",
+         "mal_id" : 143204,
+         "name" : "Anne"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/75590/Arnheid",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/9/202817.jpg?s=8b65c1c0efb4305fd1a57d2531aef36a",
+         "mal_id" : 75590,
+         "name" : "Arnheid"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/309756.jpg?s=66536324d6dc8c3e1cd1f7ec6c7e39b6",
+         "url" : "https://myanimelist.net/character/143207/Baldr",
+         "role" : "Supporting",
+         "mal_id" : 143207,
+         "name" : "Baldr"
+      },
+      {
+         "url" : "https://myanimelist.net/character/19485/Bjorn",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/66689.jpg?s=a153b47c273cf5fa3ca75c1f02585e95",
+         "role" : "Supporting",
+         "name" : "Bjorn",
+         "mal_id" : 19485
+      },
+      {
+         "mal_id" : 143205,
+         "name" : "Ear",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143205/Ear",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/309754.jpg?s=4205d831cd73ca7f2388accfdaa2d7e9"
+      },
+      {
+         "mal_id" : 28030,
+         "name" : "Einar",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/7/71328.jpg?s=0b03e139797cc54847d01966e2700b3a",
+         "url" : "https://myanimelist.net/character/28030/Einar",
+         "role" : "Supporting"
+      },
+      {
+         "url" : "https://myanimelist.net/character/19486/Leif_Erikson",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/326240.jpg?s=92f9c5d7c171ddfaf25767ce3ae9ed75",
+         "role" : "Supporting",
+         "name" : "Erikson, Leif",
+         "mal_id" : 19486
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/309759.jpg?s=a4e455f65e1c38866b33023f12db66db",
+         "url" : "https://myanimelist.net/character/143210/Eskil",
+         "role" : "Supporting",
+         "name" : "Eskil",
+         "mal_id" : 143210
+      },
+      {
+         "mal_id" : 82537,
+         "name" : "Floki",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/202841.jpg?s=8575f17b93f567bf6a9be6d6fec83a08",
+         "url" : "https://myanimelist.net/character/82537/Floki"
+      },
+      {
+         "url" : "https://myanimelist.net/character/27957/Sweyn_Forkbeard",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/71054.jpg?s=87125cd65eb2eb8e95a926e7194b9902",
+         "role" : "Supporting",
+         "name" : "Forkbeard, Sweyn",
+         "mal_id" : 27957
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143206/Full_Eyes",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/309755.jpg?s=88b4acd6ba3eedda7f6607b4e2ebe759",
+         "mal_id" : 143206,
+         "name" : "Full Eyes"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143212/Garm",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/344003.jpg?s=314a93e3149276de5b3c03c9bb87cf08",
+         "name" : "Garm",
+         "mal_id" : 143212
+      },
+      {
+         "mal_id" : 143203,
+         "name" : "Gorm",
+         "url" : "https://myanimelist.net/character/143203/Gorm",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/309752.jpg?s=7ee5b21696574d98593f90fbaf25f3e6",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/290109.jpg?s=36feb8dde7777d63768b58ca3fd6b315",
+         "url" : "https://myanimelist.net/character/104493/Gudrid",
+         "role" : "Supporting",
+         "name" : "Gudrid",
+         "mal_id" : 104493
+      },
+      {
+         "mal_id" : 143200,
+         "name" : "Halfdan",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143200/Halfdan",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/309749.jpg?s=8e5addf480987b4b18c75fce050c6356"
+      },
+      {
+         "name" : "Hild",
+         "mal_id" : 131589,
+         "url" : "https://myanimelist.net/character/131589/Hild",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/2/290104.jpg?s=0b1e8ef3c9bdf5a4246252797a110bcd",
+         "role" : "Supporting"
+      },
+      {
+         "name" : "Hordaland",
+         "mal_id" : 143202,
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/309751.jpg?s=6814a731777824059c9aa0ee7a1b7dab",
+         "url" : "https://myanimelist.net/character/143202/Hordaland"
+      },
+      {
+         "mal_id" : 143208,
+         "name" : "Karli",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/309757.jpg?s=3924a02852d6cba8512cf6ed3a16a5c7",
+         "url" : "https://myanimelist.net/character/143208/Karli",
+         "role" : "Supporting"
+      },
+      {
+         "mal_id" : 143249,
+         "name" : "Ketil",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/10/309881.jpg?s=49651b1cd6a908e902d29b48388543a2",
+         "url" : "https://myanimelist.net/character/143249/Ketil"
+      },
+      {
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/202837.jpg?s=119fcfdf2f526d4df796928e951d1724",
+         "url" : "https://myanimelist.net/character/82533/Ragnar",
+         "mal_id" : 82533,
+         "name" : "Ragnar"
+      },
+      {
+         "mal_id" : 143213,
+         "name" : "Rota",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/309762.jpg?s=a1ccbfdec478f79110ec7486647b33ec",
+         "url" : "https://myanimelist.net/character/143213/Rota"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/6/309750.jpg?s=3de188a3bf3cc7d82ee2c9e0ecebf955",
+         "url" : "https://myanimelist.net/character/143201/Sigurd",
+         "role" : "Supporting",
+         "mal_id" : 143201,
+         "name" : "Sigurd"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/197693.jpg?s=95e6e6db69d5581ae910e1a9b2f2b49c",
+         "url" : "https://myanimelist.net/character/79913/Snake",
+         "role" : "Supporting",
+         "mal_id" : 79913,
+         "name" : "Snake"
+      },
+      {
+         "name" : "Thorgil",
+         "mal_id" : 82535,
+         "url" : "https://myanimelist.net/character/82535/Thorgil",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/14/202839.jpg?s=f245077ed2e4694cae36e997825bf600",
+         "role" : "Supporting"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/303830.jpg?s=0bbe0b827a1c25b0a2501b2f44dd86e4",
+         "url" : "https://myanimelist.net/character/17440/Thorkell",
+         "role" : "Supporting",
+         "mal_id" : 17440,
+         "name" : "Thorkell"
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/13021/Thors",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/4/153729.jpg?s=82131fcd5e0c9dbd31bbe5e4eed205d6",
+         "name" : "Thors",
+         "mal_id" : 13021
+      },
+      {
+         "mal_id" : 145407,
+         "name" : "Tore",
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/145407/Tore",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/314622.jpg?s=2d7e2778d059d9695c18b81bf3f4430f"
+      },
+      {
+         "url" : "https://myanimelist.net/character/143209/Ulf",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/5/309758.jpg?s=281cad900bc2287ab862f19ba1d84ef0",
+         "role" : "Supporting",
+         "name" : "Ulf",
+         "mal_id" : 143209
+      },
+      {
+         "role" : "Supporting",
+         "url" : "https://myanimelist.net/character/143825/Vagn",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/8/310960.jpg?s=567c84fb6cbefa1b42338156e089600b",
+         "mal_id" : 143825,
+         "name" : "Vagn"
+      },
+      {
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/12/309760.jpg?s=562cb7c546d308a57fde03a9c9f030e7",
+         "url" : "https://myanimelist.net/character/143211/Vragi",
+         "role" : "Supporting",
+         "name" : "Vragi",
+         "mal_id" : 143211
+      },
+      {
+         "mal_id" : 20704,
+         "name" : "Willibald",
+         "role" : "Supporting",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/16/153543.jpg?s=536621771c9045d48ab4462f287e59df",
+         "url" : "https://myanimelist.net/character/20704/Willibald"
+      },
+      {
+         "mal_id" : 27876,
+         "name" : "Ylva",
+         "url" : "https://myanimelist.net/character/27876/Ylva",
+         "image_url" : "https://myanimelist.cdn-dena.com/r/46x64/images/characters/15/70838.jpg?s=be41da9c5c7aa55c30d5792189d2b105",
+         "role" : "Supporting"
+      }
+   ],
+   "image_url" : "https://myanimelist.cdn-dena.com/images/manga/2/188925.jpg",
+   "rank" : 36,
+   "title" : "Vinland Saga",
+   "publishing" : true,
+   "popularity" : 63,
+   "title_synonyms" : null,
+   "scored_by" : 19776,
+   "related" : {
+      "Spin-off" : [
+         {
+            "mal_id" : 22527,
+            "url" : "https://myanimelist.net/manga/22527/Ganso_Ylva-chan",
+            "type" : "manga",
+            "title" : "Ganso Ylva-chan"
+         }
+      ]
+   }
+}
