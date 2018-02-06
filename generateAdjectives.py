@@ -398,7 +398,8 @@ for i in adjectives.split("\n"):
 		continue
 	line = "	{"
 	for j in i.split(" ") :
-		line+="\""+j+"\", "
+		if j != "":
+			line+="\""+j+"\", "
 	line += "},"
 	print(line)
 print("}")
