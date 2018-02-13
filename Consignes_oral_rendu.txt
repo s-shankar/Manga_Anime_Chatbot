@@ -1,0 +1,12 @@
+Oral vendredi prochain : 15 minutes, faire une présentation générale du projet. Démo qui ne doit pas planter. Puis mini tests des profs qui ne doivent pas planter. 
+
+Ecrit plus tard : code + rapport. Rédiger des exemples de dialogue. Blinder le dialogue, pour éviter les plantages, et le bot doit expliquer quand il n'a pas compris pourquoi il n'a pas compris.
+
+
+Statistiques intéressantes : Couverture totale : nb d'info extraites / nb d'éléments dans la base pour lesquels on veut cette information (ex : nombre de manga). -->satisfaction de l'user
+Couverture effective maximale : nb d'info existante pour de vrai dans le corpus / nb d'éléments dans la base pour lesquel on veut cette information.
+Couverture : nb d'info  extraites / nb d'info existantes pour de vrai dans le corpus.  --> qualité de notre travail.
+nb d'info existante pour de vrai dans le corpus = difficile à compter. On peut l'estimer, on peut regarder un échantillon (de mangas) et faire confiance aux stats/proba.
+
+
+Dans le rapport, on veut surtout la couverture totale. Avoir les deux autres, c'est bien aussi.

@@ -73,7 +73,6 @@ local tags = {
 
 
 -- Traitement des lignes du fichier
-
 --[[local sentence = "In the first season finale, C.C. triggers a trap set by V.V., causing herself and Lelouch to be submerged in a shock image sequence similar to the one she used on Suzaku. Through this, Lelouch sees memories of her past, including repeated deaths. sensitive"
 for line in sentence.lines() do
         -- Toutes les étiquettes
