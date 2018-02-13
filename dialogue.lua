@@ -1,5 +1,5 @@
 dark = require("dark")
-local base = dofile("base.lua")
+base = dofile("base.lua")
 
 
 
@@ -41,19 +41,32 @@ local function listCharacterNames(table, characterNames, characterFirstnames, ch
 	return characterNames, characterFirstnames, characterLastnames
 end
 
+local function listAdjectives(adjectives)
+	adjList = {}
+	for key, groups in pairs(adjectives) do
+		for key2, adj in pairs(groups) do
+			adjList[#adjList+1] = adj
+		end
+	end
+	return adjList
+end
 
-local characterNames = {}
-local characterFirstNames = {}
-local characterLastNames = {}
+adjectives = dofile("adjectives.lua")
+adjList = listAdjectives(adjectives)
+characterNames = {}
+characterFirstNames = {}
+characterLastNames = {}
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames, characterFirstNames, characterLastNames)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
-print(serialize(characterNames))
+--print(serialize(adjList))
 print("I am ready !")
 
 local input = ""
 local answer = "I am sorry, I do not understand"
 
+
+dofile("dark/main.lua")
 repeat
 	local input = io.read()
 	if input == "hello" then

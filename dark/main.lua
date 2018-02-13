@@ -1,5 +1,3 @@
-local base = dofile("base2.lua")
-
 -- Création d'un pipeline pour DARK
 local main = dark.pipeline()
 
@@ -9,21 +7,12 @@ local main = dark.pipeline()
 
 --end
 
-characterFirstNames = {}
-characterLastNames = {}
-for key, anime in ipairs(base["anime"]) do
-	for key, character in ipairs(anime["character"]) do
-		characterFirstNames[#characterFirstNames+1] = character["firstname"]
-		characterLastNames[#characterLastNames+1] = character["lastname"]
-	end
-end
-
 
 -- Création d'un lexique ou chargement d'un lexique existant
-main:lexicon("#CHARACTERFIRSTNAME", characterFirstNames)
+main:lexicon("#CHARACTERFIendRSTNAME", characterFirstNames)
 main:lexicon("#CHARACTERLASTNAME", characterLastNames)
 main:lexicon("#CHIFFRES", {"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"})
-main:lexicon("#BEHAVIOUR", "behaviour.txt")
+main:lexicon("#BEHAVIOUR", adjList)
 
 -- Création de patterns en LUA, soit sur plusieurs lignes pour gagner
 -- en visibilité, soit sur une seule ligne. La capture se fait avec
@@ -33,12 +22,7 @@ main:lexicon("#BEHAVIOUR", "behaviour.txt")
 main:pattern('[#WORD /^%a+$/ ]')
 main:pattern('[#PONCT /%p/ ]')
 
--- Pattern avec patron de séquence
---main:pattern([[
---	[#FILIATION
---		#FAMILLE #PERSONNE
---	]
---]])
+
 
 main:pattern([[
 	[#CHARACTERNAME
@@ -52,6 +36,12 @@ main:pattern([[
 	]
 ]])
 
+
+main:pattern([[
+	[#QDESCRIPTION
+		('how' 'is' #CHARACTERNAME '?'?)
+	]
+]])
 
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
@@ -122,7 +112,7 @@ local function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	main(seq)
-	print(seq:tostring(tags))
+	--print(seq:tostring(tags))
 end
 
 local function splitsen(line)
@@ -153,3 +143,9 @@ for key, anime in ipairs(base["anime"]) do
 		end	
 	end
 end
+
+--function seekDescription(character, work, type)
+	
+
+--end
+
