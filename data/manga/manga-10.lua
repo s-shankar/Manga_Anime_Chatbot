@@ -1,0 +1,15 @@
+return {
+	["title"] = "xxxHOLiC",
+	["authors"] = { "CLAMP CLAMP"}
+	["volumes"] = 19,
+	["chapters"] = 213,
+	["status"] = "finished",
+	["genres"] = {"comedy","mystery","drama","magic","supernatural","seinen"},
+	["synopsis"] = "Revolves around a boy named Watanuki and how he stumbled upon a shop owned by a woman named Yuuko. Yuuko's power is to grant wishes, but she can only do so with proper payment. Since Watanuki has seen spirits ever since he was born, Yuuko offers to take away his sight of the spirits in exchange for him working at the shop. He agrees and works at the shop until his debt is repaid. (Source: xxxHOLIC Wikia) ",
+	["popularity"] = 81,
+	["relatedWorks"] = {{["title"] = "xxxHOLiC", ["type"] = "anime"}, {["title"] = "xxxHOLiC Kei", ["type"] = "anime"}, {["title"] = "xxxHOLiC Rou", ["type"] = "anime"}, {["title"] = "xxxHOLiC Shunmuki", ["type"] = "anime"}, {["title"] = "xxxHOLiC: AnotherHOLiC", ["type"] = "manga"}},
+	["characters"] = {{["firstname"] = "Shizuka", ["lastname"] = "Doumeki", ["role"] = "Main"}, {["firstname"] = "Yuuko", ["lastname"] = "Ichihara", ["role"] = "Main"}, {["firstname"] = "Himawari", ["lastname"] = "Kunogi", ["role"] = "Main"}, {["firstname"] = "Mokona", ["lastname"] = "Modoki", ["role"] = "Main"}, {["firstname"] = "Kohane", ["lastname"] = "Tsuyuri", ["role"] = "Main"}, {["firstname"] = "Kimihiro", ["lastname"] = "Watanuki", ["role"] = "Main"}, {["firstname"] = "Ame-warashi", ["lastname"] = "Ame-warashi", ["role"] = "Supporting"}, {["firstname"] = "Chibi Kitsune", ["lastname"] = "Chibi Kitsune", ["role"] = "Supporting"}, {["firstname"] = "Haruka", ["lastname"] = "Doumeki", ["role"] = "Supporting"}, {["firstname"] = "Fai D.", ["lastname"] = "Flourite", ["role"] = "Supporting"}, {["firstname"] = "Rikuo", ["lastname"] = "Himura", ["role"] = "Supporting"}, {["firstname"] = "Jorougumo", ["lastname"] = "Jorougumo", ["role"] = "Supporting"}, {["firstname"] = "Kazahaya", ["lastname"] = "Kudou", ["role"] = "Supporting"}, {["firstname"] = "Kurogane", ["lastname"] = "Kurogane", ["role"] = "Supporting"}, {["firstname"] = "Syaoran", ["lastname"] = "Li", ["role"] = "Supporting"}, {["firstname"] = "Maru", ["lastname"] = "Maru", ["role"] = "Supporting"}, {["firstname"] = "Mokona", ["lastname"] = "Modoki", ["role"] = "Supporting"}, {["firstname"] = "Moro", ["lastname"] = "Moro", ["role"] = "Supporting"}, {["firstname"] = "Mugetsu", ["lastname"] = "Mugetsu", ["role"] = "Supporting"}, {["firstname"] = "Nanami", ["lastname"] = "Nanami", ["role"] = "Supporting"}, {["firstname"] = "Neko Musume", ["lastname"] = "Neko Musume", ["role"] = "Supporting"}, {["firstname"] = "Fei Wong", ["lastname"] = "Reed", ["role"] = "Supporting"}, {["firstname"] = "Clow", ["lastname"] = "Reed", ["role"] = "Supporting"}, {["firstname"] = "Sakura", ["lastname"] = "Sakura", ["role"] = "Supporting"}, {["firstname"] = "Syaoran", ["lastname"] = "Syaoran", ["role"] = "Supporting"}, {["firstname"] = "Zashiki-warashi", ["lastname"] = "Zashiki-warashi", ["role"] = "Supporting"}},
+	["reviews"] = { 
+
+	}
+}
