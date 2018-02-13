@@ -3,7 +3,7 @@ local base = dofile("base.lua")
 
 
 
-local function listCharacterNames(table, characterNames)
+local function listCharacterNames(table, characterNames, characterFirstnames, characterLastnames)
 	for key, work in pairs(table) do
 		for key2, character in pairs(work["characters"]) do
 			local found = false
@@ -16,15 +16,7 @@ local function listCharacterNames(table, characterNames)
 			if found==false then
 				characterNames[#characterNames+1] = {["firstname"] = character["firstname"], ["lastname"] = character["lastname"]}
 			end
-		end
-	end
-	return characterNames
-end
-
-local function listCharacterFirstnames(table, characterFirstnames)
-	for key, work in pairs(table) do
-		for key2, character in pairs(work["characters"]) do
-			local found = false
+			found = false
 			for key3, autres in pairs(characterFirstnames) do
 				if autres == character["firstname"] then
 					found = true
@@ -34,15 +26,7 @@ local function listCharacterFirstnames(table, characterFirstnames)
 			if found==false then
 				characterFirstnames[#characterFirstnames+1] = character["firstname"]
 			end
-		end
-	end
-	return characterFirstnames
-end
-
-local function listCharacterLastnames(table, characterLastnames)
-	for key, work in pairs(table) do
-		for key2, character in pairs(work["characters"]) do
-			local found = false
+			found = false
 			for key3, autres in pairs(characterLastnames) do
 				if autres == character["lastname"] then
 					found = true
@@ -54,21 +38,17 @@ local function listCharacterLastnames(table, characterLastnames)
 			end
 		end
 	end
-	return characterLastnames
+	return characterNames, characterFirstnames, characterLastnames
 end
 
 
 local characterNames = {}
 local characterFirstNames = {}
 local characterLastNames = {}
-characterNames = listCharacterNames(base["manga"], characterNames)
-characterNames = listCharacterNames(base["anime"], characterNames)
-characterFirstNames = listCharacterFirstnames(base["manga"], characterFirstNames)
-characterFirstNames = listCharacterFirstnames(base["anime"], characterFirstNames)
-characterLastNames = listCharacterLastnames(base["manga"], characterLastNames)
-characterLastNames = listCharacterLastnames(base["anime"], characterLastNames)
+characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames, characterFirstNames, characterLastNames)
+characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
-print(serialize(characterLastNames))
+print(serialize(characterNames))
 print("I am ready !")
 
 local input = ""
