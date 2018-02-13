@@ -171,7 +171,7 @@ if __name__ == '__main__':
     args = argparser.parse_args()
     pathName = ""
     if args.anime is not None:
-        pathName = "anime/"+str(args.anime)
+        pathName = "anime/"+str(args.anime).split("anime\\",1)[1]
     elif args.manga is not None:
         pathName = "manga"+str(args.manga)
 
