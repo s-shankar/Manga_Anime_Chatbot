@@ -22,19 +22,6 @@ main:pattern('[#PONCT /%p/ ]')
 
 
 main:pattern([[
-	[#CHARACTERNAME
-		((#CHARACTERFIRSTNAME #CHARACTERLASTNAME?) | (#CHARACTERLASTNAME #CHARACTERFIRSTNAME?))
-	]
-]])
-
-main:pattern([[
-	[#DESCRIPTION
-		(#CHARACTERNAME 'is' 'very'? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
-	]
-]])
-
-
-main:pattern([[
 	[#QDESCRIPTION1
 		('how' 'is' #CHARACTERNAME '?'?) |
 		('tell' 'me' 'how' #CHARACTERNAME 'is' '?'?)
@@ -65,7 +52,8 @@ local tags = {
 	["#CHARACTERNAME"] = "cyan",
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
-	["#DESCRIPTION"] = "green"
+	["#QDESCRIPTION1"] = "green"
+	["#QDESCRIPTION2"] = "white"
 }
 
 
