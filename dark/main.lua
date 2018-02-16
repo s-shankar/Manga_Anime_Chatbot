@@ -1,12 +1,6 @@
 -- Création d'un pipeline pour DARK
 local main = dark.pipeline()
 
---local function serialize()
-	
-
-
---end
-
 
 -- Création d'un lexique ou chargement d'un lexique existant
 main:lexicon("#CHARACTERFIendRSTNAME", characterFirstNames)
@@ -137,7 +131,7 @@ end]]--
 end]]--
 
 for key, anime in ipairs(base["anime"]) do
-	for key,review in ipairs(anime["review"]) do
+	for key,review in ipairs(anime["reviews"]) do
 		if review["text"] ~= "" then
 			splitsen(review["text"])
 		end	

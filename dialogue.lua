@@ -41,6 +41,12 @@ local function listCharacterNames(table, characterNames, characterFirstnames, ch
 	return characterNames, characterFirstnames, characterLastnames
 end
 
+function listTitles(base)
+	mangaTitles = {}
+	animeTitles = {}
+	--for
+end
+
 local function listAdjectives(adjectives)
 	adjList = {}
 	for key, groups in pairs(adjectives) do
@@ -64,7 +70,6 @@ print("I am ready !")
 
 local input = ""
 local answer = "I am sorry, I do not understand"
-
 
 dofile("dark/main.lua")
 repeat
