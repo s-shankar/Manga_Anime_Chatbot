@@ -1,59 +1,6 @@
 dark = require("dark")
 base = dofile("base.lua")
-<<<<<<< HEAD
-
-
-
-local function listCharacterNames(table, characterNames, characterFirstnames, characterLastnames)
-	for key, work in pairs(table) do
-		for key2, character in pairs(work["characters"]) do
-			local found = false
-			for key3, autres in pairs(characterNames) do
-				if autres["firstname"] == character["firstname"] and autres["lastname"] == character["lastname"] then
-					found = true
-					break
-				end
-			end
-			if found==false then
-				characterNames[#characterNames+1] = {["firstname"] = character["firstname"], ["lastname"] = character["lastname"]}
-			end
-			found = false
-			for key3, autres in pairs(characterFirstnames) do
-				if autres == character["firstname"] then
-					found = true
-					break
-				end
-			end
-			if found==false then
-				characterFirstnames[#characterFirstnames+1] = character["firstname"]
-			end
-			found = false
-			for key3, autres in pairs(characterLastnames) do
-				if autres == character["lastname"] then
-					found = true
-					break
-				end
-			end
-			if found==false then
-				characterLastnames[#characterLastnames+1] = character["lastname"]
-			end
-		end
-	end
-	return characterNames, characterFirstnames, characterLastnames
-end
-
-local function listAdjectives(adjectives)
-	adjList = {}
-	for key, groups in pairs(adjectives) do
-		for key2, adj in pairs(groups) do
-			adjList[#adjList+1] = adj
-		end
-	end
-	return adjList
-end
-=======
 dofile("listFunctions.lua")
->>>>>>> 14e0f80f53afd497c687dce7651527780efbe794
 
 local function getFocusQ(quest)
 	quest = dark.sequence(quest)
@@ -90,11 +37,11 @@ repeat
 	print(pipe(question))
 	for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then
-			answer = "You want some information about"..chara["firstname"].." "..chara["lastname"].."." 
+			answer = "You want some information about"..chara["firstname"].." "..chara["lastname"].."."
 			break
 		end
 		if (#chara["firstname"]>0 and string.find(input, chara["firstname"])) or (#chara["lastname"]>0 and string.find(input, chara["lastname"])) then
-			answer = "Did you mean "..chara["firstname"].." "..chara["lastname"].."?" 
+			answer = "Did you mean "..chara["firstname"].." "..chara["lastname"].."?"
 		end
 	end
 	print(answer)
