@@ -56,12 +56,35 @@ for i in coms:
 
 
 
+	text = text.replace("\\", "\\\\")
+	
 	text = text.replace("<br>","\n")
 	text = text.replace("<br/>","\n")
 	text = text.replace("\n\n","\n")
+	
+	# BS4 is SUPPOSED to return Unicode but we don't call its formatter
 	text = text.replace("&quot;","'")
+	text = text.replace("&rsquo;","'")
+	text = text.replace("&ldquo;","'")
+	text = text.replace("&rdquo;","'")
+	text = text.replace("&eacute;","é")
+	text = text.replace("&hellip;","...")
+	text = text.replace("&amp;","&")
+	text = text.replace("&lt;","<")
+	text = text.replace("&gt;",">")
+	text = text.replace("&sup1;","¹")
+	text = text.replace("&sup2;","²")
+	text = text.replace("&sup3;","³")
+	text = text.replace("&bull;","•")
+	text = text.replace("&ocirc;","ô")
+	text = text.replace("&ndash;"," - ")
+	text = text.replace("&mdash;"," - ")
+	
+	text = text.replace("“", "\"")
+	text = text.replace("”", "\"")
+	
 	text = text.replace("\"","\\\"")
-
+	
 	text = text.replace("\n","\\n")
 	text = text.replace("\r","\\r")
 
