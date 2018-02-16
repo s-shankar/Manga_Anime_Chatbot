@@ -2,8 +2,9 @@ dark = require("dark")
 base = dofile("base.lua")
 dofile("listFunctions.lua")
 
-local function getFocusQ(quest)
+local function getFocusQ(quest,oldFocus)
 	quest = dark.sequence(quest)
+
 
 end
 
@@ -23,7 +24,7 @@ local input = ""
 local answer = "I am sorry, I do not understand"
 
 
-dofile("dark/main.lua")
+dofile("dark/readBase.lua")
 repeat
 	local input = io.read()
 	if input == "hello" then
@@ -34,8 +35,7 @@ repeat
 	end
 	question = input:gsub("(%p)","% l ")
 	question = dark.sequence(question)
-	pipe(question)
-	print(pipe(question))
+	print(question)
 	for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then
 			answer = "You want some information about"..chara["firstname"].." "..chara["lastname"].."."
