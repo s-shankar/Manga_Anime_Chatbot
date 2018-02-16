@@ -35,7 +35,8 @@ main:pattern([[
 
 main:pattern([[
 	[#QDESCRIPTION1
-		('how' 'is' #CHARACTERNAME '?'?)
+		('how' 'is' #CHARACTERNAME '?'?) |
+		('tell' 'me' 'how' #CHARACTERNAME 'is' '?'?)
 	]
 ]])
 
