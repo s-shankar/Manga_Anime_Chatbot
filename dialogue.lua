@@ -44,7 +44,35 @@ end
 function listTitles(base)
 	mangaTitles = {}
 	animeTitles = {}
-	--for
+	titles = {}
+	for key, anime in pairs(base["anime"]) do
+		animeTitles[#animeTitles+1] = anime["title"]
+		local found = false
+		for key2, other in pairs(titles) do
+			if other == anime["title"] then
+				found = true
+				break
+			end
+		end
+		if found == false then
+			titles[#titles+1] = anime['title']
+		end
+	end
+	
+	for key, manga in pairs(base["manga"]) do
+		mangaTitles[#mangaTitles+1] = manga["title"]
+		found = false
+		for key2, other in pairs(titles) do
+			if other == manga["title"] then
+				found = true
+				break
+			end
+		end
+		if found == false then
+			titles[#titles+1] = manga['title']
+		end
+	end
+	return mangaTitles, animeTitles, titles
 end
 
 local function listAdjectives(adjectives)
@@ -62,16 +90,17 @@ adjList = listAdjectives(adjectives)
 characterNames = {}
 characterFirstNames = {}
 characterLastNames = {}
+mangaTitles, animeTitles, titles = listTitles(base)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames, characterFirstNames, characterLastNames)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
---print(serialize(adjList))
-print("I am ready !")
+--print(serialize(titles))
 
 local input = ""
 local answer = "I am sorry, I do not understand"
 
 dofile("dark/main.lua")
+print("I am ready !")
 repeat
 	local input = io.read()
 	if input == "hello" then
