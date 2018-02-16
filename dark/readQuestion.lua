@@ -10,6 +10,7 @@ main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
 main:lexicon("#TITLE", titles)
+main:lexicon("#THEME", "../themes")
 
 -- Création de patterns en LUA, soit sur plusieurs lignes pour gagner
 -- en visibilité, soit sur une seule ligne. La capture se fait avec
@@ -23,20 +24,43 @@ main:pattern('[#PONCT /%p/ ]')
 
 main:pattern([[
 	[#QDESCRIPTION1
-		('how' 'is' #CHARACTERNAME '?'?) |
-		('tell' 'me' 'how' #CHARACTERNAME 'is' '?'?)
+		('how' 'is' #CHARACTERNAME) |
+		('do' 'you' 'know' #CHARACTERNAME) |
+		('tell' 'me' 'how' #CHARACTERNAME 'is')
 	]
 ]])
 
 main:pattern([[
 	[#QDESCRIPTION2
-		('is' #CHARACTERNAME #BEHAVIOUR '?'?) |
-		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?) |
-		('tell' 'me' 'if' #CHARACTERNAME 'is' #BEHAVIOUR '?'?) |
-		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?)
+		('is' #CHARACTERNAME #BEHAVIOUR) |
+		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman')) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' #BEHAVIOUR) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman'))
 	]
 ]])
 
+main:pattern([[
+	[#QTHEME1
+		('what' 'is' #TITLE 'about' '?'?) |
+		('what' 'is' #TITLE '\'' 's' 'main' 'theme') |
+		('what' 'are' #TITLE '\'' 's' 'main' 'themes')
+	]
+]])
+
+main:pattern([[
+	[#QTHEME1
+		('what' 'is' #TITLE 'about') |
+	]
+]])
+
+main:pattern([[
+	[#QUNKNOWN
+		('do' 'you' 'know' (#TITLE | #CHARACTERNAME)) |
+		('have' 'you' 'ever'? 'heard' 'of' (#TITLE | #CHARACTERNAME)) |
+		('what' 'about' (#TITLE | #CHARACTERNAME))|
+		('tell' 'me' 'about' (#TITLE | #CHARACTERNAME)) 
+	]
+]])
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 
