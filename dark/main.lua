@@ -131,6 +131,7 @@ end]]--
 end]]--
 
 for key, anime in ipairs(base["anime"]) do
+	print(anime["title"])
 	for key,review in ipairs(anime["reviews"]) do
 		if review["text"] ~= "" then
 			splitsen(review["text"])

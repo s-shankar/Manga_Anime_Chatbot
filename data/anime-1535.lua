@@ -9,7 +9,7 @@ return {
 	["relatedWorks"]= {{["title"] = "Code Geass: Hangyaku no Lelouch", ["type"] = "adaptation"}, {["title"] = "Code Geass: Hangyaku no Lelouch Picture Drama", ["type"] = "anime"}, {["title"] = "Code Geass: Hangyaku no Lelouch - Nunnally in Wonderland", ["type"] = "anime"}},
 	["characters"] = {{["firstname"] = "Lelouch", ["lastname"] = "Lamperouge", ["role"] = "main"}, {["firstname"] = "C.C.", ["lastname"] = "", ["role"] = "main"}, {["firstname"] = "Kallen", ["lastname"] = "Stadtfeld", ["role"] = "main"}, {["firstname"] = "Suzaku", ["lastname"] = "Kururugi", ["role"] = "main"}, {["firstname"] = "Jeremiah", ["lastname"] = "Gottwald", ["role"] = "supporting"}, {["firstname"] = "Shirley", ["lastname"] = "Fenette", ["role"] = "supporting"}, {["firstname"] = "Lloyd", ["lastname"] = "Asplund", ["role"] = "supporting"}, {["firstname"] = "Euphemia", ["lastname"] = "li Britannia", ["role"] = "supporting"}, {["firstname"] = "Nunnally", ["lastname"] = "Lamperouge", ["role"] = "supporting"}},
 	["staff"] = {"Yutaka Maseba", "Gorou Taniguchi", "Yasuo Urakami", "Makoto Baba"},
-	["review"] = {
+	["reviews"] = {
 		--
 		-- Death Note - Reviews - MyAnimeList.net
 		--
