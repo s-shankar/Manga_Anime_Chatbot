@@ -12,6 +12,7 @@ adjList = listAdjectives(adjectives)
 characterNames = {}
 characterFirstNames = {}
 characterLastNames = {}
+mangaTitles, animeTitles, titles = listTitles(base)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames, characterFirstNames, characterLastNames)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
