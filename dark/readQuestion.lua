@@ -52,7 +52,7 @@ local tags = {
 	["#CHARACTERNAME"] = "cyan",
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
-	["#QDESCRIPTION1"] = "green"
+	["#QDESCRIPTION1"] = "green",
 	["#QDESCRIPTION2"] = "white"
 }
 

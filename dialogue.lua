@@ -24,7 +24,7 @@ local input = ""
 local answer = "I am sorry, I do not understand"
 
 
-dofile("dark/readBase.lua")
+dofile("dark/readQuestion.lua")
 repeat
 	local input = io.read()
 	if input == "hello" then
