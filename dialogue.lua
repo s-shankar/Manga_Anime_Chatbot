@@ -41,40 +41,6 @@ local function listCharacterNames(table, characterNames, characterFirstnames, ch
 	return characterNames, characterFirstnames, characterLastnames
 end
 
-function listTitles(base)
-	mangaTitles = {}
-	animeTitles = {}
-	titles = {}
-	for key, anime in pairs(base["anime"]) do
-		animeTitles[#animeTitles+1] = anime["title"]
-		local found = false
-		for key2, other in pairs(titles) do
-			if other == anime["title"] then
-				found = true
-				break
-			end
-		end
-		if found == false then
-			titles[#titles+1] = anime['title']
-		end
-	end
-	
-	for key, manga in pairs(base["manga"]) do
-		mangaTitles[#mangaTitles+1] = manga["title"]
-		found = false
-		for key2, other in pairs(titles) do
-			if other == manga["title"] then
-				found = true
-				break
-			end
-		end
-		if found == false then
-			titles[#titles+1] = manga['title']
-		end
-	end
-	return mangaTitles, animeTitles, titles
-end
-
 local function listAdjectives(adjectives)
 	adjList = {}
 	for key, groups in pairs(adjectives) do
@@ -85,22 +51,27 @@ local function listAdjectives(adjectives)
 	return adjList
 end
 
+local function getFocusQ(quest)
+	quest = dark.sequence(quest)
+
+end
+
 adjectives = dofile("adjectives.lua")
 adjList = listAdjectives(adjectives)
 characterNames = {}
 characterFirstNames = {}
 characterLastNames = {}
-mangaTitles, animeTitles, titles = listTitles(base)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames, characterFirstNames, characterLastNames)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
---print(serialize(titles))
+--print(serialize(adjList))
+print("I am ready !")
 
 local input = ""
 local answer = "I am sorry, I do not understand"
 
+
 dofile("dark/main.lua")
-print("I am ready !")
 repeat
 	local input = io.read()
 	if input == "hello" then
@@ -109,6 +80,10 @@ repeat
 	if input == "bye" then
 		answer = "See you soon!"
 	end
+	question = input:gsub("(%p)","% l ")
+	question = dark.sequence(question)
+	pipe(question)
+	print(pipe(question))
 	for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then
 			answer = "You want some information about"..chara["firstname"].." "..chara["lastname"].."." 
