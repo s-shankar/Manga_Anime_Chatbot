@@ -44,7 +44,7 @@ main:pattern([[
 
 main:pattern([[
 	[#WORKTHEME
-		<((#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it')('is about' | 'deals with'))
+		<(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it') .*? ((('s' | 'is') 'about') | ('deals' 'with')) .*?)
 		#THEME 
 		
 	]
@@ -119,7 +119,7 @@ local function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	main(seq)
-	print(seq:tostring(tags))
+	--print(seq:tostring(tags))
 end
 
 local function splitsen(line)
@@ -143,7 +143,7 @@ end]]--
 	end
 end]]--
 
-----[[
+--[[
 for key, anime in ipairs(base["anime"]) do
 	for key,review in ipairs(anime["reviews"]) do
 		if review["text"] ~= "" then
@@ -151,7 +151,7 @@ for key, anime in ipairs(base["anime"]) do
 		end	
 	end
 end
---]]--
+]]--
 
 --function seekDescription(character, work, type)
 	
