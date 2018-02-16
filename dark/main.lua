@@ -9,6 +9,7 @@ main:lexicon("#CHIFFRES", {"un","deux","trois","quatre","cinq","six","sept","hui
 main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
+main:lexicon("#TITLE", titles)
 
 -- Création de patterns en LUA, soit sur plusieurs lignes pour gagner
 -- en visibilité, soit sur une seule ligne. La capture se fait avec
