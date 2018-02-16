@@ -1,5 +1,6 @@
 dark = require("dark")
 base = dofile("base.lua")
+<<<<<<< HEAD
 
 
 
@@ -50,6 +51,9 @@ local function listAdjectives(adjectives)
 	end
 	return adjList
 end
+=======
+dofile("listFunctions.lua")
+>>>>>>> 14e0f80f53afd497c687dce7651527780efbe794
 
 local function getFocusQ(quest)
 	quest = dark.sequence(quest)

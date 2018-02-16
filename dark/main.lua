@@ -43,7 +43,10 @@ main:pattern([[
 
 main:pattern([[
 	[#QDESCRIPTION2
-		(('is' #CHARACTERNAME #BEHAVIOUR '?'?) | ('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?))
+		('is' #CHARACTERNAME #BEHAVIOUR '?'?) |
+		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' #BEHAVIOUR '?'?) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?)
 	]
 ]])
 
