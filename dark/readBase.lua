@@ -2,6 +2,14 @@
 main = dark.pipeline()
 
 
+dofile("listFunctions.lua")
+base = dofile("base.lua")
+mangaTitles, animeTitles, titles = listTitles(base)
+characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], {},{},{})
+characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames,characterFirstNames,characterLastNames)
+adjList = listAdjectives(dofile("adjectives.lua"))
+
+
 -- Création d'un lexique ou chargement d'un lexique existant
 main:lexicon("#CHARACTERFIRSTNAME", characterFirstNames)
 main:lexicon("#CHARACTERLASTNAME", characterLastNames)
@@ -10,6 +18,7 @@ main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
 main:lexicon("#TITLE", titles)
+main:lexicon("#THEME", "themes")
 
 -- Création de patterns en LUA, soit sur plusieurs lignes pour gagner
 -- en visibilité, soit sur une seule ligne. La capture se fait avec
@@ -32,6 +41,15 @@ main:pattern([[
 		(#CHARACTERNAME 'is' 'very'? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
 	]
 ]])
+
+main:pattern([[
+	[#WORKTHEME
+		<(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it') .*? ((('s' | 'is') 'about') | ('deals' 'with')) .*?)
+		#THEME 
+		
+	]
+]])
+
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 
@@ -125,13 +143,15 @@ end]]--
 	end
 end]]--
 
---[[for key, anime in ipairs(base["anime"]) do
+--[[
+for key, anime in ipairs(base["anime"]) do
 	for key,review in ipairs(anime["reviews"]) do
 		if review["text"] ~= "" then
 			splitsen(review["text"])
 		end	
 	end
-end]]--
+end
+]]--
 
 --function seekDescription(character, work, type)
 	
