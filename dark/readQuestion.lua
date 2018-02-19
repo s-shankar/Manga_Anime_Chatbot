@@ -1,5 +1,5 @@
 -- Création d'un pipeline pour DARK
-local main = dark.pipeline()
+main = dark.pipeline()
 
 
 -- Création d'un lexique ou chargement d'un lexique existant
@@ -19,6 +19,12 @@ main:lexicon("#TITLE", titles)
 main:pattern('[#WORD /^%a+$/ ]')
 main:pattern('[#PONCT /%p/ ]')
 
+
+main:pattern([[
+	[#CHARACTERNAME
+		((#CHARACTERFIRSTNAME #CHARACTERLASTNAME?) | (#CHARACTERLASTNAME #CHARACTERFIRSTNAME?))
+	]
+]])
 
 
 main:pattern([[
@@ -107,7 +113,7 @@ local function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	main(seq)
-	--print(seq:tostring(tags))
+	print(seq:tostring(tags))
 end
 
 local function splitsen(line)

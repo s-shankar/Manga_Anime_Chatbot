@@ -33,6 +33,24 @@ main:pattern([[
 	]
 ]])
 
+
+main:pattern([[
+	[#QDESCRIPTION1
+		('how' 'is' #CHARACTERNAME '?'?) |
+		('tell' 'me' 'how' #CHARACTERNAME 'is' '?'?)
+	]
+]])
+
+main:pattern([[
+	[#QDESCRIPTION2
+		('is' #CHARACTERNAME #BEHAVIOUR '?'?) |
+		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' #BEHAVIOUR '?'?) |
+		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman') '?'?)
+	]
+]])
+
+
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 
 -- Sélection des étiquettes voulues, attribution d'une couleur (black,

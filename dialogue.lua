@@ -4,7 +4,20 @@ dofile("listFunctions.lua")
 
 local function getFocusQ(quest,oldFocus)
 	quest = dark.sequence(quest)
+	focusD = {}
+	if(#quest["#CHARACTERNAME"]) ~= 0 then
+		focusD.name = question:tag2str("#CHARACTERNAME")
+	else
+		focusD.name = nil
+	end
 
+	if(#quest["#QDESCRIPTION1"])  ~= 0 then
+		focusD.quest = "QDESCRIPTION1"
+	elseif (#quest["#QDESCRIPTION2"]) ~= 0 then
+		focusD.quest = "QDESCRIPTION2"
+	end
+
+	return focusD
 
 end
 
@@ -25,6 +38,7 @@ local answer = "I am sorry, I do not understand"
 
 
 dofile("dark/readQuestion.lua")
+focusQuestion = {}
 repeat
 	local input = io.read()
 	if input == "hello" then
@@ -35,7 +49,9 @@ repeat
 	end
 	question = input:gsub("(%p)","% l ")
 	question = dark.sequence(question)
-	print(question)
+	main(question)
+	print(main(question))
+	focusQuestion = getFocusQ(question,focusQuestion)
 	for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then
 			answer = "You want some information about"..chara["firstname"].." "..chara["lastname"].."."
