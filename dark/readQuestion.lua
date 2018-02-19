@@ -10,7 +10,7 @@ main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
 main:lexicon("#TITLE", titles)
-main:lexicon("#THEME", "../themes")
+main:lexicon("#THEME", "themes")
 
 -- Création de patterns en LUA, soit sur plusieurs lignes pour gagner
 -- en visibilité, soit sur une seule ligne. La capture se fait avec
@@ -48,8 +48,8 @@ main:pattern([[
 main:pattern([[
 	[#QTHEME1
 		('what' 'is' #TITLE 'about' '?'?) |
-		('what' 'is' #TITLE '\'' 's' 'main' 'theme') |
-		('what' 'are' #TITLE '\'' 's' 'main' 'themes')
+		('what' 'is' #TITLE ''' 's' 'main' 'theme') |
+		('what' 'are' #TITLE ''' 's' 'main' 'themes')
 	]
 ]])
 
@@ -76,7 +76,7 @@ main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 -- sortie (obligatoire pour éviter de copier les caractères de
 -- contrôle)
 
-local tags = {
+tags = {
 	["#CHARACTERLASTNAME"] = "blue",
 	["#CHARACTERFIRSTNAME"] = "blue",
 	["#CHARACTERNAME"] = "cyan",

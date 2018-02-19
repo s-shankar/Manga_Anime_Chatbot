@@ -3,21 +3,30 @@ base = dofile("base.lua")
 dofile("listFunctions.lua")
 
 local function getFocusQ(quest,oldFocus)
-	quest = dark.sequence(quest)
-	focusD = {}
+	--quest = dark.sequence(quest)
+	print(quest:tostring(tags))
 	if(#quest["#CHARACTERNAME"]) ~= 0 then
-		focusD.name = question:tag2str("#CHARACTERNAME")
+		oldFocus.name = question:tag2str("#CHARACTERNAME")
 	else
-		focusD.name = nil
+		oldFocus.name = nil
 	end
 
 	if(#quest["#QDESCRIPTION1"])  ~= 0 then
-		focusD.quest = "QDESCRIPTION1"
+		oldFocus.quest = "QDESCRIPTION1"
 	elseif (#quest["#QDESCRIPTION2"]) ~= 0 then
-		focusD.quest = "QDESCRIPTION2"
+		oldFocus.quest = "QDESCRIPTION2"
+	elseif (#quest["#QTHEME1"]) ~= 0 then
+		oldFocus.quest = "QTHEME1"
+	elseif (#quest["#QUNKNOWN"]) ~= 0 then
+		oldFocus.quest = "QUNKNOWN"
 	end
-
-	return focusD
+	print(oldFocus.quest)
+	if oldFocus.name ~= nil then
+		for k,v in ipairs(oldFocus.name) do
+			print("\t",k,v)
+		end
+	end
+	return oldFocus
 
 end
 
@@ -47,7 +56,7 @@ repeat
 	if input == "bye" then
 		answer = "See you soon!"
 	end
-	question = input:gsub("(%p)","% l ")
+	question = input:gsub("(%p)"," %1 ")
 	question = dark.sequence(question)
 	main(question)
 	print(main(question))
