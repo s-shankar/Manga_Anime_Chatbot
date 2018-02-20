@@ -20,41 +20,40 @@ main:lexicon("#THEME", "themes")
 main:pattern('[#WORD /^%a+$/ ]')
 main:pattern('[#PONCT /%p/ ]')
 
-
 main:pattern([[
 	[#CHARACTERNAME
 		((#CHARACTERFIRSTNAME #CHARACTERLASTNAME?) | (#CHARACTERLASTNAME #CHARACTERFIRSTNAME?))
 	]
 ]])
 
-
 main:pattern([[
 	[#QDESCRIPTION1
 		('how' 'is' #CHARACTERNAME) |
-		('do' 'you' 'know' #CHARACTERNAME) |
 		('tell' 'me' 'how' #CHARACTERNAME 'is')
+		('what' 'is' #CHARACTERNAME '%'' 's' 'main'? 'behaviour') |
+		('what' 'are' #CHARACTERNAME '%'' 's' 'main'? 'behaviours') 
 	]
 ]])
 
 main:pattern([[
 	[#QDESCRIPTION2
 		('is' #CHARACTERNAME #BEHAVIOUR) |
-		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman')) |
+		('is' #CHARACTERNAME 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman' | 'lady')) |
 		('tell' 'me' 'if' #CHARACTERNAME 'is' #BEHAVIOUR) |
-		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman'))
+		('tell' 'me' 'if' #CHARACTERNAME 'is' 'a' #BEHAVIOUR ('person' | 'guy' | 'boy' | 'girl' | 'man' | 'woman' | 'lady'))
 	]
 ]])
 
 main:pattern([[
 	[#QTHEME1
 		('what' 'is' #TITLE 'about' '?'?) |
-		('what' 'is' #TITLE ''' 's' 'main' 'theme') |
-		('what' 'are' #TITLE ''' 's' 'main' 'themes')
+		('what' 'is' #TITLE '%'' 's' 'main' 'theme') |
+		('what' 'are' #TITLE '%'' 's' 'main' 'themes')
 	]
 ]])
 
 main:pattern([[
-	[#QTHEME1
+	[#QTHEME2
 		('what' 'is' #TITLE 'about') |
 	]
 ]])
@@ -76,16 +75,14 @@ main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 -- sortie (obligatoire pour éviter de copier les caractères de
 -- contrôle)
 
-tags = {
+local tags = {
 	["#CHARACTERLASTNAME"] = "blue",
 	["#CHARACTERFIRSTNAME"] = "blue",
 	["#CHARACTERNAME"] = "cyan",
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
 	["#QDESCRIPTION1"] = "green",
-	["#QDESCRIPTION2"] = "white",
-	["#QTHEME1"] = "green",
-	["#QUNKNOWN"] = "green",
+	["#QDESCRIPTION2"] = "white"
 }
 
 
@@ -135,11 +132,11 @@ local function GetValueInLink(seq, entity, link)
 end
 
 
-local function process(sen)
+function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
-	main(seq)
-	print(seq:tostring(tags))
+	return main(seq)
+	--print(seq:tostring(tags))
 end
 
 local function splitsen(line)
@@ -147,6 +144,52 @@ local function splitsen(line)
 		process(sen)
 	end
 end
+
+
+function understandQuestion(question)
+	if question~=" " then
+		question = process(question)
+	end
+
+	--possibleTags = {
+end
+
+function havetag(seq, tag)
+	return #seq[tag] ~= 0
+end
+
+
+function tagstr(seq, tag, lim_debut, lim_fin)
+	lim_debut = lim_debut or 1
+	lim_fin   = lim_fin   or #seq
+	if not havetag(seq, tag) then
+		return nil
+	end
+	local list = seq[tag]
+	for i, position in ipairs(list) do
+		local debut, fin = position[1], position[2]
+		if debut >= lim_debut and fin <= lim_fin then
+			local tokens = {}
+			for i = debut, fin do
+				tokens[#tokens + 1] = seq[i].token
+			end
+			return table.concat(tokens, " ")
+		end
+	end
+	return nil
+end
+
+function GetValueInLink(seq, entity, link)
+	for i, pos in ipairs(seq[link]) do
+		local res = tagstr(seq, entity, pos[1], pos[2])
+		if res then
+			return res
+		end
+	end
+	return nil
+end
+
+
 
 -- un champ personnage de la base
 --[[local getCharacBehaviours(character)
