@@ -42,13 +42,44 @@ main:pattern([[
 	]
 ]])
 
+-- <( ('s' | 'is' | 'was') .*?) #THEME >('show' | 'anime' | 'manga' | 'series' | 'program')
+--[[
+ <(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'series' | 'program' | 'it') .*?
+			(('s' | 'is') 'about') | ('deals' 'with')) .*?
+			#THEME (',' #THEME)*?
+]]--
+
+--[[
+	.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'series' | 'program' | 'it') .*?
+	((('s' | 'is') 'about') | ('deals' 'with'))
+	[#WORKTHEME
+			 #THEME 
+	]
+--]]
+
+--using look-arounds because it totally gives better results
+
 main:pattern([[
 	[#WORKTHEME
-		<(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it') .*? ((('s' | 'is') 'about') | ('deals' 'with')) .*?)
-		#THEME 
-		
+		<(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it') .*?
+		((('s' | 'is') 'about') | ('deals' 'with')) .*?)
+		#THEME (',' 'and'? #THEME)*?
 	]
 ]])
+
+
+
+
+main:pattern([[
+	[#WORKTHEME
+			<(('s' | 'is' | 'was') .*?)
+			#THEME
+	]
+	('show' | 'anime' | 'manga' | 'series' | 'program')
+	
+]])
+
+
 
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
@@ -119,14 +150,18 @@ end
 local function process(sen)
 	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
-	main(seq)
+	return main(seq)
 	--print(seq:tostring(tags))
 end
 
+-- returns a table of dark.sequence
 local function splitsen(line)
+	output = {}
 	for sen in line:gmatch("(.-[a-z][.?!])") do
-		process(sen)
+		p = process(sen)
+		output[#output+1] = p
 	end
+	return output
 end
 
 -- un champ personnage de la base
@@ -144,14 +179,59 @@ end]]--
 	end
 end]]--
 
+animeOut = {}
 
-for key, anime in ipairs(base["anime"]) do
+for keya, anime in ipairs(base["anime"]) do
+	animeOut[keya] = {}
+	animeOut[keya]["title"] = anime["title"]
+	animeOut[keya]["nbreviews"] = #anime["reviews"]
+	animeOut[keya]["characters"] = anime["characters"]
+	animeOut[keya]["themes"] = {}
 	for key,review in ipairs(anime["reviews"]) do
+		revThemes = {}
 		if review["text"] ~= "" then
-			splitsen(review["text"])
-		end	
+			tablesen = splitsen(review["text"])
+			for key, sen in ipairs(tablesen) do 
+				for key, t in ipairs(sen:tag2str("#WORKTHEME")) do
+					if revThemes[t] == nil then
+						-- one "helpful" click counts as 1/10th of a review ?
+						-- no, let's log it to avoid overwhelming reviews
+						if (review["helpful"] > 0) then
+							revThemes[t] = 1+4*math.log(review["helpful"])
+						else
+							revThemes[t] = -0.1*(review["helpful"])
+						end
+					else
+						-- helpful bonus is only applied once
+						revThemes[t] = revThemes[t] + 1
+					end
+					
+				end
+				for key, t in ipairs(sen:tag2str("#DESCRIPTION")) do
+					-- TODO
+				end
+			end
+		end
+		
+		for keyt, t in pairs(revThemes) do
+			if animeOut[keya]["themes"][keyt] == nil then
+				animeOut[keya]["themes"][keyt] = t
+			else
+				animeOut[keya]["themes"][keyt] = animeOut[keya]["themes"][keyt] + t
+			end
+		end
 	end
+	print(keya .. "/" .. #base["anime"])
+	--if keya > 1 then break end
 end
+
+
+--print(serialize(animeOut))
+file = io.open("work-base.lua", "w")
+io.output(file)
+io.write(serialize(animeOut))
+io.close(file)
+
 
 
 --function seekDescription(character, work, type)
