@@ -13,6 +13,7 @@ local function getFocusQ(quest,oldFocus)
 	quest = dark.sequence(quest)
 	quest = main(quest)
 	print(quest:tostring(tags))
+
 	if(#quest["#CHARACTERNAME"]) ~= 0 then
 		oldFocus.name = {}
 		for i,name in ipairs(quest:tag2str("#CHARACTERNAME")) do
@@ -24,6 +25,34 @@ local function getFocusQ(quest,oldFocus)
 		end
 	else
 		oldFocus.name = nil
+	end
+
+	if(#quest["#TITLE"]) ~= 0 then
+		oldFocus.title = {}
+		local tTab = {}
+		for i,v in ipairs(quest:tag2str("#TITLE")) do
+			print(i,v)
+			tTab[#tTab+1]=v
+		end
+		table.insert(oldFocus.title,tTab)
+	end
+	if(#quest["#BEHAVIOUR"]) ~= 0 then
+		oldFocus.behav = {}
+		local behavTab = {}
+		for i,v in pairs(quest:tag2str("#BEHAVIOUR")) do
+			print(i,v)
+			behavTab[#behavTab+1] = v
+		end
+		table.insert(oldFocus.behav,behavTab)
+	end
+
+	if(#quest["#QTHEME1"]) ~= 0 then
+		oldFocus.theme = {}
+		local themeTab = {}
+		for i,th in ipairs(quest:tag2str("#QTHEME1")) do
+			themeTab[#themeTab+1] = th
+		end
+		table.insert(oldFocus.theme,themeTab)
 	end
 
 	if(#quest["#QDESCRIPTION1"])  ~= 0 then
@@ -40,7 +69,7 @@ local function getFocusQ(quest,oldFocus)
 		--print(#oldFocus.name)
 		for k,v in ipairs(oldFocus.name) do
 			for a,o in pairs(v) do
-				--print(a,o)
+				print(a,o)
 			end
 			--print("lol")
 		end

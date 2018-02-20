@@ -75,14 +75,20 @@ main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
 -- sortie (obligatoire pour éviter de copier les caractères de
 -- contrôle)
 
-local tags = {
+tags = {
 	["#CHARACTERLASTNAME"] = "blue",
 	["#CHARACTERFIRSTNAME"] = "blue",
 	["#CHARACTERNAME"] = "cyan",
+	["#TITLE"] = "yellow",
+	["#ANIMETITLE"] = "blue",
+	["#MANGATITLE"] = "blue",
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
 	["#QDESCRIPTION1"] = "green",
-	["#QDESCRIPTION2"] = "white"
+	["#QDESCRIPTION2"] = "green",
+	["#QTHEME1"]	=	"magenta",
+	["#QTHEME2"]	=	"magenta",
+	["#QUNKNOWN"]	= "green"
 }
 
 
