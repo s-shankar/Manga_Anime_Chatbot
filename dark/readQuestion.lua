@@ -29,7 +29,7 @@ main:pattern([[
 main:pattern([[
 	[#QDESCRIPTION1
 		('how' 'is' #CHARACTERNAME) |
-		('tell' 'me' 'how' #CHARACTERNAME 'is')
+		('tell' 'me' 'how' #CHARACTERNAME 'is') |
 		('what' 'is' #CHARACTERNAME '%'' 's' 'main'? 'behaviour') |
 		('what' 'are' #CHARACTERNAME '%'' 's' 'main'? 'behaviours') 
 	]
@@ -54,7 +54,8 @@ main:pattern([[
 
 main:pattern([[
 	[#QTHEME2
-		('what' 'is' #TITLE 'about') |
+		('is' #TITLE 'about' #THEME) |
+		('tell' 'me' 'if' #TITLE 'is' 'about' #THEME)
 	]
 ]])
 
@@ -147,11 +148,34 @@ end
 
 
 function understandQuestion(question)
-	if question~=" " then
+	if question~="" then
 		question = process(question)
+		possibleTags = {"#QUNKNOWN", "#QDESCRIPTION1", "#QDESCRIPTION2", "#QTHEME1", "#QTHEME2"}
+		if havetag(question, "#QUNKNOWN")==true then
+			if GetValueInLink(question, "#CHARACTERNAME", "#QUNKNOWN") ~= nil then
+				return "#QUNKNOWN", {GetValueInLink(question, "#CHARACTERNAME", "#QUNKNOWN")}
+			else
+				return "#QUNKNOWN", {GetValueInLink(question, "#TITLE", "#QUNKNOWN")}
+			end
+		end
+		if havetag(question, "#QDESCRIPTION1")==true then
+			return "#QDESCRIPTION1", {GetValueInLink(question, "#CHARACTERNAME", "#QDESCRIPTION1")}
+		end
+		if havetag(question, "#QDESCRIPTION2")==true then
+			return "#QDESCRIPTION2", {GetValueInLink(question, "#CHARACTERNAME", "#QDESCRIPTION2"), GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+		end
+		if havetag(question, "#QTHEME1")==true then
+			return "#QTHEME1", {GetValueInLink(question, "#TITLE", "#QTHEME1")}
+		end
+		if havetag(question, "#QTHEME2")==true then
+			return "#QTHEME2", {GetValueInLink(question, "#TITLE", "#QTHEME2"), GetValueInLink(question, "#THEME", "#QTHEME2")}
+		end
+		
+		return "#UNRECOGNIZED", nil
 	end
+	
+	return nil, nil
 
-	--possibleTags = {
 end
 
 function havetag(seq, tag)
