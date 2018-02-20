@@ -79,3 +79,64 @@ function listAdjectives(adjectives)
 	end
 	return adjList
 end
+
+
+function findCharacterName( firstname, lastname, listChara, ... )
+	local listName = {}
+	local name = ""
+	local args = {...}
+	local animeTitle = args[1] or nil
+	if(firstname == nil or lastname == nil) then
+		name = firstname or lastname
+	else
+		name = firstname..' '..lastname
+	end
+
+	if animeTitle ~= nil then
+		animeFound = getAnimeOrMangaBase(animeTitle,base)
+		if animeFound ~= nil then
+			for k,chara in pairs(animeFound) do
+				if string.find(chara["firstname"]..' '..chara["lastname"],name) or lastname ~= nil and string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+					listName[#listName+1]= {firstname=chara["firstname"],lastname= chara["lastname"]}
+				end
+			end
+		end
+	else
+		for key, chara in pairs(listChara) do
+		--	print("\t",firstname,lastname,name)
+			if string.find(chara["firstname"]..' '..chara["lastname"],name) or lastname ~= nil and string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+				listName[#listName+1]= {firstname=chara["firstname"],lastname= chara["lastname"]}
+			end
+		end
+	end
+	return listName
+end
+
+function getAnimeOrMangaBase( title, base )
+	-- body
+	for k,anime in pairs(base["anime"]) do
+		if string.find(anime["title"],title) then
+			return anime
+		end
+	end
+	return nil
+end
+
+function charaFromWhichAnimeOrManga( firstname, lastname )
+	-- body
+	for k,anime in pairs(base["anime"]) do
+		for k2,chara in pairs(anime["characters"]) do
+			if string.find(chara["firstname"]..' '..chara["lastname"],firstname..' '..lastname) or string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+				return anime["title"]
+			end
+		end
+	end
+	for k,manga in pairs(base["manga"]) do
+		for k2,chara in pairs(manga["characters"]) do
+			if string.find(chara["firstname"]..' '..chara["lastname"],firstname..' '..lastname) or string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+				return manga["title"]
+			end
+		end
+	end
+	return nil
+end

@@ -83,7 +83,9 @@ tags = {
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
 	["#QDESCRIPTION1"] = "green",
-	["#QDESCRIPTION2"] = "white"
+	["#QDESCRIPTION2"] = "white",
+	["#QTHEME1"] = "green",
+	["#QUNKNOWN"] = "green",
 }
 
 
