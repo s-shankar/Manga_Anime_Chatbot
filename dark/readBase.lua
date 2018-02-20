@@ -194,12 +194,8 @@ for keya, anime in ipairs(base["anime"]) do
 			for key, sen in ipairs(tablesen) do 
 				for key, t in ipairs(sen:tag2str("#WORKTHEME")) do
 					if revThemes[t] == nil then
-						-- one "helpful" click counts as 1/10th of a review ?
-						-- no, let's log it to avoid overwhelming reviews
-						if (review["helpful"] > 0) then
-							revThemes[t] = 1+4*math.log(review["helpful"])
-						else
-							revThemes[t] = -0.1*(review["helpful"])
+						-- one "helpful" click counts as 1/10th of a review
+							revThemes[t] = 1+0.1*(review["helpful"])
 						end
 					else
 						-- helpful bonus is only applied once
@@ -224,6 +220,25 @@ for keya, anime in ipairs(base["anime"]) do
 	print(keya .. "/" .. #base["anime"])
 	--if keya > 1 then break end
 end
+
+-- consolidation : add scores of synonyms
+
+-- this takes a list of themes (list), the reference term (ref),
+-- and a list of synonyms of the ref (synonyms)
+local function consolidate(list, ref, synonyms)
+	for key, t in pairs(list) do
+		--TODO
+	end
+end
+
+-- yeah I know it's not pretty
+for keya, a in ipairs(animeout) do
+	for keyt, t in pairs(a[theme]) do
+		--TODO
+	end
+end
+
+
 
 
 --print(serialize(animeOut))
