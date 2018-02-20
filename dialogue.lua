@@ -1,6 +1,6 @@
 dark = require("dark")
 base = dofile("base.lua")
-dofile("listFunctions.lua")
+dofile("functions.lua")
 
 local function getFocusQ(quest,oldFocus)
 	--quest = dark.sequence(quest)
