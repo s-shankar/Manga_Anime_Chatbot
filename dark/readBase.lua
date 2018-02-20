@@ -1,5 +1,5 @@
 -- Création d'un pipeline pour DARK
-main = dark.pipeline()
+local main = dark.pipeline()
 
 
 dofile("listFunctions.lua")
@@ -65,7 +65,8 @@ local tags = {
 	["#CHARACTERNAME"] = "cyan",
 	["#DUREE"] = "magenta",
 	["#BEHAVIOUR"] = "red",
-	["#DESCRIPTION"] = "green"
+	["#DESCRIPTION"] = "green",
+	["#WORKTHEME"] = "yellow",
 }
 
 
@@ -143,7 +144,7 @@ end]]--
 	end
 end]]--
 
---[[
+
 for key, anime in ipairs(base["anime"]) do
 	for key,review in ipairs(anime["reviews"]) do
 		if review["text"] ~= "" then
@@ -151,7 +152,7 @@ for key, anime in ipairs(base["anime"]) do
 		end	
 	end
 end
-]]--
+
 
 --function seekDescription(character, work, type)
 	
