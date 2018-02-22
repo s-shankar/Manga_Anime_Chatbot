@@ -2,7 +2,7 @@
 local main = dark.pipeline()
 
 
-dofile("listFunctions.lua")
+dofile("functions.lua")
 base = dofile("base.lua")
 mangaTitles, animeTitles, titles = listTitles(base)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], {},{},{})
@@ -14,6 +14,7 @@ adjList = listAdjectives(dofile("adjectives.lua"))
 main:lexicon("#CHARACTERFIRSTNAME", characterFirstNames)
 main:lexicon("#CHARACTERLASTNAME", characterLastNames)
 main:lexicon("#CHIFFRES", {"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"})
+main:lexicon("#ISVERB", {"is","seem","seems","look","looks","sound","sounds","appear","appears"})
 main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
@@ -38,7 +39,7 @@ main:pattern([[
 
 main:pattern([[
 	[#DESCRIPTION
-		(#CHARACTERNAME 'is' 'very'? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
+		(#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|('kind' 'of')|'kinda'|('a' 'little'? 'bit'))? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
 	]
 ]])
 
@@ -164,6 +165,43 @@ local function splitsen(line)
 	return output
 end
 
+
+
+local function havetag(seq, tag)
+	return #seq[tag] ~= 0
+end
+
+
+local function tagstr(seq, tag, lim_debut, lim_fin)
+	lim_debut = lim_debut or 1
+	lim_fin   = lim_fin   or #seq
+	if not havetag(seq, tag) then
+		return nil
+	end
+	local list = seq[tag]
+	for i, position in ipairs(list) do
+		local debut, fin = position[1], position[2]
+		if debut >= lim_debut and fin <= lim_fin then
+			local tokens = {}
+			for i = debut, fin do
+				tokens[#tokens + 1] = seq[i].token
+			end
+			return table.concat(tokens, " ")
+		end
+	end
+	return nil
+end
+
+local function GetValueInLink(seq, entity, link)
+	for i, pos in ipairs(seq[link]) do
+		local res = tagstr(seq, entity, pos[1], pos[2])
+		if res then
+			return res
+		end
+	end
+	return nil
+end
+
 -- un champ personnage de la base
 --[[local getCharacBehaviours(character)
 	
@@ -186,6 +224,9 @@ for keya, anime in ipairs(base["anime"]) do
 	animeOut[keya]["title"] = anime["title"]
 	animeOut[keya]["nbreviews"] = #anime["reviews"]
 	animeOut[keya]["characters"] = anime["characters"]
+	for keyb, charac in ipairs(animeOut[keya]["characters"]) do
+		charac["behaviours"] = {}
+	end
 	animeOut[keya]["themes"] = {}
 	for key,review in ipairs(anime["reviews"]) do
 		revThemes = {}
@@ -196,15 +237,30 @@ for keya, anime in ipairs(base["anime"]) do
 					if revThemes[t] == nil then
 						-- one "helpful" click counts as 1/10th of a review
 							revThemes[t] = 1+0.1*(review["helpful"])
-						end
+						--end
 					else
 						-- helpful bonus is only applied once
 						revThemes[t] = revThemes[t] + 1
 					end
 					
 				end
-				for key, t in ipairs(sen:tag2str("#DESCRIPTION")) do
-					-- TODO
+				
+				if havetag(sen, "#DESCRIPTION") then
+					for keyb, charac in pairs(animeOut[keya]["characters"]) do
+						if (GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == charac["firstname"] or GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == nil and charac["firstname"] == "")
+							and (GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == charac["lastname"] or GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == nil and charac["lastname"] == "") then
+							local found = false
+							for key, behav in pairs(charac["behaviours"]) do
+								if behav == GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION") then
+									found = true
+									break
+								end
+							end
+							if found == false then
+								charac["behaviours"][#charac["behaviours"]+1] = GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")
+							end
+						end
+					end
 				end
 			end
 		end
@@ -217,6 +273,15 @@ for keya, anime in ipairs(base["anime"]) do
 			end
 		end
 	end
+	
+	
+	for key, charac in pairs(animeOut[keya]["characters"]) do
+		if #charac["behaviours"] ~= 0 then
+			print(charac["firstname"].." : "..serialize(charac["behaviours"]))
+		end
+		--print("TEST : "..serialize(charac))--..serialize(charac["behaviours"]))
+	end
+	
 	print(keya .. "/" .. #base["anime"])
 	--if keya > 1 then break end
 end
@@ -225,18 +290,18 @@ end
 
 -- this takes a list of themes (list), the reference term (ref),
 -- and a list of synonyms of the ref (synonyms)
-local function consolidate(list, ref, synonyms)
+--[[local function consolidate(list, ref, synonyms)
 	for key, t in pairs(list) do
 		--TODO
 	end
-end
+end]]--
 
 -- yeah I know it's not pretty
-for keya, a in ipairs(animeout) do
+--[[for keya, a in ipairs(animeOut) do
 	for keyt, t in pairs(a[theme]) do
 		--TODO
 	end
-end
+end]]--
 
 
 

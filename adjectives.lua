@@ -1,6 +1,5 @@
 return {
 
-	{"able", "capable", },
 	{"absent-minded", "carefree", "careless", "dreamy", "forgetful", },
 	{"active", },
 	{"adventurous", },
