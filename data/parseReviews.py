@@ -14,11 +14,23 @@ for i in `seq <nbofpages>`; do python3 parseReviews.py $i >> anime-file.lua ; do
 
 3b. Call me if problems
 
+
+Better usage : (for fish)
+rm * ; for i in (seq 100)
+	wget "https://myanimelist.net/.../reviews?p="$i -O $i
+	python3 parseReviews.py $i >> anime-file.lua 
+	if test $status -eq 1
+		break
+	end
+end
+
+Avoids downloading more than necessary and requires fewer input
+
 """
 
 
 from bs4 import BeautifulSoup
-from sys import stdin, stderr, argv
+from sys import stdin, stderr, argv, exit
 
 with open(argv[1], 'r') as f:
 	soup = BeautifulSoup(f.read(), "html.parser")
@@ -29,9 +41,10 @@ coms = soup.find_all("div", class_="borderDark")
 
 if len(coms) == 0:
 	print("No comments",file=stderr)
+	exit(1)
 
 else:
-	print("--\n-- "+str(soup.title.string).strip()+"\n--\n")
+	print("\t\t--\n\t\t-- "+str(soup.title.string).strip()+"\n\t\t--\n")
 
 k=-1
 for i in coms:
@@ -91,7 +104,7 @@ for i in coms:
 	if k==1:
 		pass #import pdb ; pdb.set_trace()
 
-	toPrint = ""
+	toPrint = "\t\t"
 	toPrint += "{[\"score\"]="+str(score)+","+(" "*(3-len(str(score))))
 	toPrint += "[\"helpful\"]="+str(helpful)+","+(" "*(5-len(str(helpful))))
 	toPrint += "[\"text\"]=\""+text+"\"},"
