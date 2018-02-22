@@ -1,6 +1,6 @@
 return {
 	["title"] = "xxxHOLiC",
-	["authors"] = { "CLAMP CLAMP"}
+	["authors"] = { "CLAMP CLAMP"},
 	["volumes"] = 19,
 	["chapters"] = 213,
 	["status"] = "finished",

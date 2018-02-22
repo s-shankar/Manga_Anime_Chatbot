@@ -1,6 +1,6 @@
 return {
 	["title"] = "Naruto",
-	["authors"] = { "Masashi Kishimoto"}
+	["authors"] = { "Masashi Kishimoto"},
 	["volumes"] = 72,
 	["chapters"] = 700,
 	["status"] = "finished",

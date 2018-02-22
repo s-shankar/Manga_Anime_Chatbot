@@ -1,6 +1,6 @@
 return {
 	["title"] = "Kiseijuu",
-	["authors"] = { "Hitoshi Iwaaki"}
+	["authors"] = { "Hitoshi Iwaaki"},
 	["volumes"] = 10,
 	["chapters"] = 64,
 	["status"] = "finished",

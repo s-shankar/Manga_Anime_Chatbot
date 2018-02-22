@@ -1,6 +1,6 @@
 return {
 	["title"] = "Hajime no Ippo",
-	["authors"] = { "George Morikawa"}
+	["authors"] = { "George Morikawa"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

@@ -1,6 +1,6 @@
 return {
 	["title"] = "Berserk",
-	["authors"] = { "Kentarou Miura"}
+	["authors"] = { "Kentarou Miura"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

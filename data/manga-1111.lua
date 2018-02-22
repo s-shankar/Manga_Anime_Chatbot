@@ -1,6 +1,6 @@
 return {
 	["title"] = "Buddha",
-	["authors"] = { "Osamu Tezuka"}
+	["authors"] = { "Osamu Tezuka"},
 	["volumes"] = 14,
 	["chapters"] = 66,
 	["status"] = "finished",

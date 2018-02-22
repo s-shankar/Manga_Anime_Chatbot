@@ -1,6 +1,6 @@
 return {
 	["title"] = "Fruits Basket",
-	["authors"] = { "Natsuki Takaya"}
+	["authors"] = { "Natsuki Takaya"},
 	["volumes"] = 23,
 	["chapters"] = 136,
 	["status"] = "finished",

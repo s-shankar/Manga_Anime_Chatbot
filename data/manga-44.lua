@@ -1,6 +1,6 @@
 return {
 	["title"] = "Gintama",
-	["authors"] = { "Hideaki Sorachi"}
+	["authors"] = { "Hideaki Sorachi"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

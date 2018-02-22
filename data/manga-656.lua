@@ -1,6 +1,6 @@
 return {
 	["title"] = "Vagabond",
-	["authors"] = { "Takehiko Inoue", "Eiji Yoshikawa"}
+	["authors"] = { "Takehiko Inoue", "Eiji Yoshikawa"},
 	["volumes"] = 37,
 	["chapters"] = 327,
 	["status"] = "publishing",

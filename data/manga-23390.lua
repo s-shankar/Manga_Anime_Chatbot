@@ -1,6 +1,6 @@
 return {
 	["title"] = "Shingeki no Kyojin",
-	["authors"] = { "Hajime Isayama"}
+	["authors"] = { "Hajime Isayama"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

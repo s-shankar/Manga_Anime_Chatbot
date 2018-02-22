@@ -1,6 +1,6 @@
 return {
 	["title"] = "Versailles no Bara",
-	["authors"] = { "Riyoko Ikeda"}
+	["authors"] = { "Riyoko Ikeda"},
 	["volumes"] = 10,
 	["chapters"] = 82,
 	["status"] = "finished",

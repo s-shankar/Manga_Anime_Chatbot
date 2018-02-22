@@ -1,6 +1,6 @@
 return {
 	["title"] = "20th Century Boys",
-	["authors"] = { "Naoki Urasawa"}
+	["authors"] = { "Naoki Urasawa"},
 	["volumes"] = 22,
 	["chapters"] = 249,
 	["status"] = "finished",

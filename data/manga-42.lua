@@ -1,6 +1,6 @@
 return {
 	["title"] = "Dragon Ball",
-	["authors"] = { "Akira Toriyama"}
+	["authors"] = { "Akira Toriyama"},
 	["volumes"] = 42,
 	["chapters"] = 520,
 	["status"] = "finished",

@@ -1,6 +1,6 @@
 return {
 	["title"] = "Hellsing",
-	["authors"] = { "Kouta Hirano"}
+	["authors"] = { "Kouta Hirano"},
 	["volumes"] = 10,
 	["chapters"] = 92,
 	["status"] = "finished",

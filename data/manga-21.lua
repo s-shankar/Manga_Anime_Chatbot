@@ -1,6 +1,6 @@
 return {
 	["title"] = "Death Note",
-	["authors"] = { "Takeshi Obata", "Tsugumi Ohba"}
+	["authors"] = { "Takeshi Obata", "Tsugumi Ohba"},
 	["volumes"] = 12,
 	["chapters"] = 108,
 	["status"] = "finished",

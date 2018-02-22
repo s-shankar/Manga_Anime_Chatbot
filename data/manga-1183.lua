@@ -1,6 +1,6 @@
 return {
 	["title"] = "Cross Game",
-	["authors"] = { "Mitsuru Adachi"}
+	["authors"] = { "Mitsuru Adachi"},
 	["volumes"] = 17,
 	["chapters"] = 170,
 	["status"] = "finished",

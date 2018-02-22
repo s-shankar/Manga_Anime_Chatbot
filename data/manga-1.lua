@@ -1,6 +1,6 @@
 return {
 	["title"] = "Monster",
-	["authors"] = { "Naoki Urasawa"}
+	["authors"] = { "Naoki Urasawa"},
 	["volumes"] = 18,
 	["chapters"] = 162,
 	["status"] = "finished",

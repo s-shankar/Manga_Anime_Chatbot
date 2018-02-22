@@ -1,6 +1,6 @@
 return {
 	["title"] = "Gunnm",
-	["authors"] = { "Yukito Kishiro"}
+	["authors"] = { "Yukito Kishiro"},
 	["volumes"] = 9,
 	["chapters"] = 53,
 	["status"] = "finished",

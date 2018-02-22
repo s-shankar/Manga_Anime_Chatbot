@@ -1,6 +1,6 @@
 return {
 	["title"] = "Yotsuba to!",
-	["authors"] = { "Kiyohiko Azuma"}
+	["authors"] = { "Kiyohiko Azuma"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

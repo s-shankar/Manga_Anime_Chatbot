@@ -1,6 +1,6 @@
 return {
 	["title"] = "City Hunter",
-	["authors"] = { "Tsukasa Hojo"}
+	["authors"] = { "Tsukasa Hojo"},
 	["volumes"] = 35,
 	["chapters"] = 193,
 	["status"] = "finished",

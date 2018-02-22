@@ -1,6 +1,6 @@
 return {
 	["title"] = "Ashita no Joe",
-	["authors"] = { "Ikki Kajiwara", "Tetsuya Chiba"}
+	["authors"] = { "Ikki Kajiwara", "Tetsuya Chiba"},
 	["volumes"] = 20,
 	["chapters"] = 171,
 	["status"] = "finished",

@@ -1,6 +1,6 @@
 return {
 	["title"] = "Nana",
-	["authors"] = { "Ai Yazawa"}
+	["authors"] = { "Ai Yazawa"},
 	["volumes"] = 21,
 	["chapters"] = 84,
 	["status"] = "publishing",

@@ -1,6 +1,6 @@
 return {
 	["title"] = "One Piece",
-	["authors"] = { "Eiichiro Oda"}
+	["authors"] = { "Eiichiro Oda"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

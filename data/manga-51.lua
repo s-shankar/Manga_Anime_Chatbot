@@ -1,6 +1,6 @@
 return {
 	["title"] = "Slam Dunk",
-	["authors"] = { "Takehiko Inoue"}
+	["authors"] = { "Takehiko Inoue"},
 	["volumes"] = 31,
 	["chapters"] = 276,
 	["status"] = "finished",

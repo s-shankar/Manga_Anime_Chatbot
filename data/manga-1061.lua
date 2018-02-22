@@ -1,6 +1,6 @@
 return {
 	["title"] = "Detective Conan",
-	["authors"] = { "Gosho Aoyama"}
+	["authors"] = { "Gosho Aoyama"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

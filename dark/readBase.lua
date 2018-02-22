@@ -217,99 +217,143 @@ end]]--
 	end
 end]]--
 
-animeOut = {}
 
-for keya, anime in ipairs(base["anime"]) do
-	animeOut[keya] = {}
-	animeOut[keya]["title"] = anime["title"]
-	animeOut[keya]["nbreviews"] = #anime["reviews"]
-	animeOut[keya]["characters"] = anime["characters"]
-	for keyb, charac in ipairs(animeOut[keya]["characters"]) do
-		charac["behaviours"] = {}
-	end
-	animeOut[keya]["themes"] = {}
-	for key,review in ipairs(anime["reviews"]) do
-		revThemes = {}
-		if review["text"] ~= "" then
-			tablesen = splitsen(review["text"])
-			for key, sen in ipairs(tablesen) do 
-				for key, t in ipairs(sen:tag2str("#WORKTHEME")) do
-					if revThemes[t] == nil then
-						-- one "helpful" click counts as 1/10th of a review
-							revThemes[t] = 1+0.1*(review["helpful"])
-						--end
-					else
-						-- helpful bonus is only applied once
-						revThemes[t] = revThemes[t] + 1
+function getAnalyzedBase(base)
+	animeOut={}
+	for keya, anime in ipairs(base) do
+		animeOut[keya] = {}
+		animeOut[keya]["title"] = anime["title"]
+		animeOut[keya]["nbreviews"] = #anime["reviews"]
+		animeOut[keya]["characters"] = anime["characters"]
+		for keyb, charac in ipairs(animeOut[keya]["characters"]) do
+			charac["behaviours"] = {}
+		end
+		animeOut[keya]["themes"] = {}
+		for key,review in ipairs(anime["reviews"]) do
+			revThemes = {}
+			if review["text"] ~= "" then
+				tablesen = splitsen(review["text"])
+				for key, sen in ipairs(tablesen) do 
+					for key, t in ipairs(sen:tag2str("#WORKTHEME")) do
+						if revThemes[t] == nil then
+							-- one "helpful" click counts as 1/10th of a review
+								revThemes[t] = 1+0.1*(review["helpful"])
+							--end
+						else
+							-- helpful bonus is only applied once
+							revThemes[t] = revThemes[t] + 1
+						end
+						
 					end
 					
-				end
-				
-				if havetag(sen, "#DESCRIPTION") then
-					for keyb, charac in pairs(animeOut[keya]["characters"]) do
-						if (GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == charac["firstname"] or GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == nil and charac["firstname"] == "")
-							and (GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == charac["lastname"] or GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == nil and charac["lastname"] == "") then
-							local found = false
-							for key, behav in pairs(charac["behaviours"]) do
-								if behav == GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION") then
-									found = true
-									break
+					if havetag(sen, "#DESCRIPTION") then
+						for keyb, charac in pairs(animeOut[keya]["characters"]) do
+							if (GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == charac["firstname"] or GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == nil and charac["firstname"] == "")
+								and (GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == charac["lastname"] or GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == nil and charac["lastname"] == "") then
+								local found = false
+								for key, behav in pairs(charac["behaviours"]) do
+									if behav == GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION") then
+										found = true
+										break
+									end
 								end
-							end
-							if found == false then
-								charac["behaviours"][#charac["behaviours"]+1] = GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")
+								if found == false then
+									charac["behaviours"][#charac["behaviours"]+1] = GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")
+								end
 							end
 						end
 					end
 				end
 			end
-		end
-		
-		for keyt, t in pairs(revThemes) do
-			if animeOut[keya]["themes"][keyt] == nil then
-				animeOut[keya]["themes"][keyt] = t
-			else
-				animeOut[keya]["themes"][keyt] = animeOut[keya]["themes"][keyt] + t
+			
+			for keyt, t in pairs(revThemes) do
+				if animeOut[keya]["themes"][keyt] == nil then
+					animeOut[keya]["themes"][keyt] = t
+				else
+					animeOut[keya]["themes"][keyt] = animeOut[keya]["themes"][keyt] + t
+				end
 			end
 		end
-	end
-	
-	
-	for key, charac in pairs(animeOut[keya]["characters"]) do
-		if #charac["behaviours"] ~= 0 then
-			print(charac["firstname"].." : "..serialize(charac["behaviours"]))
+		
+		--[[
+		for key, charac in pairs(animeOut[keya]["characters"]) do
+			if #charac["behaviours"] ~= 0 then
+				print(charac["firstname"].." : "..serialize(charac["behaviours"]))
+			end
+			--print("TEST : "..serialize(charac))--..serialize(charac["behaviours"]))
 		end
-		--print("TEST : "..serialize(charac))--..serialize(charac["behaviours"]))
+		]]--
+		
+		print(keya .. "/" .. #base)
+		--if keya > 1 then break end
 	end
-	
-	print(keya .. "/" .. #base["anime"])
-	--if keya > 1 then break end
+	return animeOut
 end
+
+outbase={}
+print("Parsing animes")
+outbase["anime"] = getAnalyzedBase(base["anime"])
+print("Parsing mangas")
+outbase["manga"] = getAnalyzedBase(base["manga"])
+
 
 -- consolidation : add scores of synonyms
 
 -- this takes a list of themes (list), the reference term (ref),
 -- and a list of synonyms of the ref (synonyms)
---[[local function consolidate(list, ref, synonyms)
+local function consolidate(list, ref, synonyms)
 	for key, t in pairs(list) do
-		--TODO
+		for _, v in pairs(synonyms) do -- who needs tools when you can just bash nails in with a rock ?
+			-- it's not an original theme, but a synonym, so we fold it
+			if key == v then
+				if list[ref] == nil then list[ref] = 0 end
+				list[ref] = list[ref] + t
+				list[key] = nil
+			end
+		end
 	end
-end]]--
+	return list
+end
 
 -- yeah I know it's not pretty
---[[for keya, a in ipairs(animeOut) do
-	for keyt, t in pairs(a[theme]) do
-		--TODO
+local function overConsolidate(base)
+	for keya, a in ipairs(base) do
+		a["themes"] = consolidate(a["themes"], "psychology", {"psychological"})
+		a["themes"] = consolidate(a["themes"], "pirates", {"pirate"})
+		a["themes"] = consolidate(a["themes"], "ninjas", {"ninja"})
+		a["themes"] = consolidate(a["themes"], "zombies", {"zombie", "zombi", "zombis"})
+		a["themes"] = consolidate(a["themes"], "robots", {"robot"})
+		a["themes"] = consolidate(a["themes"], "mechas", {"mecha","mechs","mech"})
+		a["themes"] = consolidate(a["themes"], "kaijus", {"kaiju"})
+		a["themes"] = consolidate(a["themes"], "magical girls", {"magicka girls", "magic girls"})
+		a["themes"] = consolidate(a["themes"], "post-apocalypse", {"post-apocalyptic", "post-apo", "post apocalypse","post apocalyptic", "post apo"})
+		a["themes"] = consolidate(a["themes"], "cowboys", {"cowboy", "western", "old west", "wild west"})
+		a["themes"] = consolidate(a["themes"], "vikings", {"viking"})
+		a["themes"] = consolidate(a["themes"], "history", {"historical"})
+		a["themes"] = consolidate(a["themes"], "super heroes", {"superhero", "super hero", "super-hero", "superheroes", "super-heroes"})
+		a["themes"] = consolidate(a["themes"], "video games", {"videogames", "video games", "vidya", "videogaming", "video-gaming", "video gaming"})
+		
+		a["themes"] = consolidate(a["themes"], "romance", {"romantism", "romantic"}) -- I just became my worst enemy by conflating romantism and romance
+		a["themes"] = consolidate(a["themes"], "serial killers", {"serial killer"})
+		a["themes"] = consolidate(a["themes"], "dilemmas", {"dilemma"})
+		a["themes"] = consolidate(a["themes"], "serious issues", {"serious problems", "serious questions"})
+		a["themes"] = consolidate(a["themes"], "important questions", {"serious problems", "serious issues"}) --basically cheating
+		
+		a["themes"] = consolidate(a["themes"], "good versus evil", {"good vs evil", "good versus bad", "good vs bad"})
+		a["themes"] = consolidate(a["themes"], "man versus nature", {"man vs nature", "man against nature"})
+		base[keya] = a
 	end
-end]]--
+	return base
+end
 
-
+outbase["anime"] = overConsolidate(outbase["anime"])
+outbase["manga"] = overConsolidate(outbase["manga"])
 
 
 --print(serialize(animeOut))
 file = io.open("work-base.lua", "w")
 io.output(file)
-io.write(serialize(animeOut))
+io.write(serialize(outbase))
 io.close(file)
 
 

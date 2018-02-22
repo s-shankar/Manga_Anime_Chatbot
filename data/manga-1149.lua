@@ -1,6 +1,6 @@
 return {
 	["title"] = "Hokuto no Ken",
-	["authors"] = { "Tetsuo Hara", "Buronson Buronson"}
+	["authors"] = { "Tetsuo Hara", "Buronson Buronson"},
 	["volumes"] = 27,
 	["chapters"] = 245,
 	["status"] = "finished",

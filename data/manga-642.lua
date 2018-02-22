@@ -1,6 +1,6 @@
 return {
 	["title"] = "Vinland Saga",
-	["authors"] = { "Makoto Yukimura"}
+	["authors"] = { "Makoto Yukimura"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

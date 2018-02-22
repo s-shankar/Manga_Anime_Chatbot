@@ -1,6 +1,6 @@
 return {
 	["title"] = "Hunter x Hunter",
-	["authors"] = { "Yoshihiro Togashi"}
+	["authors"] = { "Yoshihiro Togashi"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

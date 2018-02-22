@@ -1,6 +1,6 @@
 return {
 	["title"] = "One Punch-Man",
-	["authors"] = { "Yusuke Murata", "ONE ONE"}
+	["authors"] = { "Yusuke Murata", "ONE ONE"},
 	["volumes"] = "Unknown",
 	["chapters"] = "Unknown",
 	["status"] = "publishing",

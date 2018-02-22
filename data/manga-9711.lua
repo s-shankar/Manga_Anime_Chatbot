@@ -1,6 +1,6 @@
 return {
 	["title"] = "Bakuman.",
-	["authors"] = { "Takeshi Obata", "Tsugumi Ohba"}
+	["authors"] = { "Takeshi Obata", "Tsugumi Ohba"},
 	["volumes"] = 20,
 	["chapters"] = 176,
 	["status"] = "finished",
