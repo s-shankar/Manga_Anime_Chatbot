@@ -163,6 +163,10 @@ repeat
 				answer = answer..'Sorry , I do no know this character...'
 			end
 		end
+	elseif focusQuestion.quest == "QDESCRIPTION2" then
+	elseif focusQuestion.quest == "QTHEME1" then
+	elseif focusQuestion.quest == "QTHEME2" then
+	elseif focusQuestion.quest == "QUNKNOWN" then
 	end
 	--[[for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then
