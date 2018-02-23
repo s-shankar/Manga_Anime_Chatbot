@@ -193,7 +193,26 @@ repeat
 				end
 				resultListName = findCharacterName(fname,lname,characterNames)
 				if #resultListName ~= 0 then
-
+					if #resultListName == 1 then
+						workTitle = charaFromWhichAnimeOrManga(resultListName[1]["firstname"],resultListName[1]["lastname"])
+						bbhav = getBehaviours(resultListName[1]["firstname"],resultListName[1]["lastname"],workTitle,'anime')
+						if #bbhav ~= 0 then
+							if #bbhav == 1 then
+							answer=answer..resultListName[1]["firstname"].."is definetely "..bbhav[1].."."
+						else
+							answer=answer..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"].." is : "
+							for i,v in pairs(bbhav) do
+								answer=answer.." "..v.." , "
+							end
+						end
+						elseif #resultListName > 1 then
+							if fname and last then
+								answer = answer.."Hmmm, I know many characters named"..fname..' '..lname
+							end
+						else
+							answer = answer.."Aah, I do not know the behaviours of "..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"]..". Really sorry."
+						end
+					end
 
 				else
 					answer = answer..'Sorry , I do no know '..fname..'... did you mistype his/her name ?'
@@ -216,16 +235,16 @@ repeat
 				resultListName = findCharacterName(fname,lname,characterNames)
 				if #resultListName ~= 0 then
 					if #resultListName == 1 then
-						if #focusQuestion.behavs == 0 then
+						if #focusQuestion.behav == 0 then
 							answer= answer.."I cannot understand what behavior you asked."
 						else
 							workTitle = charaFromWhichAnimeOrManga(resultListName[1]["firstname"],resultListName[1]["lastname"])
 							bbhav = getBehaviours(resultListName[1]["firstname"],resultListName[1]["lastname"],workTitle,'anime')
 							found = 0
 							for i,v in ipairs(bbhav) do
-								if string.find(v,focusQuestion.behavs[1]) then
+								if string.find(v,focusQuestion.behav[1][1]) then
 									found = 1
-									answer=answer.."Yes, "..resultListName[1]["firstname"].." is "..focusQuestion.behavs[1]..'.'
+									answer=answer.."Yes, "..resultListName[1]["firstname"].." is "..focusQuestion.behav[1][1]..'.'
 									break
 								end
 							end
