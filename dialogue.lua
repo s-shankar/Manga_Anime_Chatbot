@@ -102,7 +102,7 @@ characterNames, characterFirstNames, characterLastNames = listCharacterNames(bas
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
 --print(serialize(adjList))
-print("I am ready !")
+print("Hello")
 
 local input = ""
 local answer = "I am sorry, I do not understand"
@@ -269,11 +269,17 @@ repeat
 					amTheme = getTheme(oeuvreBase["title"],"anime")
 					if #amTheme ~= 0 then
 						if #amTheme == 1 then
-							answer=answer.." It's definetely "..amTheme[1].."."
+							answer=answer.." It's definetely about "..amTheme[1].."."
 						else
-							answer=answer.."It deals with : "
+							answer=answer.."It deals with several themes :"
 							for i,v in ipairs(amTheme) do
-								answer=answer.." "..v.." , "
+								if i==#amTheme-1 then
+									answer=answer.." "..v.." and"
+								elseif i==#amTheme then
+									answer=answer.." "..v.."."
+								else
+									answer=answer.." "..v.." ,"
+								end
 							end
 						end
 					else
