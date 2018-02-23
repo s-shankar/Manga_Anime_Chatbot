@@ -187,6 +187,7 @@ function getAnimeOrMangaBase( title, base )
 	-- body
 	for k,anime in pairs(base["anime"]) do
 		print(title)
+		print(anime["title"])
 		if string.find(anime["title"],title) then
 			return anime
 		end
