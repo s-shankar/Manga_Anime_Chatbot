@@ -109,7 +109,7 @@ repeat
 	end
 	
 	focusQuestion = getFocusQ(input,focusQuestion)
-	if focusQuestion.quest == "QDESCRIPTION1" then
+	if focusQuestion.quest == "QUNKNOWN" then
 		answer=""
 		for i,chara in ipairs(focusQuestion.name) do
 			if i > 1 then
@@ -122,51 +122,140 @@ repeat
 				fname,lname = chara[1],chara[2]
 			end
 			--print("\t",fname,lname,#chara,chara[1],chara[2])
-			resultListName = findCharacterName(fname,lname,characterNames)
-			if #resultListName ~= 0 then
-				answer = answer..""
-				if #resultListName == 1 then
-					workTitle = charaFromWhichAnimeOrManga(resultListName[1]["firstname"],resultListName[1]["lastname"])
-					if fname and lname then
-						answer = answer.."Yes, I know "..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"].." from "..workTitle.."."
-					else
-						answer = answer.."Hum, I only know one character called like that : "..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"].." from "..workTitle.."."
-					end
-				elseif #resultListName > 1 then
-					if fname and last then
-						answer = answer.."Hmmm, I know many characters named"..fname..' '..lname
-						--[[for k,possibleName in pairs(resultListName) do
-							local count = 1
-							workTitle = charaFromWhichAnimeOrManga(fname,lname)
-							answer = answer..'\n'
-							if count > 1 then
-								answer = answer..' and '
+			if #focusQuestion.name ~= 0 then
+				resultListName = findCharacterName(fname,lname,characterNames)
+				if #resultListName ~= 0 then
+					answer = answer..""
+					if #resultListName == 1 then
+						workTitle = charaFromWhichAnimeOrManga(resultListName[1]["firstname"],resultListName[1]["lastname"])
+						if fname and lname then
+							answer = answer.."Yes, I know "..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"].." from "..workTitle.."."
+						else
+							answer = answer.."Hum, I only know one character called like that : "..resultListName[1]["firstname"]..' '..resultListName[1]["lastname"].." from "..workTitle.."."
+						end
+					elseif #resultListName > 1 then
+						if fname and last then
+							answer = answer.."Hmmm, I know many characters named"..fname..' '..lname
+							--[[for k,possibleName in pairs(resultListName) do
+								local count = 1
+								workTitle = charaFromWhichAnimeOrManga(fname,lname)
+								answer = answer..'\n'
+								if count > 1 then
+									answer = answer..' and '
+								end
+								answer = answer.."Yes, I know "..fname..' '..lname.."from "..workTitle.."."
+							end]]--
+						else
+							answer = answer.."Well, there are many characters called "..fname..'.\n'
+							for i,possibleName in ipairs(resultListName) do
+								workTitle = charaFromWhichAnimeOrManga(possibleName["firstname"],possibleName["lastname"])
+								if i == #resultListName then
+									answer = answer.."\nFinally, "
+								elseif i > 1 then
+									answer = answer.."\nAlso, "
+								else
+									answer = answer.."\nFirst, "
+								end
+								answer = answer.." I know "..possibleName["firstname"]..' '..possibleName["lastname"].." from "..workTitle.."."
 							end
-							answer = answer.."Yes, I know "..fname..' '..lname.."from "..workTitle.."."
-						end]]--
-					else
-						answer = answer.."Well, there are many characters called "..fname..'.\n'
-						for i,possibleName in ipairs(resultListName) do
-							workTitle = charaFromWhichAnimeOrManga(possibleName["firstname"],possibleName["lastname"])
-							if i == #resultListName then
-								answer = answer.."\nFinally, "
-							elseif i > 1 then
-								answer = answer.."\nAlso, "
-							else
-								answer = answer.."\nFirst, "
-							end
-							answer = answer.." I know "..possibleName["firstname"]..' '..possibleName["lastname"].." from "..workTitle.."."
 						end
 					end
+				else
+					answer = answer..'Sorry , I do no know this character...'
 				end
-			else
-				answer = answer..'Sorry , I do no know this character...'
+			elseif #focusQuestion.title ~= 0 then
+				for i,title in ipairs(focusQuestion.title) do
+					print(i,title)
+				end
 			end
 		end
+	elseif focusQuestion.quest == "QDESCRIPTION1" then
+		answer=""
+		if focusQuestion.name ~= 0 then
+			for i,chara in ipairs(focusQuestion.name) do
+				local fname, lname=nil,nil
+				if #chara == 1 then
+					fname = chara[1]
+				elseif #chara == 2 then
+					fname,lname = chara[1],chara[2]
+				end
+				resultListName = findCharacterName(fname,lname,characterNames)
+				if #resultListName ~= 0 then
+
+
+				else
+					answer = answer..'Sorry , I do no know '..fname..'... did you mistype his/her name ?'
+				end
+
+			end
+		else
+			answer = answer.."Unfortunately I did not find a name of a character in your question. can you provide one ?"
+		end
 	elseif focusQuestion.quest == "QDESCRIPTION2" then
+		answer = ""
+		if focusQuestion.name ~= 0 then
+			for i,chara in ipairs(focusQuestion.name) do
+				local fname, lname=nil,nil
+				if #chara == 1 then
+					fname = chara[1]
+				elseif #chara == 2 then
+					fname,lname = chara[1],chara[2]
+				end
+				resultListName = findCharacterName(fname,lname,characterNames)
+				if #resultListName ~= 0 then
+					if #resultListName == 1 then
+					elseif
+						#resultListName > 1 and fname or lname then
+							answer = answer.."Oops, I know many characters named "..fname.." :"
+							for i,possibleName in ipairs(resultListName) do
+								workTitle = charaFromWhichAnimeOrManga(possibleName["firstname"],possibleName["lastname"])
+								if i == #resultListName then
+									answer = answer.."\nFinally, "
+								elseif i > 1 then
+									answer = answer.."\nAlso, "
+								else
+									answer = answer.."\nFirst, "
+								end
+								answer = answer.." I know "..possibleName["firstname"]..' '..possibleName["lastname"].." from "..workTitle.."."
+							end
+					end
+				else
+					answer = answer.."Sorry, I do not know "..fname..' '..lastname.."... did you mistype it ?"
+				end
+			end
+		else
+			answer = answer..'Sorry , I do no know '..fname..'... did you mistype his/her name ?'
+		end
 	elseif focusQuestion.quest == "QTHEME1" then
+		answer = ""
+		if #focusQuestion.title ~= 0 then
+			for i,titre in ipairs(focusQuestion.title) do
+				c_title = ""
+				for q,t in pairs(titre) do
+					c_title= c_title..t.." "
+					c_title= c_title:sub(1, -2)
+				end
+				oeuvreBase = getAnimeOrMangaBase(c_title,base)
+				if oeuvreBase ~= nil then
+				else
+					answer = answer.."Sorry, I do not know the anime/manga "..c_title..", maybe it was mispelled ?"
+				end
+			end
+		else
+			answer = answer..'Sumimasen (excuse me), I need a title in order to give its themes.'
+		end
 	elseif focusQuestion.quest == "QTHEME2" then
-	elseif focusQuestion.quest == "QUNKNOWN" then
+		if #focusQuestion.title ~= 0 then
+			for i,titre in ipairs(focusQuestion.title) do
+				oeuvreBase = getAnimeOrMangaBase(titre,base)
+				if oeuvreBase ~= nil then
+				else
+					answer = answer.."Sorry, I do not know the anime/manga "..titre..", maybe it was mispelled ?"
+				end
+			end
+		else
+			answer = answer..'Sumimasen (excuse me), I did not found a title in your question. Can you provide me one ?'
+		end
 	end
 	--[[for key, chara in pairs(characterNames) do
 		if string.find(input, chara["firstname"]) and string.find(input, chara["lastname"]) then

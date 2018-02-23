@@ -133,8 +133,9 @@ function getContext(name)
 			animefound = name
 		end
 		for key, charac in pairs(anime[characters]) do
-			if charac["firstname"].." "..charac["lastname"].. == name or charac["lastname"].." "..charac["firstname"].. == name or charac["firstname"] == name or charac["lastname"] == name
+			if charac["firstname"].." "..charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"] == name or charac["lastname"] == name then
 				charactersfound[#charactersfound+1] = {["anime"] = anime["title"], ["name"] = name}
+			end
 		end
 	end 
 	for key, manga in pairs(base["manga"]) do
@@ -142,12 +143,12 @@ function getContext(name)
 			mangafound = name
 		end
 		for key, charac in pairs(manga[characters]) do
-			if charac["firstname"].." "..charac["lastname"].. == name or charac["lastname"].." "..charac["firstname"].. == name or charac["firstname"] == name or charac["lastname"] == name
+			if charac["firstname"].." "..charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"] == name or charac["lastname"] == name then
 				charactersfound[#charactersfound+1] = {["manga"] = manga["title"], ["name"] = name}
+			end
 		end
 	end
 	
-	if(
 end
 
 function findCharacterName( firstname, lastname, listChara, ... )
@@ -185,6 +186,7 @@ end
 function getAnimeOrMangaBase( title, base )
 	-- body
 	for k,anime in pairs(base["anime"]) do
+		print(title)
 		if string.find(anime["title"],title) then
 			return anime
 		end
