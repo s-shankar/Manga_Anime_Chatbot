@@ -140,16 +140,38 @@ end
 
 
 function process(sen)
-	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
+	sen = sen:gsub("([^A-Z])(%p)([^A-Z])", "%1 %2 %3")            --%0 correspond à toute la capture
+	sen = sen:gsub("([^A-Z])(%p)$", "%1 %2")
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	return main(seq)
 	--print(seq:tostring(tags))
 end
 
 local function splitsen(line)
-	for sen in line:gmatch("(.-[a-z][.?!])") do
-		process(sen)
+	output = {}
+	sents = {""}
+	local i=1
+	for j = 1, #line do
+		local letter = line:sub(j,j)
+		if letter ~= "." and letter ~= "?" and letter ~= "!" then
+			sents[i] = ""..sents[i]..letter
+		elseif j == #line or (j==#line-1 and line:sub(j+1, j+1) == " ")then
+			sents[i] = ""..sents[i]..letter
+			break
+		elseif line:sub(j+1,j+1) == " " and line:sub(j+2,j+2):find("[A-Z]") then
+			sents[i] = ""..sents[i]..letter
+			i=i+1
+			sents[i] = ""
+		else
+			sents[i] = ""..sents[i]..letter
+		end
 	end
+	--for sen in line:gmatch("(.-[a-zA-Z][.?!]) [A-Z]") do
+	for key, sen in pairs(sents) do
+		p = process(sen)
+		output[#output+1] = p
+	end
+	return output
 end
 
 
