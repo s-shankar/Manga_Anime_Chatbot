@@ -216,6 +216,23 @@ repeat
 				resultListName = findCharacterName(fname,lname,characterNames)
 				if #resultListName ~= 0 then
 					if #resultListName == 1 then
+						if #focusQuestion.behavs == 0 then
+							answer= answer.."I cannot understand what behavior you asked."
+						else
+							workTitle = charaFromWhichAnimeOrManga(resultListName[1]["firstname"],resultListName[1]["lastname"])
+							bbhav = getBehaviours(resultListName[1]["firstname"],resultListName[1]["lastname"],workTitle,'anime')
+							found = 0
+							for i,v in ipairs(bbhav) do
+								if string.find(v,focusQuestion.behavs[1]) then
+									found = 1
+									answer=answer.."Yes, "..resultListName[1]["firstname"].." is "..focusQuestion.behavs[1]..'.'
+									break
+								end
+							end
+							if found == 0 then
+								answer=answer.."No, "..resultListName[1]["firstname"].." is not."
+							end
+						end
 					elseif
 						#resultListName > 1 and fname or lname then
 							answer = answer.."Oops, I know many characters named "..fname.." :"
