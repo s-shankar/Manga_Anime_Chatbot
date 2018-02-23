@@ -213,7 +213,7 @@ function getTheme(title_name, type)
 			if anime["title"] == title_name then
 				themes = {}
 				for theme, indice in pairs(anime["themes"]) do
-					if indice > 0.025 then
+					if indice/anime["nbreviews"] > 0.025 then
 						themes[#themes+1] = theme
 					end
 				end
@@ -227,7 +227,7 @@ function getTheme(title_name, type)
 			if manga["title"] == title_name then
 				themes = {}
 				for theme, indice in pairs(manga["themes"]) do
-					if indice > 0.025 then
+					if indice/manga["nbreviews"] > 0.025 then
 						themes[#themes+1] = theme
 					end
 				end
