@@ -1,5 +1,5 @@
 dark = require("dark")
-base = dofile("base.lua")
+base = dofile("work-base.lua")
 dofile("functions.lua")
 
 local function getFocusQ(quest,oldFocus)
@@ -46,6 +46,16 @@ local function getFocusQ(quest,oldFocus)
 		table.insert(oldFocus.behav,behavTab)
 	end
 
+	if(#quest["#THEME"]) ~= 0 then
+		oldFocus.ask_theme = {}
+		local thTab = {}
+		for i,v in pairs(quest:tag2str("#THEME")) do
+			print(i,v)
+			thTab[#thTab+1] = v
+		end
+		table.insert(oldFocus.ask_theme,thTab)
+	end
+
 	if(#quest["#QTHEME1"]) ~= 0 then
 		oldFocus.theme = {}
 		local themeTab = {}
@@ -61,6 +71,8 @@ local function getFocusQ(quest,oldFocus)
 		oldFocus.quest = "QDESCRIPTION2"
 	elseif (#quest["#QTHEME1"]) ~= 0 then
 		oldFocus.quest = "QTHEME1"
+	elseif (#quest["#QTHEME2"]) ~= 0 then
+		oldFocus.quest = "QTHEME2"
 	elseif (#quest["#QUNKNOWN"]) ~= 0 then
 		oldFocus.quest = "QUNKNOWN"
 	end
@@ -237,6 +249,19 @@ repeat
 				end
 				oeuvreBase = getAnimeOrMangaBase(c_title,base)
 				if oeuvreBase ~= nil then
+					amTheme = getTheme(oeuvreBase["title"],"anime")
+					if #amTheme ~= 0 then
+						if #amTheme == 1 then
+							answer=answer.." It's definetely "..amTheme[1].."."
+						else
+							answer=answer.."It deals with : "
+							for i,v in ipairs(amTheme) do
+								answer=answer.." "..v.." , "
+							end
+						end
+					else
+						answer=answer.." Oops, I have no themes for "..oeuvreBase["title"]..". Sorry for the inconvenience."
+					end
 				else
 					answer = answer.."Sorry, I do not know the anime/manga "..c_title..", maybe it was mispelled ?"
 				end
@@ -245,12 +270,35 @@ repeat
 			answer = answer..'Sumimasen (excuse me), I need a title in order to give its themes.'
 		end
 	elseif focusQuestion.quest == "QTHEME2" then
+		answer=""
 		if #focusQuestion.title ~= 0 then
-			for i,titre in ipairs(focusQuestion.title) do
-				oeuvreBase = getAnimeOrMangaBase(titre,base)
-				if oeuvreBase ~= nil then
-				else
-					answer = answer.."Sorry, I do not know the anime/manga "..titre..", maybe it was mispelled ?"
+			if #focusQuestion.ask_theme == 0 then
+				answer=answer.."What is the theme you asked ?"
+			else
+				for i,titre in ipairs(focusQuestion.title) do
+					c_title = ""
+				for q,t in pairs(titre) do
+					c_title= c_title..t.." "
+					c_title= c_title:sub(1, -2)
+				end
+					oeuvreBase = getAnimeOrMangaBase(c_title,base)
+					if oeuvreBase ~= nil then
+						amTheme = getTheme(oeuvreBase["title"],"anime")
+						found = 0
+						for i,v in ipairs(amTheme) do
+							print(focusQuestion.ask_theme[1])
+							if(string.find(v,focusQuestion.ask_theme[1][1])) then
+								answer=answer.."Yes, indeed it is one of its themes."
+								found = 1
+								break
+							end
+						end
+						if found == 0 then
+							answer=answer.."No, it is not one of its themes."
+						end
+					else
+						answer = answer.."Sorry, I do not know the anime/manga "..titre..", maybe it was mispelled ?"
+					end
 				end
 			end
 		else

@@ -148,8 +148,6 @@ function getContext(name)
 		end
 	end
 	
-<<<<<<< HEAD
-=======
 	if #charactersfound == 0 and animefound == "" and mangafound == "" then
 		return "NOTFOUND", {}
 	end
@@ -228,7 +226,6 @@ function getTheme(title_name, type)
 			end
 		end
 	end
->>>>>>> b44d4a157dd27c32d4fca34bf36952f0de770302
 end
 
 function findCharacterName( firstname, lastname, listChara, ... )
@@ -266,8 +263,6 @@ end
 function getAnimeOrMangaBase( title, base )
 	-- body
 	for k,anime in pairs(base["anime"]) do
-		print(title)
-		print(anime["title"])
 		if string.find(anime["title"],title) then
 			return anime
 		end

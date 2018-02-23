@@ -1,4 +1,4 @@
-{
+return {
   anime = {
     [1] = {
       characters = {
