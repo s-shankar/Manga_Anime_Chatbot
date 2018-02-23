@@ -80,8 +80,78 @@ function listAdjectives(adjectives)
 	return adjList
 end
 
+-- Returns the Levenshtein distance between the two given strings
+function levenshtein(str1, str2)
+	local len1 = string.len(str1)
+	local len2 = string.len(str2)
+	local matrix = {}
+	local cost = 0
+	
+        -- quick cut-offs to save time
+	if (len1 == 0) then
+		return len2
+	elseif (len2 == 0) then
+		return len1
+	elseif (str1 == str2) then
+		return 0
+	end
+	
+        -- initialise the base matrix values
+	for i = 0, len1, 1 do
+		matrix[i] = {}
+		matrix[i][0] = i
+	end
+	for j = 0, len2, 1 do
+		matrix[0][j] = j
+	end
+	
+        -- actual Levenshtein algorithm
+	for i = 1, len1, 1 do
+		for j = 1, len2, 1 do
+			if (str1:byte(i) == str2:byte(j)) then
+				cost = 0
+			else
+				cost = 1
+			end
+			
+			matrix[i][j] = math.min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + cost)
+		end
+	end
+	
+        -- return the last value - this is the Levenshtein distance
+	return matrix[len1][len2]
+end
+
+
+function getContext(name)
+	
+	local animefound = ""
+	local mangafound = ""
+	local charactersfound = {}
+	for key, anime in pairs(base["anime"]) do
+		if(name == anime["title"]) then
+			animefound = name
+		end
+		for key, charac in pairs(anime[characters]) do
+			if charac["firstname"].." "..charac["lastname"].. == name or charac["lastname"].." "..charac["firstname"].. == name or charac["firstname"] == name or charac["lastname"] == name
+				charactersfound[#charactersfound+1] = {["anime"] = anime["title"], ["name"] = name}
+		end
+	end 
+	for key, manga in pairs(base["manga"]) do
+		if(name == manga["title"]) then
+			mangafound = name
+		end
+		for key, charac in pairs(manga[characters]) do
+			if charac["firstname"].." "..charac["lastname"].. == name or charac["lastname"].." "..charac["firstname"].. == name or charac["firstname"] == name or charac["lastname"] == name
+				charactersfound[#charactersfound+1] = {["manga"] = manga["title"], ["name"] = name}
+		end
+	end
+	
+	if(
+end
 
 function findCharacterName( firstname, lastname, listChara, ... )
+	local distancemax = 3
 	local listName = {}
 	local name = ""
 	local args = {...}
@@ -96,7 +166,7 @@ function findCharacterName( firstname, lastname, listChara, ... )
 		animeFound = getAnimeOrMangaBase(animeTitle,base)
 		if animeFound ~= nil then
 			for k,chara in pairs(animeFound) do
-				if string.find(chara["firstname"]..' '..chara["lastname"],name) or lastname ~= nil and string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+				if levenshtein(chara["firstname"]..' '..chara["lastname"],name)<=distancemax or lastname ~= nil and levenshtein(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname)<distancemax then
 					listName[#listName+1]= {firstname=chara["firstname"],lastname= chara["lastname"]}
 				end
 			end
@@ -104,7 +174,7 @@ function findCharacterName( firstname, lastname, listChara, ... )
 	else
 		for key, chara in pairs(listChara) do
 		--	print("\t",firstname,lastname,name)
-			if string.find(chara["firstname"]..' '..chara["lastname"],name) or lastname ~= nil and string.find(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname) then
+			if levenshtein(chara["firstname"]..' '..chara["lastname"],name)<3 or lastname ~= nil and levenshtein(chara["firstname"]..' '..chara["lastname"],lastname..' '..firstname)<3 then
 				listName[#listName+1]= {firstname=chara["firstname"],lastname= chara["lastname"]}
 			end
 		end

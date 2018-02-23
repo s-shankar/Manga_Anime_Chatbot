@@ -14,7 +14,7 @@ adjList = listAdjectives(dofile("adjectives.lua"))
 main:lexicon("#CHARACTERFIRSTNAME", characterFirstNames)
 main:lexicon("#CHARACTERLASTNAME", characterLastNames)
 main:lexicon("#CHIFFRES", {"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"})
-main:lexicon("#ISVERB", {"is","seem","seems","look","looks","sound","sounds","appear","appears"})
+main:lexicon("#ISVERB", {"is","seem","seems","look","looks","sound","sounds","appear","appears", "was"})
 main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
@@ -39,7 +39,7 @@ main:pattern([[
 
 main:pattern([[
 	[#DESCRIPTION
-		(#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|('kind' 'of')|'kinda'|('a' 'little'? 'bit'))? #BEHAVIOUR (',' #BEHAVIOUR)* ('and' #BEHAVIOUR)?)
+		(#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|'extremely'|('kind' 'of')|'kinda'|('a' 'little'? 'bit')|'so'|'soo'|'sooo'|'soooo')? #BEHAVIOUR ((','|'and') #BEHAVIOUR)*)
 	]
 ]])
 
@@ -149,7 +149,8 @@ end
 
 
 local function process(sen)
-	sen = sen:gsub("^[A-Z]%p^[A-Z]", " %0 ")            --%0 correspond à toute la capture
+	sen = sen:gsub("([^A-Z])(%p)([^A-Z])", "%1 %2 %3")            --%0 correspond à toute la capture
+	sen = sen:gsub("([^A-Z])(%p)$", "%1 %2")
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	return main(seq)
 	--print(seq:tostring(tags))
@@ -158,7 +159,25 @@ end
 -- returns a table of dark.sequence
 local function splitsen(line)
 	output = {}
-	for sen in line:gmatch("(.-[a-z][.?!])") do
+	sents = {""}
+	local i=1
+	for j = 1, #line do
+		local letter = line:sub(j,j)
+		if letter ~= "." and letter ~= "?" and letter ~= "!" then
+			sents[i] = ""..sents[i]..letter
+		elseif j == #line or (j==#line-1 and line:sub(j+1, j+1) == " ")then
+			sents[i] = ""..sents[i]..letter
+			break
+		elseif line:sub(j+1,j+1) == " " and line:sub(j+2,j+2):find("[A-Z]") then
+			sents[i] = ""..sents[i]..letter
+			i=i+1
+			sents[i] = ""
+		else
+			sents[i] = ""..sents[i]..letter
+		end
+	end
+	--for sen in line:gmatch("(.-[a-zA-Z][.?!]) [A-Z]") do
+	for key, sen in pairs(sents) do
 		p = process(sen)
 		output[#output+1] = p
 	end
@@ -173,33 +192,44 @@ end
 
 
 local function tagstr(seq, tag, lim_debut, lim_fin)
+	local results = {}
 	lim_debut = lim_debut or 1
 	lim_fin   = lim_fin   or #seq
 	if not havetag(seq, tag) then
-		return nil
+		return {""}
 	end
 	local list = seq[tag]
 	for i, position in ipairs(list) do
+		local tokens = {}
 		local debut, fin = position[1], position[2]
 		if debut >= lim_debut and fin <= lim_fin then
-			local tokens = {}
 			for i = debut, fin do
 				tokens[#tokens + 1] = seq[i].token
 			end
-			return table.concat(tokens, " ")
+		end
+		if #tokens ~= 0 then
+			results[#results+1] = table.concat(tokens, " ")
 		end
 	end
-	return nil
+	if #results == 0 then
+		return {""}
+	end
+	return results
 end
 
 local function GetValueInLink(seq, entity, link)
+	results = {}
 	for i, pos in ipairs(seq[link]) do
 		local res = tagstr(seq, entity, pos[1], pos[2])
+		--print("TESTA : "..serialize(res))
 		if res then
-			return res
+			results[#results+1] = res
 		end
 	end
-	return nil
+	if #results == 0 then
+		return nil
+	end
+	return results
 end
 
 -- un champ personnage de la base
@@ -247,18 +277,33 @@ function getAnalyzedBase(base)
 					end
 					
 					if havetag(sen, "#DESCRIPTION") then
-						for keyb, charac in pairs(animeOut[keya]["characters"]) do
-							if (GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == charac["firstname"] or GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION") == nil and charac["firstname"] == "")
-								and (GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == charac["lastname"] or GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION") == nil and charac["lastname"] == "") then
-								local found = false
-								for key, behav in pairs(charac["behaviours"]) do
-									if behav == GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION") then
-										found = true
-										break
+						firstnames = {}
+						for key, value in pairs(GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION")) do
+							firstnames[#firstnames+1] = value[1]
+						end
+						lastnames = {}
+						for key, value in pairs(GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION")) do
+							lastnames[#lastnames+1] = value[1]
+						end
+						behavs = {}
+						for key, value in pairs(GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")) do
+							behavs[#behavs+1] = value
+						end
+						for i = 1, #behavs do
+							for keyb, charac in pairs(animeOut[keya]["characters"]) do
+								if firstnames[i] == charac["firstname"] or lastnames[i] == charac["lastname"] then
+									for key, behav in pairs(behavs[i]) do
+										local found = false
+										for key, other in pairs(charac["behaviours"]) do
+											if other == behav then
+												found = true
+												break
+											end
+										end
+										if found == false then
+											charac["behaviours"][#charac["behaviours"]+1] = behav
+										end
 									end
-								end
-								if found == false then
-									charac["behaviours"][#charac["behaviours"]+1] = GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")
 								end
 							end
 						end

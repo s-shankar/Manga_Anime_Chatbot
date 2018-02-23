@@ -255,7 +255,6 @@ return {
 	{"poor", },
 	{"popular", },
 	{"precise", },
-	{"pretty", },
 	{"primitive", },
 	{"proper", },
 	{"proud", },
