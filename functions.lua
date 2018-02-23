@@ -124,7 +124,6 @@ end
 
 
 function getContext(name)
-	
 	local animefound = ""
 	local mangafound = ""
 	local charactersfound = {}
@@ -149,6 +148,87 @@ function getContext(name)
 		end
 	end
 	
+<<<<<<< HEAD
+=======
+	if #charactersfound == 0 and animefound == "" and mangafound == "" then
+		return "NOTFOUND", {}
+	end
+	if #charactersfound == 0 and animefound == "" and mangafound ~= "" then
+		return "MANGA", {mangafound}
+	end
+	if #charactersfound == 0 and animefound ~= "" and mangafound == "" then
+		return "ANIME", {animefound}
+	end
+	if #charactersfound ~= 0 and animefound == "" and mangafound == "" then
+		return "CHAR", charactersfound
+	end
+	if #charactersfound == 0 and animefound ~= "" and mangafound ~= "" then
+		return "ANIMEORMANGA", {animefound, mangafound}
+	end
+	if #charactersfound ~= 0 and animefound ~= "" and mangafound == "" then
+		return "ANIMEORCHAR", {animefound}+charactersfound
+	end
+	if #charactersfound ~= 0 and animefound == "" and mangafound ~= "" then
+		return "MANGAORCHAR", {mangafound}+charactersfound
+	end
+	return "ALLFOUND", {animefound, mangafound}+charactersfound
+end
+
+
+function getBehaviours(firstname,lastname, title, type)
+		if type == "anime" then
+		for key, anime in pairs(base["anime"]) do
+			if anime["title"] == title then
+				for key, charac in pairs(anime["characters"]) do
+					if charac["firstname"] == firstname and charac["lastname"] == lastname then
+						return charac["behaviours"]
+					end
+				end
+			end
+		end
+	end
+	if type == "manga" then
+		for key, manga in pairs(base["manga"]) do
+			if manga["title"] == title then
+				for key, charac in pairs(manga["characters"]) do
+					if charac["firstname"] == firstname and charac["lastname"] == lastname then
+						return charac["behaviours"]
+					end
+				end
+			end
+		end
+	end
+end
+
+function getTheme(title_name, type)
+	if type == "anime" then
+		for key, anime in pairs(base["anime"]) do
+			if anime["title"] == title_name then
+				themes = {}
+				for theme, indice in pairs(anime["themes"]) do
+					if indice > 0.025 then
+						themes[#themes+1] = theme
+					end
+				end
+			return themes
+			end
+		end
+	end
+	
+	if type == "manga" then
+		for key, manga in pairs(base["manga"]) do
+			if manga["title"] == title_name then
+				themes = {}
+				for theme, indice in pairs(manga["themes"]) do
+					if indice > 0.025 then
+						themes[#themes+1] = theme
+					end
+				end
+			return themes
+			end
+		end
+	end
+>>>>>>> b44d4a157dd27c32d4fca34bf36952f0de770302
 end
 
 function findCharacterName( firstname, lastname, listChara, ... )
@@ -213,3 +293,4 @@ function charaFromWhichAnimeOrManga( firstname, lastname )
 	end
 	return nil
 end
+
