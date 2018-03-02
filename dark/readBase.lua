@@ -340,6 +340,15 @@ function getAnalyzedBase(base)
 					animeOut[keya]["themes"][keyt] = animeOut[keya]["themes"][keyt] + t
 				end
 			end
+
+			for keyt, t in pairs(revCanThemes) do
+				if animeOut[keya]["candidate_themes"][keyt] == nil then
+					animeOut[keya]["candidate_themes"][keyt] = t
+				else
+					animeOut[keya]["candidate_themes"][keyt] = animeOut[keya]["candidate_themes"][keyt] + t
+				end
+			end
+
 		end
 		
 		--[[
@@ -352,7 +361,7 @@ function getAnalyzedBase(base)
 		]]--
 		
 		print(keya .. "/" .. #base)
-		--if keya > 1 then break end
+		if keya > 3 then break end
 	end
 	return animeOut
 end
