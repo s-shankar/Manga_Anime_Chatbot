@@ -15,6 +15,7 @@ main:lexicon("#CHARACTERFIRSTNAME", characterFirstNames)
 main:lexicon("#CHARACTERLASTNAME", characterLastNames)
 main:lexicon("#CHIFFRES", {"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"})
 main:lexicon("#ISVERB", {"is","seem","seems","look","looks","sound","sounds","appear","appears", "was"})
+main:lexicon("#ENDPHRASE", { '.',';',',',')','(','-','--'})
 main:lexicon("#BEHAVIOUR", adjList)
 main:lexicon("#MANGATITLE", mangaTitles)
 main:lexicon("#ANIMETITLE", animeTitles)
@@ -30,7 +31,6 @@ main:pattern('[#WORD /^%a+$/ ]')
 main:pattern('[#PONCT /%p/ ]')
 
 
-
 main:pattern([[
 	[#CHARACTERNAME
 		((#CHARACTERFIRSTNAME #CHARACTERLASTNAME?) | (#CHARACTERLASTNAME #CHARACTERFIRSTNAME?))
@@ -43,20 +43,15 @@ main:pattern([[
 	]
 ]])
 
--- <( ('s' | 'is' | 'was') .*?) #THEME >('show' | 'anime' | 'manga' | 'series' | 'program')
---[[
- <(.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'series' | 'program' | 'it') .*?
-			(('s' | 'is') 'about') | ('deals' 'with')) .*?
-			#THEME (',' #THEME)*?
-]]--
-
---[[
-	.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'series' | 'program' | 'it') .*?
-	((('s' | 'is') 'about') | ('deals' 'with'))
-	[#WORKTHEME
-			 #THEME 
+main:pattern([[
+	[#CANDIDATE_DESCRIPTION
+	#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|'extremely'|('kind' 'of')|'kinda'|('a' 'little'? 'bit')|'so'|'soo'|'sooo'|'soooo')? 
+		.{1,50}?
 	]
---]]
+	#ENDPHRASE
+]])
+
+
 
 --using look-arounds because it totally gives better results
 
@@ -69,6 +64,16 @@ main:pattern([[
 ]])
 
 
+main:pattern([[
+	.*? (#TITLE | 'story' | 'anime' | 'manga' | 'show' | 'work' | 'it') (',' .* ',')*?
+	((('s' | 'is') 'about') | ('deals' 'with'))
+	[#CANDIDATE_WORKTHEME
+		.{1,50}? (',' 'and'? .*)*?
+	]
+	#ENDPHRASE
+]])
+
+
 
 
 main:pattern([[
@@ -77,10 +82,16 @@ main:pattern([[
 			#THEME
 	]
 	('show' | 'anime' | 'manga' | 'series' | 'program')
-	
 ]])
 
-
+main:pattern([[
+	#title ('s' | 'is' | 'was') .*?
+	[#CANDIDATE_WORKTHEME
+			.{1,50}?
+	]
+	('show' | 'anime' | 'manga' | 'series' | 'program')
+	#ENDPHRASE
+]])
 
 
 main:pattern("[#DUREE ( #CHIFFRES | /%d+/ ) ( /mois%p?/ | /jours%p?/ ) ]")
@@ -257,10 +268,13 @@ function getAnalyzedBase(base)
 		animeOut[keya]["characters"] = anime["characters"]
 		for keyb, charac in ipairs(animeOut[keya]["characters"]) do
 			charac["behaviours"] = {}
+			charac["candidate_behaviours"]= {}
 		end
 		animeOut[keya]["themes"] = {}
+		animeOut[keya]["candidate_themes"] = {}
 		for key,review in ipairs(anime["reviews"]) do
 			revThemes = {}
+			revCanThemes = {}
 			if review["text"] ~= "" then
 				tablesen = splitsen(review["text"])
 				for key, sen in ipairs(tablesen) do 
@@ -274,6 +288,14 @@ function getAnalyzedBase(base)
 							revThemes[t] = revThemes[t] + 1
 						end
 						
+					end
+					for key, t in ipairs(sen:tag2str("#CANDIDATE_WORKTHEME")) do
+						if revCanThemes[t] == nil then
+								revCanThemes[t] = 1+0.1*(review["helpful"])
+						else
+							revCanThemes[t] = revCanThemes[t] + 1
+						end
+
 					end
 					
 					if havetag(sen, "#DESCRIPTION") then
