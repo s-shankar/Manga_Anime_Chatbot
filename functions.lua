@@ -3,33 +3,33 @@ function listCharacterNames(table, characterNames, characterFirstnames, characte
 		for key2, character in pairs(work["characters"]) do
 			local found = false
 			for key3, autres in pairs(characterNames) do
-				if autres["firstname"] == character["firstname"] and autres["lastname"] == character["lastname"] then
+				if autres["firstname"] == character["firstname"]:lower() and autres["lastname"] == character["lastname"]:lower() then
 					found = true
 					break
 				end
 			end
 			if found==false then
-				characterNames[#characterNames+1] = {["firstname"] = character["firstname"], ["lastname"] = character["lastname"]}
+				characterNames[#characterNames+1] = {["firstname"] = character["firstname"]:lower(), ["lastname"] = character["lastname"]:lower()}
 			end
 			found = false
 			for key3, autres in pairs(characterFirstnames) do
-				if autres == character["firstname"] then
+				if autres == character["firstname"]:lower() then
 					found = true
 					break
 				end
 			end
 			if found==false then
-				characterFirstnames[#characterFirstnames+1] = character["firstname"]
+				characterFirstnames[#characterFirstnames+1] = character["firstname"]:lower()
 			end
 			found = false
 			for key3, autres in pairs(characterLastnames) do
-				if autres == character["lastname"] then
+				if autres == character["lastname"]:lower() then
 					found = true
 					break
 				end
 			end
 			if found==false then
-				characterLastnames[#characterLastnames+1] = character["lastname"]
+				characterLastnames[#characterLastnames+1] = character["lastname"]:lower()
 			end
 		end
 	end

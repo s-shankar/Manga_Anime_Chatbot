@@ -8,7 +8,9 @@ base = dofile("base.lua")
 mangaTitles, animeTitles, titles = listTitles(base)
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], {},{},{})
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["manga"], characterNames,characterFirstNames,characterLastNames)
-adjList = listAdjectives(dofile("adjectives.lua"))
+adjectives = dofile("adjectives.lua")
+adjList = listAdjectives(adjectives)
+
 
 
 -- Création d'un lexique ou chargement d'un lexique existant
@@ -174,6 +176,7 @@ local function splitsen(line)
 	output = {}
 	sents = {""}
 	local i=1
+	--A sentence ends with a dot and is followed by a space and a capital letter
 	for j = 1, #line do
 		local letter = line:sub(j,j)
 		if letter ~= "." and letter ~= "?" and letter ~= "!" then
@@ -260,6 +263,75 @@ end]]--
 	end
 end]]--
 
+local function addBehavioursFromSentence(sen)
+	if havetag(sen, "#DESCRIPTION") then
+		firstnames = {}
+		for key, value in pairs(GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION")) do
+			firstnames[#firstnames+1] = value[1]
+		end
+		lastnames = {}
+		for key, value in pairs(GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION")) do
+			lastnames[#lastnames+1] = value[1]
+		end
+		behavs = {}
+		for key, value in pairs(GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")) do
+			local found = false
+			for key, list in ipairs(adjectives) do
+				for key2, adj in ipairs(list) do
+					if value == adj then
+						found = true
+						behavs[#behavs+1] = list[1]
+						break
+					end
+				end
+				if found == true then break end
+			end
+		end
+		for i = 1, #behavs do
+			for keyb, charac in pairs(animeOut[keya]["characters"]) do
+				if firstnames[i] == charac["firstname"] or lastnames[i] == charac["lastname"] then
+					for key, behav in pairs(behavs[i]) do
+						local found = false
+						for key, other in pairs(charac["behaviours"]) do
+							if other == behav then
+								found = true
+								break
+							end
+						end
+						if found == false then
+							charac["behaviours"][#charac["behaviours"]+1] = behav
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+function replaceCaps(base)
+	for key, work in ipairs(base) do
+		work["title"] = work["title"]:lower()
+		work["synopsis"] = work["synopsis"]:lower()
+		for key, related in ipairs(work["relatedWorks"]) do
+			related["title"] = related["title"]:lower()
+		end
+		for key, review in ipairs(work["reviews"]) do
+			review["text"] = review["text"]:lower()
+		end
+		for key, charac in ipairs(work["characters"]) do
+			charac["firstname"] = charac["firstname"]:lower()
+			charac["lastname"] = charac["lastname"]:lower()
+			if charac["description"] ~= nil then
+				charac["description"] = charac["description"]:lower()
+			end
+			if charac["nicknames"]~= nil then
+				for key, nickname in ipairs(charac["nicknames"]) do
+					nickname = nickname:lower()
+				end
+			end
+		end
+	end
+end
 
 function getAnalyzedBase(base)
 	animeOut={}
@@ -268,6 +340,9 @@ function getAnalyzedBase(base)
 		animeOut[keya]["title"] = anime["title"]
 		animeOut[keya]["nbreviews"] = #anime["reviews"]
 		animeOut[keya]["characters"] = anime["characters"]
+		if anime["synopsis"] ~= nil then
+			animeOut[keya]["synopsis"] = anime["synopsis"]
+		end
 		for keyb, charac in ipairs(animeOut[keya]["characters"]) do
 			charac["behaviours"] = {}
 			charac["candidate_behaviours"]= {}
@@ -312,39 +387,7 @@ function getAnalyzedBase(base)
 							end
 						end
 					end
-					
-					if havetag(sen, "#DESCRIPTION") then
-						firstnames = {}
-						for key, value in pairs(GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION")) do
-							firstnames[#firstnames+1] = value[1]
-						end
-						lastnames = {}
-						for key, value in pairs(GetValueInLink(sen, "#CHARACTERLASTNAME", "#DESCRIPTION")) do
-							lastnames[#lastnames+1] = value[1]
-						end
-						behavs = {}
-						for key, value in pairs(GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")) do
-							behavs[#behavs+1] = value
-						end
-						for i = 1, #behavs do
-							for keyb, charac in pairs(animeOut[keya]["characters"]) do
-								if firstnames[i] == charac["firstname"] or lastnames[i] == charac["lastname"] then
-									for key, behav in pairs(behavs[i]) do
-										local found = false
-										for key, other in pairs(charac["behaviours"]) do
-											if other == behav then
-												found = true
-												break
-											end
-										end
-										if found == false then
-											charac["behaviours"][#charac["behaviours"]+1] = behav
-										end
-									end
-								end
-							end
-						end
-					end
+					addBehavioursFromSentence(sen)
 				end
 			end
 			
@@ -382,6 +425,10 @@ function getAnalyzedBase(base)
 end
 
 outbase={}
+print("Replacing capital letters from animes")
+replaceCaps(base["anime"])
+print("Replacing capital letters from mangas")
+replaceCaps(base["manga"])
 print("Parsing animes")
 outbase["anime"] = getAnalyzedBase(base["anime"])
 print("Parsing mangas")
