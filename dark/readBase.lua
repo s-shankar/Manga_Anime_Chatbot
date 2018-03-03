@@ -1,6 +1,7 @@
 -- Création d'un pipeline pour DARK
 local main = dark.pipeline()
 
+postagmod = dark.model("dark/model/postag-en")
 
 dofile("functions.lua")
 base = dofile("base.lua")
@@ -43,6 +44,7 @@ main:pattern([[
 	]
 ]])
 
+-- /^%p/ seem about as useful as wet toilet paper
 main:pattern([[
 	[#CANDIDATE_DESCRIPTION
 	#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|'extremely'|('kind' 'of')|'kinda'|('a' 'little'? 'bit')|'so'|'soo'|'sooo'|'soooo')? 
@@ -290,12 +292,25 @@ function getAnalyzedBase(base)
 						
 					end
 					for key, t in ipairs(sen:tag2str("#CANDIDATE_WORKTHEME")) do
-						if revCanThemes[t] == nil then
-								revCanThemes[t] = 1+0.1*(review["helpful"])
-						else
-							revCanThemes[t] = revCanThemes[t] + 1
+						skipThisCan = false
+						canSeq = dark.sequence(t)
+						postagmod:label(canSeq)
+						c = canSeq:tag2str("#POS=NNC")
+						p = canSeq:tag2str("#POS=NNP")
+						if #c == 0 and #p == 0 then
+							skipThisCan = true
 						end
+						
+						if (canSeq[1][1]["name"] == "#POS=PCT") then skipThisCan = true end
+						if (canSeq[1][1]["name"] == "#POS=ADV") then skipThisCan = true end
 
+						if (skipThisCan ~= true) then
+							if revCanThemes[t] == nil then
+									revCanThemes[t] = 1+0.1*(review["helpful"])
+							else
+								revCanThemes[t] = revCanThemes[t] + 1
+							end
+						end
 					end
 					
 					if havetag(sen, "#DESCRIPTION") then
@@ -361,7 +376,7 @@ function getAnalyzedBase(base)
 		]]--
 		
 		print(keya .. "/" .. #base)
-		if keya > 3 then break end
+		-- if keya > 3 then break end
 	end
 	return animeOut
 end
