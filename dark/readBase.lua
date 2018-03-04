@@ -49,7 +49,7 @@ main:pattern([[
 -- /^%p/ seem about as useful as wet toilet paper
 main:pattern([[
 	[#CANDIDATE_DESCRIPTION
-	#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|'extremely'|('kind' 'of')|'kinda'|('a' 'little'? 'bit')|'so'|'soo'|'sooo'|'soooo')? 
+	#CHARACTERNAME #ISVERB ('to' 'be')? ('really'|'very'|'extremely'|('kind' 'of')|'kinda'|('a' 'little'? 'bit')|'so'|'soo'|'sooo'|'soooo')?		
 		.{1,50}?
 	]
 	#ENDPHRASE
@@ -118,14 +118,6 @@ local tags = {
 
 
 -- Traitement des lignes du fichier
---[[local sentence = "In the first season finale, C.C. triggers a trap set by V.V., causing herself and Lelouch to be submerged in a shock image sequence similar to the one she used on Suzaku. Through this, Lelouch sees memories of her past, including repeated deaths. sensitive"
-for line in sentence.lines() do
-        -- Toutes les étiquettes
-	--print(main(line))
-        -- Uniquement les étiquettes voulues
-print(main(sentence):tostring(tags))
-end--]]
-
 
 
 local function havetag(seq, tag)
@@ -168,7 +160,6 @@ local function process(sen)
 	sen = sen:gsub("([^A-Z])(%p)$", "%1 %2")
 	local seq = dark.sequence(sen) -- ça découpe sur les espaces
 	return main(seq)
-	--print(seq:tostring(tags))
 end
 
 -- returns a table of dark.sequence
@@ -237,7 +228,6 @@ local function GetValueInLink(seq, entity, link)
 	results = {}
 	for i, pos in ipairs(seq[link]) do
 		local res = tagstr(seq, entity, pos[1], pos[2])
-		--print("TESTA : "..serialize(res))
 		if res then
 			results[#results+1] = res
 		end
@@ -248,20 +238,6 @@ local function GetValueInLink(seq, entity, link)
 	return results
 end
 
--- un champ personnage de la base
---[[local getCharacBehaviours(character)
-	
-end]]--
-
---Pour afficher le corpus
---[[for f in os.dir("sentences") do
-	for line in io.lines("sentences/"..f) do
-		--print(line)
-		if line ~= "" then
-			splitsen(line)
-		end
-	end
-end]]--
 
 local function addBehavioursFromSentence(sen, characterList)
 	if havetag(sen, "#DESCRIPTION") then
@@ -280,7 +256,6 @@ local function addBehavioursFromSentence(sen, characterList)
 		for i = 1, #behavs do
 			for keyb, charac in pairs(characterList) do
 				if firstnames[i] == charac["firstname"] or lastnames[i] == charac["lastname"] then
-					--print("TEST : "..serialize(charac))
 					for key, behav in pairs(behavs[i]) do
 						--consolide les adjectifs pour éviter les répétitions/synonyms
 						local found = false
@@ -309,6 +284,60 @@ local function addBehavioursFromSentence(sen, characterList)
 			end
 		end
 	end
+end
+
+-- assumed to already be a #CANDIDATE_DESCRIPTION
+function addCandidateBehavioursFromSentence(sen, characterList)
+	-- sentence starts with a proper name, so we just remove that and search for it in the character list
+	seq = process(sen)
+
+	-- scattershot approach, right, but..
+
+
+	-- get the names that should be at the start (because the patterns are that way)
+	fnames = {}
+	lnames = {}
+
+	i = 1
+	while i<#seq do
+		isName = false
+		for j, tag in pairs(seq[i]) do 
+			if tag["name"] == "#CHARACTERFIRSTNAME" then
+				fnames[#fnames+1] = seq[i]["token"]
+				isName = true
+			end
+			if tag["name"] == "#CHARACTERLASTNAME" then
+				lnames[#lnames+1] = seq[i]["token"]
+				isName = true
+			end
+
+			if isName==false then goto done end
+		end
+		i=i+1
+	end
+	::done::
+
+	-- attach the sentence to all fitting characters
+
+	--FIXME : we should only put there the sentence without the character name at the start.
+
+	for k, char in pairs(characterList) do
+		for j, f in pairs(fnames) do
+			if f == char["firstname"] then
+				characterList[k]["candidate_behaviours"][sen] = nil
+				characterList[k]["candidate_behaviours"][sen] = 1
+			end
+		end
+		for j, l in pairs(lnames) do
+			if l == char["lastname"] then
+				characterList[k]["candidate_behaviours"][sen] = nil
+				characterList[k]["candidate_behaviours"][sen] = 1
+			end
+		end
+
+	end
+	
+
 end
 
 function replaceCaps(base)
@@ -370,7 +399,6 @@ function getAnalyzedBase(base)
 						if revThemes[t] == nil then
 							-- one "helpful" click counts as 1/10th of a review
 								revThemes[t] = 1+0.1*(review["helpful"])
-							--end
 						else
 							-- helpful bonus is only applied once
 							revThemes[t] = revThemes[t] + 1
@@ -399,9 +427,16 @@ function getAnalyzedBase(base)
 						end
 					end
 					addBehavioursFromSentence(sen, animeOut[keya]["characters"])
+
+					for key, b in ipairs(sen:tag2str("#CANDIDATE_DESCRIPTION")) do
+						addCandidateBehavioursFromSentence(b, animeOut[keya]["characters"])
+					end
+
+
 				end
 			end
 			
+
 			for keyt, t in pairs(revThemes) do
 				if animeOut[keya]["themes"][keyt] == nil then
 					animeOut[keya]["themes"][keyt] = t
@@ -421,7 +456,7 @@ function getAnalyzedBase(base)
 		end
 		
 		print(keya .. "/" .. #base)
-		-- if keya > 3 then break end
+		 if keya > 1 then break end
 	end
 	return animeOut
 end
@@ -490,15 +525,8 @@ outbase["anime"] = overConsolidate(outbase["anime"])
 outbase["manga"] = overConsolidate(outbase["manga"])
 
 
---print(serialize(animeOut))
 file = io.open("work-base.lua", "w")
 io.output(file)
 io.write("return "..serialize(outbase))
 io.close(file)
 
-
-
---function seekDescription(character, work, type)
-	
-	
---end
