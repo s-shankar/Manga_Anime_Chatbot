@@ -1,5 +1,6 @@
 # Manga Anime Chatbot
 Projet contenant un système de dialogue avec un agent conversationnel sur le thème des mangas et animes.
+Réalisé par Olivier Léobal, Pierre-Antoine Locatelli et Shankar Sivagnanasundaram
 
 ## Utilisation
 

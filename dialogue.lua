@@ -133,6 +133,8 @@ repeat
 		answer = "See you soon!"
 	else
 		understandQuestion(input)
+		print(serialize(dialog_state))
+		print("test : "..dialog_state.hctypes)
 		focusQuestion = getFocusQ(input,focusQuestion)
 		if focusQuestion.quest == "QUNKNOWN" then
 			answer=""

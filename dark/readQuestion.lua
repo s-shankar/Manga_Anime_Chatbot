@@ -180,9 +180,12 @@ end
 function understandQuestion(question)
 	if question~="" then
 		local sum = 0
+		workfound = {}
+		local nbcharacters = 0
 		question = process(question)
 		if havetag(question, "#CHARACTERNAME") then
-			characFound, sum = findCharacterInWorks(question:tag2str("#CHARACTERNAME")[1])
+			characFound, nbcharacters = findCharacterInWorks(question:tag2str("#CHARACTERNAME")[1])
+			sum = nbcharacters
 		end
 		if havetag(question, "#TITLE") then
 			workfound = findWorkFromTitle(question:tag2str("#TITLE")[1])
@@ -191,7 +194,6 @@ function understandQuestion(question)
 		if havetag(question, "#QUNKNOWN")==true then
 			if workfound["anime"] ~= nil then sum = sum+1 end
 			if workfound["manga"] ~= nil then sum = sum+1 end
-			print("YES ! "..sum)
 			if sum > 1 then
 				print("Hum, I am not certain, as there are multiple things you may refer to :")
 				if workfound["anime"] ~= nil then
@@ -237,15 +239,31 @@ function understandQuestion(question)
 				if characFound == nil and s:find("anime") then
 					dialog_state.hckey = workfound["anime"]
 					dialog_state.hctypes  = "QTHEME"
+					return
 				elseif characFound == nil and s:find("manga") then
 					dialog_state.hckey = workfound["manga"]
 					dialog_state.hctypes  = "QTHEME"
-				elseif s:find("anime") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
+					return
+				elseif nbcharacters == 1 and #characFound["manga"] == 1 and #characFound["anime"] == 0 and s:find("character") then
+					for key, manga in pairs(characFound["manga"]) do
+						dialog_state.hckey = manga[1]
+						dialog_state.hctypes  = "QBEHAVIOUR"
+					end
+					return
+				elseif nbcharacters == 1 and #characFound["manga"] == 0 and #characFound["anime"] == 1 and s:find("character") then
+					for key, anime in pairs(characFound["anime"]) do
+						dialog_state.hckey = anime[1]
+						dialog_state.hctypes  = "QBEHAVIOUR"
+					end
+					return
+				elseif workfound["anime"] ~= nil and s:find("anime") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
 					dialog_state.hckey = workfound["anime"]
 					dialog_state.hctypes  = "QTHEME"
-				elseif s:find("manga") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
+					return
+				elseif workfound["manga"] ~= nil and s:find("manga") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
 					dialog_state.hckey = workfound["manga"]
 					dialog_state.hctypes  = "QTHEME"
+					return
 				elseif s:find("character") ~= nil or s:find(" from ") ~= nil then
 					local foundwork = ""
 					local foundcharac = false
@@ -254,60 +272,310 @@ function understandQuestion(question)
 					elseif s:find("manga") ~=nil then
 						worktype = "manga"
 					else 
-						print("Sorry, I don't understand what you want")
+						print("Sorry, I don't understand which one you want")
+						dialog_state.hckey = nil
+						dialog_state.hctypes = nil
+						return
+					end
+					--compte le nombre de manga/d'animes trouves
+					local count = 0
+					for title, characs in pairs(characFound[worktype]) do
+						count = count + 1
+					end
+					for title, characs in pairs(characFound[worktype]) do
+						if count == 1 then
+							foundwork = title
+							break
+						elseif s:find(title) ~= nil then
+							foundwork = title
+							break
+						end
+					end
+					if foundwork =="" then
+						print("Sorry, I don't know this "..worktype..".")
 						dialog_state.hckey = nil
 						return
 					end
-					for title, characs in pairs(characFound[worktype]) do
-						if s:find(title) ~= nil then
-							foundWork = title
-							for k, charac in pairs(characs) do
-								if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
+					if #characFound[worktype][foundwork] == 1 then
+						foundcharac = true
+						dialog_state.hckey = charac
+						dialog_state.hctypes = "QHEBAVIOUR"
+						return
+					else
+						for k, charac in pairs(characFound[worktype][foundwork]) do
+							if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
+								foundcharac = true
+								dialog_state.hckey = charac
+								dialog_state.hctypes = "QHEBAVIOUR"
+								break
+							end
+						end
+						if foundcharac == false then
+							for k, charac in pairs(characFound[worktype][foundwork]) do
+								if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
+									print("MYTEST")
 									foundcharac = true
 									dialog_state.hckey = charac
-									break
-								end
-							end
-							if found == false then
-								for k, charac in pairs(characs) do
-									if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
-										foundcharac = true
-										dialog_state.hckey = charac
-										dialog_state.hctypes = "QHEBAVIOUR"
-										return
-									end
+									dialog_state.hctypes = "QHEBAVIOUR"
 								end
 							end
 						end
-						if foundcharac == true then break end
 					end
-					if foundwork == "" then
-						print("Sorry, I don't know this"..worktype..".")
-						dialog_state.hckey = nil
-						return
-					else if foundcharac == false then
+					if foundcharac == false then
 						print("Sorry, I don't know this character")
 						dialog_state.hckey = nil
-						return nil
+						return
 					end
+				else
+					print("Sorry, I don't know what you are talking about")
+					dialog_state.hctypes  = nil
+					dialog_state.hckey = nil
 				end
 			elseif sum == 1 then
 				if workfound["anime"] ~= nil then
 					dialog_state.hckey = workfound["anime"]
 					dialog_state.hctypes  = "QTHEME"
-				elseif #workfound["manga"] ~= nil then
+					return
+				elseif workfound["manga"] ~= nil then
 					dialog_state.hckey = workfound["manga"]	
 					dialog_state.hctypes  = "QTHEME"
+					return
+				else
+					for title, characs in ipairs(characFound["anime"]) do
+						for key, charac in ipairs(characs) do
+							dialog_state.hckey = charac
+							dialog_state.hctypes  = "QBEHAVIOUR"
+							return
+						end
+					end
+					for title, characs in ipairs(characFound["manga"]) do
+						for key, charac in ipairs(characs) do
+							dialog_state.hckey = charac
+							dialog_state.hctypes  = "QBEHAVIOUR"
+							return
+						end
+					end
 				end
 			else
 				print("Sorry, I don't know what you are talking about.")
 				dialog_state.hckey = nil
+				dialog_state.hctypes  = nil
 			end
-		end	
 		elseif havetag(question, "#QDESCRIPTION1")==true then
-			return "#QDESCRIPTION1", {GetValueInLink(question, "#CHARACTERNAME", "#QDESCRIPTION1")}
+			print("YES !")
+			if sum > 1 then
+				print("Hum, I am not certain, as there are multiple things you may refer to :")
+				if characFound ~= nil then
+					for title, characs in pairs(characFound["anime"]) do
+						for k, charac in pairs(characs) do
+							sum = sum-1
+							if sum == 0 then
+								print("And in the anime "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"]..".")
+							else
+								print("In the anime "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"].." ;")
+							end
+						end
+					end
+					for title, characs in pairs(characFound["manga"]) do
+						for k, charac in pairs(characs) do
+							sum = sum-1
+							if sum == 0 then
+								print("And in the manga "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"]..".")
+							else
+								print("In the manga "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"].." ;")
+							end
+						end
+					end
+				end
+				print("Which one are you talking about ?")
+				local s = io.read():lower()local foundwork = ""
+				local foundcharac = false
+				if s:find("anime") ~=nil then
+					worktype = "anime"
+				elseif s:find("manga") ~=nil then
+					worktype = "manga"
+				else 
+					print("Sorry, I don't understand which one you want")
+					dialog_state.hckey = nil
+					dialog_state.hctypes = nil
+					return
+				end
+				--compte le nombre de manga/d'animes trouves
+				local count = 0
+				for title, characs in pairs(characFound[worktype]) do
+					count = count + 1
+				end
+				for title, characs in pairs(characFound[worktype]) do
+					if count == 1 then
+						foundwork = title
+						break
+					elseif s:find(title) ~= nil then
+						foundwork = title
+						break
+					end
+				end
+				if foundwork =="" then
+					print("Sorry, I don't know this "..worktype..".")
+					dialog_state.hckey = nil
+					return
+				end
+				if #characFound[worktype][foundwork] == 1 then
+					foundcharac = true
+					dialog_state.hckey = charac
+					dialog_state.hctypes = "QHEBAVIOUR"
+					return
+				else
+					for k, charac in pairs(characFound[worktype][foundwork]) do
+						if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
+							foundcharac = true
+							dialog_state.hckey = charac
+							dialog_state.hctypes = "QHEBAVIOUR"
+							return
+						end
+					end
+					if foundcharac == false then
+						for k, charac in pairs(characFound[worktype][foundwork]) do
+							if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
+								foundcharac = true
+								dialog_state.hckey = charac
+								dialog_state.hctypes = "QHEBAVIOUR"
+								return
+							end
+						end
+					end
+				end
+				if foundcharac == false then
+					print("Sorry, I don't know this character")
+					dialog_state.hckey = nil
+					return
+				end
+			elseif sum == 1 then
+				for title, characs in ipairs(characFound["anime"]) do
+					for key, charac in ipairs(characs) do
+						dialog_state.hckey = charac
+						dialog_state.hctypes  = "QBEHAVIOUR"
+						return
+					end
+				end
+				for title, characs in ipairs(characFound["manga"]) do
+					for key, charac in ipairs(characs) do
+						dialog_state.hckey = charac
+						dialog_state.hctypes  = "QBEHAVIOUR"
+						return
+					end
+				end
+			else
+				print("Sorry, I don't know what you are talking about.")
+				dialog_state.hckey = nil
+				dialog_state.hctypes  = nil
+			end
 		elseif havetag(question, "#QDESCRIPTION2")==true then
-			return "#QDESCRIPTION2", {GetValueInLink(question, "#CHARACTERNAME", "#QDESCRIPTION2"), GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+			if sum > 1 then
+				print("Hum, I am not certain, as there are multiple things you may refer to :")
+				if characFound ~= nil then
+					for title, characs in pairs(characFound["anime"]) do
+						for k, charac in pairs(characs) do
+							sum = sum-1
+							if sum == 0 then
+								print("And in the anime "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"]..".")
+							else
+								print("In the anime "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"].." ;")
+							end
+						end
+					end
+					for title, characs in pairs(characFound["manga"]) do
+						for k, charac in pairs(characs) do
+							sum = sum-1
+							if sum == 0 then
+								print("And in the manga "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"]..".")
+							else
+								print("In the manga "..title..", there is a character named "..charac["firstname"].." "..charac["lastname"].." ;")
+							end
+						end
+					end
+				end
+				print("Which one are you talking about ?")
+				local s = io.read():lower()local foundwork = ""
+				local foundcharac = false
+				if s:find("anime") ~=nil then
+					worktype = "anime"
+				elseif s:find("manga") ~=nil then
+					worktype = "manga"
+				else 
+					print("Sorry, I don't understand which one you want")
+					dialog_state.hckey = nil
+					dialog_state.hctypes = nil
+					return
+				end
+				--compte le nombre de manga/d'animes trouves
+				local count = 0
+				for title, characs in pairs(characFound[worktype]) do
+					count = count + 1
+				end
+				for title, characs in pairs(characFound[worktype]) do
+					if count == 1 then
+						foundwork = title
+						break
+					elseif s:find(title) ~= nil then
+						foundwork = title
+						break
+					end
+				end
+				if foundwork =="" then
+					print("Sorry, I don't know this "..worktype..".")
+					dialog_state.hckey = nil
+					return
+				end
+				if #characFound[worktype][foundwork] == 1 then
+					foundcharac = true
+					dialog_state.hckey = {charac, GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+					dialog_state.hctypes = "QHEBAVIOUR"
+					return
+				else
+					for k, charac in pairs(characFound[worktype][foundwork]) do
+						if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
+							foundcharac = true
+							dialog_state.hckey = {charac, GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+							dialog_state.hctypes = "QHEBAVIOUR"
+							return
+						end
+					end
+					if foundcharac == false then
+						for k, charac in pairs(characFound[worktype][foundwork]) do
+							if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
+								foundcharac = true
+								dialog_state.hckey = {charac, GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+								dialog_state.hctypes = "QHEBAVIOUR"
+								return
+							end
+						end
+					end
+				end
+				if foundcharac == false then
+					print("Sorry, I don't know this character")
+					dialog_state.hckey = nil
+					return
+				end
+			elseif sum == 1 then
+				for title, characs in ipairs(characFound["anime"]) do
+					for key, charac in ipairs(characs) do
+						dialog_state.hckey = {charac, GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+						dialog_state.hctypes  = "QBEHAVIOUR"
+						return
+					end
+				end
+				for title, characs in ipairs(characFound["manga"]) do
+					for key, charac in ipairs(characs) do
+						dialog_state.hckey = {charac, GetValueInLink(question, "#BEHAVIOUR", "#QDESCRIPTION2")}
+						dialog_state.hctypes  = "QBEHAVIOUR"
+						return
+					end
+				end
+			else
+				print("Sorry, I don't know what you are talking about.")
+				dialog_state.hckey = nil
+				dialog_state.hctypes  = nil
+			end
 		elseif havetag(question, "#QTHEME1")==true then
 			return "#QTHEME1", {GetValueInLink(question, "#TITLE", "#QTHEME1")}
 		elseif havetag(question, "#QTHEME2")==true then
@@ -317,6 +585,6 @@ function understandQuestion(question)
 		return "#UNRECOGNIZED", nil
 	end
 	
-	return nil, nil
+	return
 end
 

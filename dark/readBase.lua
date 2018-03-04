@@ -493,7 +493,7 @@ outbase["manga"] = overConsolidate(outbase["manga"])
 --print(serialize(animeOut))
 file = io.open("work-base.lua", "w")
 io.output(file)
-io.write(serialize(outbase))
+io.write("return "..serialize(outbase))
 io.close(file)
 
 
