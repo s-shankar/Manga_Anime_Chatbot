@@ -41,30 +41,30 @@ function listTitles(base)
 	animeTitles = {}
 	titles = {}
 	for key, anime in pairs(base["anime"]) do
-		animeTitles[#animeTitles+1] = anime["title"]
+		animeTitles[#animeTitles+1] = anime["title"]:lower()
 		local found = false
 		for key2, other in pairs(titles) do
-			if other == anime["title"] then
+			if other == anime["title"]:lower() then
 				found = true
 				break
 			end
 		end
 		if found == false then
-			titles[#titles+1] = anime['title']
+			titles[#titles+1] = anime['title']:lower()
 		end
 	end
 
 	for key, manga in pairs(base["manga"]) do
-		mangaTitles[#mangaTitles+1] = manga["title"]
+		mangaTitles[#mangaTitles+1] = manga["title"]:lower()
 		found = false
 		for key2, other in pairs(titles) do
-			if other == manga["title"] then
+			if other == manga["title"]:lower() then
 				found = true
 				break
 			end
 		end
 		if found == false then
-			titles[#titles+1] = manga['title']
+			titles[#titles+1] = manga['title']:lower()
 		end
 	end
 	return mangaTitles, animeTitles, titles
@@ -122,36 +122,40 @@ function levenshtein(str1, str2)
 	return matrix[len1][len2]
 end
 
+--print("TEST : "..levenshtein("Naruto", "Naruta"))
 
+--Prend un nom et recherche si c'est une anime, un manga ou un nom de personnage.
 function getContext(name)
+	local distancemax = 1
 	local animefound = ""
 	local mangafound = ""
 	local charactersfound = {}
 	for key, anime in pairs(base["anime"]) do
-		if(name == anime["title"]) then
-			animefound = name
+		if levenshtein(name, anime["title"])<distancemax then
+			animefound = anime
 		end
 		for key, charac in pairs(anime[characters]) do
-			if charac["firstname"].." "..charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"] == name or charac["lastname"] == name then
-				charactersfound[#charactersfound+1] = {["anime"] = anime["title"], ["name"] = name}
+			if levenshtein(charac["firstname"].." "..charac["lastname"], name)<distancemax or levenshtein(charac["lastname"].." "..charac["firstname"],name)<distancemax or levenshtein(charac["firstname"],name)<distancemas or levenshtein(charac["lastname"],name)<distancemax then
+				charactersfound[#charactersfound+1] = {["anime"] = anime, ["character"] = charac}
 			end
 		end
 	end
 	for key, manga in pairs(base["manga"]) do
 		if(name == manga["title"]) then
-			mangafound = name
+			mangafound = manga
 		end
 		for key, charac in pairs(manga[characters]) do
-			if charac["firstname"].." "..charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"] == name or charac["lastname"] == name then
-				charactersfound[#charactersfound+1] = {["manga"] = manga["title"], ["name"] = name}
+			if levenshtein(charac["firstname"].." "..charac["lastname"], name)<distancemax or levenshtein(charac["lastname"].." "..charac["firstname"],name)<distancemax or levenshtein(charac["firstname"],name)<distancemas or levenshtein(charac["lastname"],name)<distancemax then
+				charactersfound[#charactersfound+1] = {["manga"] = manga, ["character"] = charac}
 			end
 		end
 	end
-
+	return animefound, mangafound, characterfound
 end
 
+
 function findCharacterName( firstname, lastname, listChara, ... )
-	local distancemax = 3
+	local distancemax = 1
 	local listName = {}
 	local name = ""
 	local args = {...}
@@ -182,8 +186,10 @@ function findCharacterName( firstname, lastname, listChara, ... )
 	return listName
 end
 
+
+--Retourne le behaviour d'un personnage en se basant sur son nom et le titre de son anime.
 function getBehaviours(firstname,lastname, title, type)
-		if type == "anime" then
+	if type == "anime" then
 		for key, anime in pairs(base["anime"]) do
 			if anime["title"] == title then
 				for key, charac in pairs(anime["characters"]) do
@@ -207,13 +213,64 @@ function getBehaviours(firstname,lastname, title, type)
 	end
 end
 
+function findCharacterInWorks(name)
+
+	local count = 0
+	found = {}
+	found["anime"] = {}
+	found["manga"] = {}
+	for k,anime in pairs(base["anime"]) do
+		for k, charac in pairs(anime["characters"]) do
+			if charac["firstname"] == name or charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"].." "..charac["lastname"] == name then
+				count = count + 1
+				if(found["anime"][anime["title"]] == nil) then
+					found["anime"][anime["title"]] = {}
+				end
+				found["anime"][anime["title"]][#found["anime"][anime["title"]]+1] = charac
+			end
+		end
+	end
+	for k,manga in pairs(base["manga"]) do
+		for k, charac in pairs(manga["characters"]) do
+			if charac["firstname"] == name or charac["lastname"] == name or charac["lastname"].." "..charac["firstname"] == name or charac["firstname"].." "..charac["lastname"] == name then
+				count = count + 1
+				if(found["manga"][manga["title"]] == nil) then
+					found["manga"][manga["title"]] = {}
+				end
+				found["manga"][manga["title"]][#found["manga"][manga["title"]]+1] = charac
+			end
+		end
+	end
+	return found, count
+end
+
+function findWorkFromTitle(title)
+	
+	found = {}
+	for k,anime in pairs(base["anime"]) do
+		if title == anime["title"] then
+			found["anime"] = anime
+			break
+		end
+	end
+	for k, manga in pairs(base["anime"]) do
+		if title == manga["title"] then
+			found["manga"] = manga
+			break
+		end
+	end
+	return found
+end
+
+--Retourne le theme d'un anime ou d'un manga en se basant sur le nom.
 function getTheme(title_name, type)
+	minimalIndice = 0.025
 	if type == "anime" then
 		for key, anime in pairs(base["anime"]) do
 			if anime["title"] == title_name then
 				themes = {}
 				for theme, indice in pairs(anime["themes"]) do
-					if indice/anime["nbreviews"] > 0.025 then
+					if indice/anime["nbreviews"] > minimalIndice then
 						themes[#themes+1] = theme
 					end
 				end
@@ -227,7 +284,7 @@ function getTheme(title_name, type)
 			if manga["title"] == title_name then
 				themes = {}
 				for theme, indice in pairs(manga["themes"]) do
-					if indice/manga["nbreviews"] > 0.025 then
+					if indice/manga["nbreviews"] > minimalIndice then
 						themes[#themes+1] = theme
 					end
 				end
@@ -235,15 +292,24 @@ function getTheme(title_name, type)
 			end
 		end
 	end
+	return nil
 end
 
-
-function getAnimeOrMangaBase( title, base )
+--retourne un anime ou un manga en se basant sur son titre
+function getAnimeOrMangaBase( title, base , type)
 	-- body
-	for k,anime in pairs(base["anime"]) do
-		print(title)
-		if string.find(anime["title"],title) then
-			return anime
+	if type == "manga" then
+		for k,anime in pairs(base["anime"]) do
+			if string.find(anime["title"],title) then
+				return anime
+			end
+		end
+	end
+	if type == "anime" then
+		for k, manga in pairs(base["manga"]) do
+			if string.find(manga["title"],title) then
+				return manga
+			end
 		end
 	end
 	return nil

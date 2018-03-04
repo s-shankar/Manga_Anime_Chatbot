@@ -2,6 +2,7 @@ dark = require("dark")
 base = dofile("work-base.lua")
 dofile("functions.lua")
 
+
 local function getFocusQ(quest,oldFocus)
 	--quest = dark.sequence(quest)
 	if(quest == "hello" or quest =="bye") then
@@ -13,7 +14,9 @@ local function getFocusQ(quest,oldFocus)
 	quest = dark.sequence(quest)
 	quest = main(quest)
 	--print(quest:tostring(tags))
-
+	
+	--question, details = understandQuestion(ques)
+	
 	if(#quest["#CHARACTERNAME"]) ~= 0 then
 		oldFocus.name = {}
 		for i,name in ipairs(quest:tag2str("#CHARACTERNAME")) do
@@ -90,6 +93,15 @@ local function getFocusQ(quest,oldFocus)
 
 end
 
+function getState(question)
+
+	--D'abord hors context
+	dialog_state.hctypes, dialog_state.hckey = understandQuestion(question)
+	
+end
+
+dialog_state = {}
+
 
 
 adjectives = dofile("adjectives.lua")
@@ -102,7 +114,7 @@ characterNames, characterFirstNames, characterLastNames = listCharacterNames(bas
 characterNames, characterFirstNames, characterLastNames = listCharacterNames(base["anime"], characterNames, characterFirstNames, characterLastNames)
 
 --print(serialize(adjList))
-print("Hello")
+print("Hello !")
 
 local input = ""
 local answer = "I am sorry, I do not understand"
@@ -113,23 +125,14 @@ focusQuestion = {}
 repeat
 	answer = "I am sorry, I do not understand"
 	local quit = false
-	local input1 = io.read()
-	local input = ""
-	for i=1,#input1 do
-		if i==1 then
-			input = input..string.lower(input1:sub(i,i))
-		else
-			input = input..input1:sub(i,i)
-		end
-	end
-	if input:sub(1,5) == "hello" then
+	local input = io.read():lower()
+	if input:sub(1,5) == "hello" or (input:sub(1,5) == "good " and (input:sub(6,12) == "morning" or input:sub(6,12) == "evening" or input:sub(6,14) == "afternoon")) then
 		answer = "How can I help you?"
-	elseif input:sub(1,3) == "bye" then
+	elseif input:sub(1,3) == "bye" or input:sub(1,8) == "good bye" then
 		quit = true
 		answer = "See you soon!"
 	else
-	
-	
+		understandQuestion(input)
 		focusQuestion = getFocusQ(input,focusQuestion)
 		if focusQuestion.quest == "QUNKNOWN" then
 			answer=""
@@ -183,7 +186,7 @@ repeat
 							end
 						end
 					else
-						answer = answer..'Sorry , I do no know this character...'
+						answer = answer..'Sorry , I do not know this character...'
 					end
 				elseif #focusQuestion.title ~= 0 then
 					for i,title in ipairs(focusQuestion.title) do
