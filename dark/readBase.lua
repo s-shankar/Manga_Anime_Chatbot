@@ -263,7 +263,7 @@ end]]--
 	end
 end]]--
 
-local function addBehavioursFromSentence(sen)
+local function addBehavioursFromSentence(sen, characterList)
 	if havetag(sen, "#DESCRIPTION") then
 		firstnames = {}
 		for key, value in pairs(GetValueInLink(sen, "#CHARACTERFIRSTNAME", "#DESCRIPTION")) do
@@ -275,31 +275,34 @@ local function addBehavioursFromSentence(sen)
 		end
 		behavs = {}
 		for key, value in pairs(GetValueInLink(sen, "#BEHAVIOUR", "#DESCRIPTION")) do
-			local found = false
-			for key, list in ipairs(adjectives) do
-				for key2, adj in ipairs(list) do
-					if value == adj then
-						found = true
-						behavs[#behavs+1] = list[1]
-						break
-					end
-				end
-				if found == true then break end
-			end
+			behavs[#behavs+1] = value
 		end
 		for i = 1, #behavs do
-			for keyb, charac in pairs(animeOut[keya]["characters"]) do
+			for keyb, charac in pairs(characterList) do
 				if firstnames[i] == charac["firstname"] or lastnames[i] == charac["lastname"] then
+					--print("TEST : "..serialize(charac))
 					for key, behav in pairs(behavs[i]) do
+						--consolide les adjectifs pour éviter les répétitions/synonyms
 						local found = false
-						for key, other in pairs(charac["behaviours"]) do
-							if other == behav then
+						for keyx, list in ipairs(adjectives) do
+							for keyy, adj in ipairs(list) do
+								if behav == adj then
+									found = true
+									realBehav = list[1]
+									break
+								end
+							end
+							if found == true then break end
+						end
+						found = false
+						for keyc, other in ipairs(charac["behaviours"]) do
+							if other == realBehav then
 								found = true
 								break
 							end
 						end
 						if found == false then
-							charac["behaviours"][#charac["behaviours"]+1] = behav
+							charac["behaviours"][#charac["behaviours"]+1] = realBehav
 						end
 					end
 				end
@@ -343,9 +346,17 @@ function getAnalyzedBase(base)
 		if anime["synopsis"] ~= nil then
 			animeOut[keya]["synopsis"] = anime["synopsis"]
 		end
-		for keyb, charac in ipairs(animeOut[keya]["characters"]) do
+		for keyb, charac in pairs(animeOut[keya]["characters"]) do
 			charac["behaviours"] = {}
 			charac["candidate_behaviours"]= {}
+		end
+		for keyb, charac in pairs(animeOut[keya]["characters"]) do
+			if charac["description"] ~= nil then
+				tablesen = splitsen(charac["description"])
+				for key, sen in ipairs(tablesen) do 
+					addBehavioursFromSentence(sen, animeOut[keya]["characters"])
+				end
+			end
 		end
 		animeOut[keya]["themes"] = {}
 		animeOut[keya]["candidate_themes"] = {}
@@ -387,7 +398,7 @@ function getAnalyzedBase(base)
 							end
 						end
 					end
-					addBehavioursFromSentence(sen)
+					addBehavioursFromSentence(sen, animeOut[keya]["characters"])
 				end
 			end
 			
@@ -408,15 +419,6 @@ function getAnalyzedBase(base)
 			end
 
 		end
-		
-		--[[
-		for key, charac in pairs(animeOut[keya]["characters"]) do
-			if #charac["behaviours"] ~= 0 then
-				print(charac["firstname"].." : "..serialize(charac["behaviours"]))
-			end
-			--print("TEST : "..serialize(charac))--..serialize(charac["behaviours"]))
-		end
-		]]--
 		
 		print(keya .. "/" .. #base)
 		-- if keya > 3 then break end
