@@ -267,3 +267,36 @@ function charaFromWhichAnimeOrManga( firstname, lastname )
 	end
 	return nil
 end
+
+
+-- takes a key/number dictionary as input (dic)
+-- returns a list of the (number) keys with the largest values, in order
+function getLargestKeys(dic, number)
+	-- sorting ? eh
+	output = {}
+	opdic = {}
+	for k,i in pairs(dic) do
+		opdic[k] = i
+	end
+
+	while #output < number do
+		largestK = ""
+		largestV = -100
+		dicIsEmpty = true
+		for k,i in pairs(opdic) do
+			if i > largestV then
+				largestK = k
+			end
+			dicIsEmpty = false
+		end
+		if dicIsEmpty then break end
+		output[#output+1] = largestK
+		opdic[largestK] = nil
+	end
+	return output
+end
+
+
+
+
+
