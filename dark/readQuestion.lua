@@ -63,7 +63,8 @@ main:pattern([[
 	[#QUNKNOWN
 		('do' 'you' 'know' .{1,10}?) |
 		('have' 'you' 'ever'? 'heard' 'of' .{1,10}?) |
-		('what' 'about' .{1,10}?)|
+		(('what'|'how') 'about' .{1,10}?)|
+		('and'  .{1,10}?)|
 		('tell' 'me' 'about' .{1,10}?) 
 	]
 ]])
@@ -186,7 +187,6 @@ function understandQuestion(question)
 		if havetag(question, "#QUNKNOWN")==true then
 			if workfound["anime"] ~= nil then sum = sum+1 end
 			if workfound["manga"] ~= nil then sum = sum+1 end
-			
 			if sum > 1 then
 				print("Hum, I am not certain, as there are multiple things you may refer to :")
 				if workfound["anime"] ~= nil then
@@ -336,15 +336,15 @@ function understandQuestion(question)
 					dialog_state.hctypes  = "QTHEME"
 					return
 				else
-					for title, characs in ipairs(characFound["anime"]) do
-						for key, charac in ipairs(characs) do
+					for title, characs in pairs(characFound["anime"]) do
+						for key, charac in pairs(characs) do
 							dialog_state.hckey = {charac}
 							dialog_state.hctypes  = "QBEHAVIOUR"
 							return
 						end
 					end
-					for title, characs in ipairs(characFound["manga"]) do
-						for key, charac in ipairs(characs) do
+					for title, characs in pairs(characFound["manga"]) do
+						for key, charac in pairs(characs) do
 							dialog_state.hckey = {charac}
 							dialog_state.hctypes  = "QBEHAVIOUR"
 							return

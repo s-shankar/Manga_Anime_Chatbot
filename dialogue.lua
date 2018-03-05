@@ -66,7 +66,7 @@ repeat
 			dialog_state.ectypes = nil
 		end
 		
-		--print(serialize(dialog_state.eckey[1]["themes"]).." "..dialog_state.eckey[2])
+		--print(serialize(dialog_state.eckey[1]))
 		if dialog_state.ectypes then
 			if dialog_state.ectypes == "QTHEME" then
 				if #dialog_state.eckey == 2 then
@@ -101,6 +101,48 @@ repeat
 					dialog_state.eckey[2] = themes[1]
 				end
 			end
+			if dialog_state.ectypes == "QBEHAVIOUR" then
+				if #dialog_state.eckey == 2 then
+					found = false
+					for	k, behav in pairs(dialog_state.eckey[1]["behaviours"]) do
+						if dialog_state.eckey[2] == behav then
+							found = true
+							break
+						end
+					end
+					for	k, behav in pairs(dialog_state.eckey[1]["candidate_behaviours"]) do
+						if dialog_state.eckey[2] == behav then
+							found = true
+							break
+						end
+					end
+					if found == true then
+						answer = "Yes, "..dialog_state.eckey[1]["firstname"].." is "..dialog_state.eckey[2].."."
+					else 
+						answer = "No, "..dialog_state.eckey[1]["firstname"].." is not "..dialog_state.eckey[2].."."
+					end
+				else
+					behavs = dialog_state.eckey[1]["behaviours"]
+					--print("test"..serialize(dialog_state.eckey[1]))
+					if(#behavs == 0) then
+						answer = "I don't know much about "..dialog_state.eckey[1]["firstname"].."."
+					else
+						answer = dialog_state.eckey[1]["firstname"].." is "..behavs[1]
+						for i = 2,#behavs do
+							if i<#behavs then
+								answer = answer..", "..behavs[i]
+							else
+								answer = answer.." and "..behavs[i].."."
+							end
+						end
+						dialog_state.eckey[2] = behavs[1]
+					end
+				end
+			else
+				answer = "Sorry, I don't understand"
+			end
+		else
+			answer = "Woops, I don't understand your question."
 		end
 	end
 	print(answer)
