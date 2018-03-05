@@ -93,14 +93,6 @@ tags = {
 }
 
 
--- Traitement des lignes du fichier
---[[local sentence = "In the first season finale, C.C. triggers a trap set by V.V., causing herself and Lelouch to be submerged in a shock image sequence similar to the one she used on Suzaku. Through this, Lelouch sees memories of her past, including repeated deaths. sensitive"
-for line in sentence.lines() do
-        -- Toutes les étiquettes
-	--print(main(line))
-        -- Uniquement les étiquettes voulues
-print(main(sentence):tostring(tags))
-end--]]
 
 
 
@@ -188,13 +180,13 @@ function understandQuestion(question)
 			sum = nbcharacters
 		end
 		if havetag(question, "#TITLE") then
-			print("REYES ! ")
 			workfound = findWorkFromTitle(question:tag2str("#TITLE")[1])
 		end
 		
 		if havetag(question, "#QUNKNOWN")==true then
 			if workfound["anime"] ~= nil then sum = sum+1 end
 			if workfound["manga"] ~= nil then sum = sum+1 end
+			
 			if sum > 1 then
 				print("Hum, I am not certain, as there are multiple things you may refer to :")
 				if workfound["anime"] ~= nil then
@@ -238,31 +230,31 @@ function understandQuestion(question)
 				print("Which one are you talking about ?")
 				local s = io.read():lower()
 				if characFound == nil and s:find("anime") then
-					dialog_state.hckey = workfound["anime"]
+					dialog_state.hckey = {workfound["anime"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif characFound == nil and s:find("manga") then
-					dialog_state.hckey = workfound["manga"]
+					dialog_state.hckey = {workfound["manga"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif nbcharacters == 1 and #characFound["manga"] == 1 and #characFound["anime"] == 0 and s:find("character") then
 					for key, manga in pairs(characFound["manga"]) do
-						dialog_state.hckey = manga[1]
+						dialog_state.hckey = {manga[1]}
 						dialog_state.hctypes  = "QBEHAVIOUR"
 					end
 					return
 				elseif nbcharacters == 1 and #characFound["manga"] == 0 and #characFound["anime"] == 1 and s:find("character") then
 					for key, anime in pairs(characFound["anime"]) do
-						dialog_state.hckey = anime[1]
+						dialog_state.hckey = {anime[1]}
 						dialog_state.hctypes  = "QBEHAVIOUR"
 					end
 					return
 				elseif workfound["anime"] ~= nil and s:find("anime") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
-					dialog_state.hckey = workfound["anime"]
+					dialog_state.hckey = {workfound["anime"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif workfound["manga"] ~= nil and s:find("manga") ~= nil and s:find("character") == nil and s:find(" from ") == nil then
-					dialog_state.hckey = workfound["manga"]
+					dialog_state.hckey = {workfound["manga"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif s:find("character") ~= nil or s:find(" from ") ~= nil then
@@ -300,14 +292,14 @@ function understandQuestion(question)
 					end
 					if #characFound[worktype][foundwork] == 1 then
 						foundcharac = true
-						dialog_state.hckey = characFound[worktype][foundwork][1]
+						dialog_state.hckey = {characFound[worktype][foundwork][1]}
 						dialog_state.hctypes = "QBEHAVIOUR"
 						return
 					else
 						for k, charac in pairs(characFound[worktype][foundwork]) do
 							if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
 								foundcharac = true
-								dialog_state.hckey = charac
+								dialog_state.hckey = {charac}
 								dialog_state.hctypes = "QBEHAVIOUR"
 								break
 							end
@@ -315,9 +307,8 @@ function understandQuestion(question)
 						if foundcharac == false then
 							for k, charac in pairs(characFound[worktype][foundwork]) do
 								if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
-									print("MYTEST")
 									foundcharac = true
-									dialog_state.hckey = charac
+									dialog_state.hckey = {charac}
 									dialog_state.hctypes = "QBEHAVIOUR"
 								end
 							end
@@ -337,24 +328,24 @@ function understandQuestion(question)
 				end
 			elseif sum == 1 then
 				if workfound["anime"] ~= nil then
-					dialog_state.hckey = workfound["anime"]
+					dialog_state.hckey = {workfound["anime"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif workfound["manga"] ~= nil then
-					dialog_state.hckey = workfound["manga"]	
+					dialog_state.hckey = {workfound["manga"]}	
 					dialog_state.hctypes  = "QTHEME"
 					return
 				else
 					for title, characs in ipairs(characFound["anime"]) do
 						for key, charac in ipairs(characs) do
-							dialog_state.hckey = charac
+							dialog_state.hckey = {charac}
 							dialog_state.hctypes  = "QBEHAVIOUR"
 							return
 						end
 					end
 					for title, characs in ipairs(characFound["manga"]) do
 						for key, charac in ipairs(characs) do
-							dialog_state.hckey = charac
+							dialog_state.hckey = {charac}
 							dialog_state.hctypes  = "QBEHAVIOUR"
 							return
 						end
@@ -367,7 +358,6 @@ function understandQuestion(question)
 				return
 			end
 		elseif havetag(question, "#QDESCRIPTION1")==true then
-			print("clapier")
 			if sum > 1 then
 				print("Hum, I am not certain, as there are multiple things you may refer to :")
 				if characFound ~= nil then
@@ -427,14 +417,14 @@ function understandQuestion(question)
 				end
 				if #characFound[worktype][foundwork] == 1 then
 					foundcharac = true
-					dialog_state.hckey = characFound[worktype][foundwork][1]
+					dialog_state.hckey = {characFound[worktype][foundwork][1]}
 					dialog_state.hctypes = "QBEHAVIOUR"
 					return
 				else
 					for k, charac in pairs(characFound[worktype][foundwork]) do
 						if s:find(charac["firstname"]) and s:find(charac["lastname"]) then
 							foundcharac = true
-							dialog_state.hckey = charac
+							dialog_state.hckey = {charac}
 							dialog_state.hctypes = "QBEHAVIOUR"
 							return
 						end
@@ -443,7 +433,7 @@ function understandQuestion(question)
 						for k, charac in pairs(characFound[worktype][foundwork]) do
 							if s:find(charac["firstname"]) or s:find(charac["lastname"]) then
 								foundcharac = true
-								dialog_state.hckey = charac
+								dialog_state.hckey = {charac}
 								dialog_state.hctypes = "QBEHAVIOUR"
 								return
 							end
@@ -459,14 +449,14 @@ function understandQuestion(question)
 			elseif sum == 1 then
 				for title, characs in pairs(characFound["anime"]) do
 					for key, charac in pairs(characs) do
-						dialog_state.hckey = charac
+						dialog_state.hckey = {charac}
 						dialog_state.hctypes  = "QBEHAVIOUR"
 						return
 					end
 				end
 				for key, characs in pairs(characFound["manga"]) do
 					for key, charac in pairs(characs) do
-						dialog_state.hckey = charac
+						dialog_state.hckey = {charac}
 						dialog_state.hctypes  = "QBEHAVIOUR"
 						return
 					end
@@ -587,6 +577,7 @@ function understandQuestion(question)
 				return
 			end
 		elseif havetag(question, "#QTHEME1")==true then
+			sum = 0
 			if workfound["anime"] ~= nil then sum = sum+1 end
 			if workfound["manga"] ~= nil then sum = sum+1 end
 			if sum > 1 then
@@ -610,21 +601,21 @@ function understandQuestion(question)
 				print("Which one are you talking about ?")
 				local s = io.read():lower()
 				if s:find("anime") then
-					dialog_state.hckey = workfound["anime"]
+					dialog_state.hckey = {workfound["anime"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif s:find("manga") then
-					dialog_state.hckey = workfound["manga"]
+					dialog_state.hckey = {workfound["manga"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				end
 			elseif sum == 1 then
 				if workfound["anime"] ~= nil then
-					dialog_state.hckey = workfound["anime"]
+					dialog_state.hckey = {workfound["anime"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif workfound["manga"] ~= nil then
-					dialog_state.hckey = workfound["manga"]	
+					dialog_state.hckey = {workfound["manga"]}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				end
@@ -635,7 +626,7 @@ function understandQuestion(question)
 				return
 			end
 		elseif havetag(question, "#QTHEME2")==true then
-			print("YES ! "..serialize(workfound))
+			sum = 0
 			if workfound["anime"] ~= nil then sum = sum+1 end
 			if workfound["manga"] ~= nil then sum = sum+1 end
 			if sum > 1 then
@@ -673,7 +664,7 @@ function understandQuestion(question)
 					dialog_state.hctypes  = "QTHEME"
 					return
 				elseif workfound["manga"] ~= nil then
-					dialog_state.hckey = {workfound["anime"], GetValueInLink(question, "#THEME", "#QTHEME2")}
+					dialog_state.hckey = {workfound["manga"], GetValueInLink(question, "#THEME", "#QTHEME2")}
 					dialog_state.hctypes  = "QTHEME"
 					return
 				end

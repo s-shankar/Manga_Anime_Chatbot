@@ -253,7 +253,7 @@ function findWorkFromTitle(title)
 			break
 		end
 	end
-	for k, manga in pairs(base["anime"]) do
+	for k, manga in pairs(base["manga"]) do
 		if title == manga["title"] then
 			found["manga"] = manga
 			break
