@@ -35,7 +35,7 @@ repeat
 	answer = ""
 	local quit = false
 	local input = io.read():lower()
-	if input:sub(1,5) == "hello" or (input:sub(1,5) == "good " and (input:sub(6,12) == "morning" or input:sub(6,12) == "evening" or input:sub(6,14) == "afternoon")) then
+	if input:sub(1,5) == "hello" or input:sub(1,2) == "hi" or (input:sub(1,5) == "good " and (input:sub(6,12) == "morning" or input:sub(6,12) == "evening" or input:sub(6,14) == "afternoon")) then
 		answer = "How can I help you?"
 	elseif input:sub(1,3) == "bye" or input:sub(1,8) == "good bye" then
 		quit = true
@@ -100,8 +100,7 @@ repeat
 					end
 					dialog_state.eckey[2] = themes[1]
 				end
-			end
-			if dialog_state.ectypes == "QBEHAVIOUR" then
+			elseif dialog_state.ectypes == "QBEHAVIOUR" then
 				if #dialog_state.eckey == 2 then
 					found = false
 					for	k, behav in pairs(dialog_state.eckey[1]["behaviours"]) do
