@@ -15,14 +15,16 @@ if __name__ == '__main__':
     #reload(sys)
     #sys.setdefaultencoding('utf-8')
     argparser = argparse.ArgumentParser()
-    argparser.add_argument("-a","--anime",help='anime sheet in json file')
+    #argparser.add_argument("-a","--anime",help='anime sheet in json file')
+    argparser.add_argument("-m","--manga",help='manga sheet in json file')
     args = argparser.parse_args()
 
-    pathName = str(args.anime)
+    #pathName = str(args.anime)
+    pathName = str(args.manga)
 
     with io.open(pathName,encoding="utf8") as fp:
         data = json.load(fp,encoding="utf8")
-    print(args.anime)
+    print(args.manga)
     orig_stdout = sys.stdout
     persos = data["character"]
     luaFileName = str("perso/perso_")+pathName.replace("json","lua")
@@ -40,15 +42,15 @@ if __name__ == '__main__':
 
     title_alternative = "%s \" %s \" " % (title_alternative,data["title_english"])
     title_alternative = normalize_string(title_alternative)
-    print("\t[\"title_alternative\"] = {{{0}}},".format(title_alternative))
+    #print("\t[\"title_alternative\"] = {{{0}}},".format(title_alternative))
     charaW = ""
     for chara in persos:
         cid = chara["mal_id"]
 
         api_url = "https://api.jikan.me/character/"+str(cid)
         res = requests.get(api_url)
+        cW = ""
         if res.status_code == 200:
-            cW = ""
             chara_data = res.json()
             cW = cW+"[\"mal_id\"] = %s, " % (cid)
             characterW = ""

@@ -456,7 +456,6 @@ function getAnalyzedBase(base)
 		end
 		
 		print(keya .. "/" .. #base)
-		 if keya > 1 then break end
 	end
 	return animeOut
 end

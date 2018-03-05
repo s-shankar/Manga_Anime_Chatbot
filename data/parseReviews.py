@@ -18,7 +18,7 @@ for i in `seq <nbofpages>`; do python3 parseReviews.py $i >> anime-file.lua ; do
 Better usage : (for fish)
 rm * ; for i in (seq 100)
 	wget "https://myanimelist.net/.../reviews?p="$i -O $i
-	python3 parseReviews.py $i >> anime-file.lua 
+	python3 parseReviews.py $i >> anime-file.lua
 	if test $status -eq 1
 		break
 	end
@@ -54,8 +54,8 @@ for i in coms:
 
 	score = int(i.contents[3].contents[1].contents[1].contents[1].contents[3].contents[0].contents[0])
 
-	#helpful=int(i.contents[1].contents[2].contents[1].contents[1].contents[3].contents[4].contents[1].contents[1].contents[1].contents[0])
-	helpful=int(i.contents[1].contents[2].contents[1].contents[1].contents[3].contents[6].contents[1].contents[1].contents[0])
+	helpful=int(i.contents[1].contents[2].contents[1].contents[1].contents[3].contents[4].contents[1].contents[1].contents[1].contents[0])
+	#helpful=int(i.contents[1].contents[2].contents[1].contents[1].contents[3].contents[6].contents[1].contents[1].contents[0])
 
 
 	text = i.contents[3].get_text()
@@ -70,11 +70,11 @@ for i in coms:
 
 
 	text = text.replace("\\", "\\\\")
-	
+
 	text = text.replace("<br>","\n")
 	text = text.replace("<br/>","\n")
 	text = text.replace("\n\n","\n")
-	
+
 	# BS4 is SUPPOSED to return Unicode but we don't call its formatter
 	text = text.replace("&quot;","'")
 	text = text.replace("&rsquo;","'")
@@ -92,12 +92,12 @@ for i in coms:
 	text = text.replace("&ocirc;","ô")
 	text = text.replace("&ndash;"," - ")
 	text = text.replace("&mdash;"," - ")
-	
+
 	text = text.replace("“", "\"")
 	text = text.replace("”", "\"")
-	
+
 	text = text.replace("\"","\\\"")
-	
+
 	text = text.replace("\n","\\n")
 	text = text.replace("\r","\\r")
 
@@ -108,5 +108,5 @@ for i in coms:
 	toPrint += "{[\"score\"]="+str(score)+","+(" "*(3-len(str(score))))
 	toPrint += "[\"helpful\"]="+str(helpful)+","+(" "*(5-len(str(helpful))))
 	toPrint += "[\"text\"]=\""+text+"\"},"
-	
+
 	print(toPrint)

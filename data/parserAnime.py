@@ -173,7 +173,7 @@ if __name__ == '__main__':
     if args.anime is not None:
         pathName = "anime/"+str(args.anime).split("anime\\",1)[1]
     elif args.manga is not None:
-        pathName = "manga"+str(args.manga)
+        pathName = "manga/"+str(args.manga)
 
     with io.open(pathName,encoding="utf8") as fp:
         data = json.load(fp,encoding="utf8")
